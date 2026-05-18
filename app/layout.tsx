@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import { SiteFooter } from "./components/site-footer";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -41,6 +42,7 @@ export default function RootLayout({
           <div className="ambient-blob ambient-blob-d" />
         </div>
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
