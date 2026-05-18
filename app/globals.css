@@ -39,7 +39,7 @@ body {
 
 @media (pointer: fine) {
   body {
-    cursor: url("/cursors/rename-cursor.png") 6 6, auto;
+    cursor: url("/cursors/rename-cursor.png?v=5") 4 4, auto;
   }
 
   a,
@@ -51,7 +51,7 @@ body {
   input[type="submit"],
   input[type="button"],
   input[type="range"] {
-    cursor: url("/cursors/rename-pointer.png") 7 7, pointer;
+    cursor: url("/cursors/rename-pointer.png?v=5") 5 5, pointer;
   }
 
   input[type="text"],
@@ -69,6 +69,13 @@ body {
 
 a {
   color: inherit;
+}
+
+button.bg-accent,
+a.bg-accent,
+input[type="submit"].bg-accent,
+input[type="button"].bg-accent {
+  color: #fff !important;
 }
 
 ::selection {

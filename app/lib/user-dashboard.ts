@@ -276,22 +276,19 @@ export async function getUserDashboardData(
     })
     .filter((item): item is BookmarkItem => item !== null);
 
+  const listenedSecondsEstimate = continueListening.reduce(
+    (accumulator, row) => accumulator + Math.max(row.positionSeconds, 0),
+    0,
+  );
+
   const summary: DashboardSummary = {
     booksInProgress: continueListening.filter(
       (row) => row.completionPercent > 0 && row.completionPercent < 100,
     ).length,
     booksCompleted: continueListening.filter((row) => row.completionPercent >= 100).length,
     totalBookmarks: recentBookmarks.length,
-    listenedSeconds: continueListening.reduce(
-      (accumulator, row) => accumulator + Math.max(row.completedSeconds, 0),
-      0,
-    ),
-    listenedLabel: formatDurationLabel(
-      continueListening.reduce(
-        (accumulator, row) => accumulator + Math.max(row.completedSeconds, 0),
-        0,
-      ),
-    ),
+    listenedSeconds: listenedSecondsEstimate,
+    listenedLabel: formatDurationLabel(listenedSecondsEstimate),
   };
 
   return {

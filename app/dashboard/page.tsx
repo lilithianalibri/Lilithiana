@@ -104,7 +104,7 @@ export default async function DashboardPage() {
             </article>
             <article className="panel rounded-2xl p-4">
               <p className="text-xs uppercase tracking-[0.14em] text-muted">
-                Tempo ascoltato
+                Tempo ascoltato stimato
               </p>
               <p className="mt-2 text-3xl font-display">
                 {dashboard.summary.listenedLabel}
