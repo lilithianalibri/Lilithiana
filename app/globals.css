@@ -1,26 +1,136 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f1eb;
+  --foreground: #21191d;
+  --surface: rgba(255, 255, 255, 0.74);
+  --surface-strong: rgba(255, 255, 255, 0.9);
+  --accent: #8f2f45;
+  --accent-soft: #c47a7c;
+  --gold: #bb8a2f;
+  --muted: #6d5f63;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-surface: var(--surface);
+  --color-surface-strong: var(--surface-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-gold: var(--gold);
+  --color-muted: var(--muted);
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-space-grotesk);
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 12% 18%, rgba(196, 122, 124, 0.36), transparent 34%),
+    radial-gradient(circle at 86% 14%, rgba(187, 138, 47, 0.21), transparent 30%),
+    radial-gradient(circle at 24% 56%, rgba(196, 122, 124, 0.22), transparent 34%),
+    radial-gradient(circle at 82% 68%, rgba(187, 138, 47, 0.18), transparent 30%),
+    radial-gradient(circle at 18% 88%, rgba(143, 47, 69, 0.14), transparent 34%),
+    linear-gradient(140deg, #f8f2eb 0%, #f1e7da 52%, #f8f0e9 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+@media (pointer: fine) {
+  body {
+    cursor: url("/cursors/rename-cursor.png") 6 6, auto;
+  }
+
+  a,
+  button,
+  [role="button"],
+  summary,
+  label,
+  select,
+  input[type="submit"],
+  input[type="button"],
+  input[type="range"] {
+    cursor: url("/cursors/rename-pointer.png") 7 7, pointer;
+  }
+
+  input[type="text"],
+  input[type="search"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    cursor: text;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(143, 47, 69, 0.24);
+  color: #1f1b1e;
+}
+
+.panel {
+  background: var(--surface);
+  border: 1px solid rgba(49, 25, 31, 0.16);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 40px rgba(67, 38, 44, 0.08);
+}
+
+.title-glow {
+  text-shadow: 0 4px 30px rgba(143, 47, 69, 0.18);
+}
+
+.gold-line {
+  background: linear-gradient(
+    90deg,
+    rgba(187, 138, 47, 0) 0%,
+    rgba(187, 138, 47, 0.86) 50%,
+    rgba(187, 138, 47, 0) 100%
+  );
+}
+
+.ambient-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(72px);
+  opacity: 0.34;
+}
+
+.ambient-blob-a {
+  left: -140px;
+  top: 8%;
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(circle, rgba(196, 122, 124, 0.5) 0%, rgba(196, 122, 124, 0) 68%);
+}
+
+.ambient-blob-b {
+  right: -140px;
+  top: 32%;
+  width: 460px;
+  height: 460px;
+  background: radial-gradient(circle, rgba(187, 138, 47, 0.42) 0%, rgba(187, 138, 47, 0) 70%);
+}
+
+.ambient-blob-c {
+  left: 8%;
+  top: 58%;
+  width: 340px;
+  height: 340px;
+  background: radial-gradient(circle, rgba(143, 47, 69, 0.34) 0%, rgba(143, 47, 69, 0) 70%);
+}
+
+.ambient-blob-d {
+  right: 12%;
+  top: 82%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(196, 122, 124, 0.3) 0%, rgba(196, 122, 124, 0) 72%);
 }

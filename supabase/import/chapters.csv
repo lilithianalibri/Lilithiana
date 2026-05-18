@@ -1,0 +1,12 @@
+book_slug,chapter_index,chapter_slug,chapter_title,duration_seconds,audio_url,r2_key
+briganta,1,intro,"Intro",20,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/01-intro.wav,briganta/01-intro.wav
+briganta,2,primavera-1883,"Primavera 1883",1288,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/02-primavera-1883.wav,briganta/02-primavera-1883.wav
+briganta,3,marzo-1861,"Marzo 1861",2112,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/03-marzo-1861.wav,briganta/03-marzo-1861.wav
+briganta,4,aprile-1861,"Aprile 1861",1299,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/04-aprile-1861.wav,briganta/04-aprile-1861.wav
+briganta,5,maggio-1861,"Maggio 1861",1646,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/05-maggio-1861.wav,briganta/05-maggio-1861.wav
+briganta,6,giugno-1861,"Giugno 1861",2529,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/06-giugno-1861.wav,briganta/06-giugno-1861.wav
+briganta,7,luglio-1861,"Luglio 1861",1921,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/07-luglio-1861.wav,briganta/07-luglio-1861.wav
+briganta,8,agosto-1861,"Agosto 1861",2418,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/08-agosto-1861.wav,briganta/08-agosto-1861.wav
+briganta,9,primavera-1863,"Primavera 1863",576,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/09-primavera-1863.wav,briganta/09-primavera-1863.wav
+briganta,10,estate-1883,"Estate 1883",130,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/10-estate-1883.wav,briganta/10-estate-1883.wav
+briganta,11,postfazione-la-briganta-e-io,"Postfazione. La briganta e io",456,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/11-postfazione-la-briganta-e-io.wav,briganta/11-postfazione-la-briganta-e-io.wav
