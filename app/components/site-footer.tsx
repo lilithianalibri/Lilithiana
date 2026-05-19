@@ -41,6 +41,27 @@ export function SiteFooter() {
           </div>
 
           <div className="gold-line mt-4 h-px w-full" />
+          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-accent/14 bg-white/58 px-4 py-3">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted">
+              Partner ufficiali
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <Image
+                src="/partners/amleta-logo.png"
+                alt="Amleta"
+                width={564}
+                height={140}
+                className="h-7 w-auto"
+              />
+              <Image
+                src="/partners/rete-lilith-logo.png"
+                alt="Rete informativa Lilith"
+                width={118}
+                height={73}
+                className="h-7 w-auto"
+              />
+            </div>
+          </div>
           <p className="mt-4 text-xs uppercase tracking-[0.13em] text-muted">
             &copy; {year} Lilithiana. Tutti i diritti riservati.
           </p>

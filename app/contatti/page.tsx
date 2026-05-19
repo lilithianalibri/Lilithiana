@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, Megaphone, Sparkles, Users } from "lucide-react";
 import { MainNav } from "../components/main-nav";
@@ -71,6 +72,28 @@ export default function ContactsPage() {
               <p className="mt-3 rounded-2xl border border-accent/16 bg-white/62 px-4 py-3 text-xs uppercase tracking-[0.1em] text-muted">
                 Sezione in aggiornamento
               </p>
+
+              <div className="mt-5 rounded-2xl border border-accent/14 bg-white/62 px-4 py-4">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-muted">
+                  Partner ufficiali
+                </p>
+                <div className="mt-3 flex flex-wrap items-center gap-3">
+                  <Image
+                    src="/partners/amleta-logo.png"
+                    alt="Amleta"
+                    width={564}
+                    height={140}
+                    className="h-8 w-auto"
+                  />
+                  <Image
+                    src="/partners/rete-lilith-logo.png"
+                    alt="Rete informativa Lilith"
+                    width={118}
+                    height={73}
+                    className="h-8 w-auto"
+                  />
+                </div>
+              </div>
 
               <Link
                 href="/"
