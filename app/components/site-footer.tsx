@@ -3,6 +3,7 @@ import Link from "next/link";
 
 const footerLinks = [
   { label: "Home", href: "/" },
+  { label: "Progetto", href: "/progetto" },
   { label: "Catalogo", href: "/library" },
   { label: "Chi siamo", href: "/chi-siamo" },
   { label: "Contatti", href: "/contatti" },

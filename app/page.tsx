@@ -216,54 +216,6 @@ export default function Home() {
             </div>
           </section>
 
-          <section id="progetto" className="panel rounded-3xl p-6 sm:p-8">
-            <div className="grid gap-6 lg:grid-cols-[1.35fr_1fr]">
-              <article>
-                <p className="text-xs uppercase tracking-[0.2em] text-muted">
-                  Il progetto
-                </p>
-                <h2 className="mt-3 font-display text-3xl leading-tight sm:text-4xl">
-                  Una libreria audio femminista, scelta con cura
-                </h2>
-                <div className="mt-4 space-y-4 text-base text-muted">
-                  <p>
-                    Questo progetto nasce dall&apos;idea che non possiamo lasciare solo
-                    a piattaforme generaliste la possibilita di decidere quali libri
-                    trasmettere in audio.
-                  </p>
-                  <p>
-                    Nel web e importante dire anche la parola di noi femministe,
-                    scegliere i testi che riteniamo importanti e renderli disponibili
-                    anche alle nuove generazioni, che forse usano questo mezzo piu di
-                    quanto accadesse in passato.
-                  </p>
-                  <p>
-                    Il progetto nasce anche da una grande voglia di dialogo fra
-                    generazioni ed esperienze diverse: fatemi sapere cosa pensate,
-                    consigli, suggerimenti per il futuro (magari nuove sezioni, poesia,
-                    ragazz*), candidature per nuove voci.
-                  </p>
-                </div>
-              </article>
-
-              <article className="panel rounded-2xl bg-white/70 p-5">
-                <p className="text-xs uppercase tracking-[0.2em] text-muted">
-                  Contatti
-                </p>
-                <p className="mt-3 text-sm text-muted">
-                  Se vuoi contribuire con idee, testi o voce narrante, scrivi
-                  direttamente all&apos;indirizzo del progetto.
-                </p>
-                <a
-                  href="mailto:lilithiana@gmail.com"
-                  className="mt-5 inline-flex items-center justify-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
-                >
-                  lilithiana@gmail.com
-                </a>
-              </article>
-            </div>
-          </section>
-
           <section id="catalogo" className="panel rounded-3xl p-6 sm:p-8">
             <div className="mb-5 flex flex-wrap items-start justify-between gap-4">
               <div>
