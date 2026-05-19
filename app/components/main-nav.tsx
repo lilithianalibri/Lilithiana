@@ -22,9 +22,9 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
             <Image
               src="/lilithiana-logo-transparent.png"
               alt="Lilithiana"
-              width={1354}
-              height={486}
-              priority
+              width={1572}
+              height={715}
+              preload
               className="h-10 w-auto sm:h-12 lg:h-14"
             />
           </Link>
