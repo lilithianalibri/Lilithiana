@@ -91,19 +91,11 @@ export default function Home() {
                 Edizione LILITHIANA
               </span>
 
-              <h1 className="title-glow font-display text-4xl leading-tight sm:text-5xl lg:text-6xl">
-                LILITHIANA
-                <br />
-                audiolibri di autrici,
-                <br />
-                ascolto con anima.
-              </h1>
-
-              <p className="max-w-2xl text-lg text-muted">
+              <h1 className="title-glow font-display text-3xl leading-tight sm:text-4xl lg:text-5xl">
                 Ascolta gratis e senza alcuna profilazione questi libri, inediti
                 nella versione audio, fondamentali per la cultura delle donne per
                 contenuti, sperimentazioni e finezza di scrittura.
-              </p>
+              </h1>
 
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Link
@@ -158,25 +150,6 @@ export default function Home() {
                 </Link>
               </div>
             </motion.aside>
-          </section>
-
-          <section className="panel rounded-3xl px-6 py-8 sm:px-8">
-            <div className="mx-auto max-w-4xl text-center">
-              <p className="text-xs uppercase tracking-[0.2em] text-accent">
-                Ascolto libero
-              </p>
-              <p className="mt-4 text-lg leading-relaxed text-foreground sm:text-xl">
-                Ascolta gratis e senza alcuna profilazione questi libri, inediti
-                nella versione audio, fondamentali per la cultura delle donne per
-                contenuti, sperimentazioni e finezza di scrittura.
-              </p>
-              <Link
-                href="/library"
-                className="mt-6 inline-flex items-center justify-center rounded-full bg-accent px-6 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
-              >
-                Vai al catalogo
-              </Link>
-            </div>
           </section>
 
           <section className="panel rounded-3xl p-6 sm:p-8">

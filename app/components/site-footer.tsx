@@ -70,7 +70,7 @@ export function SiteFooter() {
             <div className="mt-2 space-y-1.5 text-sm text-foreground/90">
               <p>
                 <span className="font-semibold">Organizzazione e coordinamento:</span>{" "}
-                Stefania Di Biase
+                Stefania De biase
               </p>
               <p>
                 <span className="font-semibold">Design:</span> Fiamma Spinelli

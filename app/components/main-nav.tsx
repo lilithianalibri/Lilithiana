@@ -18,7 +18,7 @@ type MainNavProps = {
 export function MainNav({ searchQuery = "" }: MainNavProps) {
   return (
     <header className="panel mb-10 rounded-3xl p-4 sm:p-5">
-      <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:gap-3 xl:items-center">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:gap-3">
         <div className="flex items-center justify-between gap-3">
           <Link href="/" className="shrink-0" aria-label="Vai alla home di Lilithiana">
             <Image
@@ -32,12 +32,12 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
           </Link>
         </div>
 
-        <nav className="flex min-w-0 flex-nowrap items-center gap-2 overflow-x-auto px-1 py-1 text-sm whitespace-nowrap lg:flex-1 lg:flex-wrap lg:overflow-x-visible lg:whitespace-normal [&::-webkit-scrollbar]:hidden">
+        <nav className="flex min-w-0 flex-nowrap items-center gap-1.5 overflow-x-auto px-1 py-1 text-sm whitespace-nowrap lg:flex-1 lg:flex-nowrap lg:overflow-x-visible lg:whitespace-nowrap [&::-webkit-scrollbar]:hidden">
           {menuItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="whitespace-nowrap rounded-full border border-accent/16 bg-white/55 px-3.5 py-2 font-medium transition hover:bg-white hover:shadow-[0_8px_22px_rgba(33,25,29,0.12)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/30"
+              className="whitespace-nowrap rounded-full border border-accent/16 bg-white/55 px-3 py-1.5 font-medium transition hover:bg-white hover:shadow-[0_8px_22px_rgba(33,25,29,0.12)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/30"
             >
               {item.label}
             </Link>
@@ -45,7 +45,7 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
         </nav>
 
         <div className="flex flex-col gap-2 sm:flex-row sm:items-center lg:ml-auto lg:shrink-0">
-          <form action="/library" method="get" className="relative sm:w-[260px] xl:w-[300px]">
+          <form action="/library" method="get" className="relative sm:w-[220px] xl:w-[250px]">
             <Search
               size={16}
               className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-accent/80"
@@ -55,12 +55,12 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
               name="q"
               defaultValue={searchQuery}
               placeholder="Cerca titolo, autrice o categoria"
-              className="w-full rounded-full border border-accent/24 bg-white/72 py-2.5 pl-11 pr-16 text-sm outline-none ring-accent/25 transition placeholder:text-muted focus:ring-2"
+              className="w-full rounded-full border border-accent/24 bg-white/72 py-2 pl-10 pr-14 text-sm outline-none ring-accent/25 transition placeholder:text-muted focus:ring-2"
             />
             <button
               type="submit"
               aria-label="Cerca in libreria"
-              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border border-accent/16 bg-white px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-accent transition hover:bg-white"
+              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border border-accent/16 bg-white px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-accent transition hover:bg-white"
             >
               Cerca
             </button>
