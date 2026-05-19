@@ -7,6 +7,7 @@ import { AuthCard } from "../../components/auth-card";
 import { BookCover } from "../../components/book-cover";
 import { MainNav } from "../../components/main-nav";
 import { getCatalogBookBySlug } from "../../lib/catalog";
+import { getEditorialTrack } from "../../lib/editorial-track";
 
 type BookPageProps = {
   params: Promise<{ slug: string }>;
@@ -98,9 +99,7 @@ export default async function BookPage({ params, searchParams }: BookPageProps) 
                   {book.author}
                 </p>
                 <p>
-                  <span className="font-semibold text-foreground">
-                    Narratrice:
-                  </span>{" "}
+                  <span className="font-semibold text-foreground">Legge</span>{" "}
                   {book.narrator}
                 </p>
                 <p>
@@ -110,8 +109,8 @@ export default async function BookPage({ params, searchParams }: BookPageProps) 
                   {book.totalDuration}
                 </p>
                 <p>
-                  <span className="font-semibold text-foreground">Atmosfera:</span>{" "}
-                  {book.vibe}
+                  <span className="font-semibold text-foreground">Percorso:</span>{" "}
+                  {getEditorialTrack(book.category)}
                 </p>
               </div>
 

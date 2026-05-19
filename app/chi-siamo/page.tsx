@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { HeartHandshake, Mic2, NotebookPen, Sparkles } from "lucide-react";
+import { Mic2, NotebookPen, Sparkles } from "lucide-react";
 import { MainNav } from "../components/main-nav";
 
 export const metadata: Metadata = {
@@ -8,22 +9,6 @@ export const metadata: Metadata = {
   description:
     "Storia, visione e collaborazioni dietro la piattaforma LILITHIANA: una rete di donne, voci e competenze al servizio degli audiolibri.",
 };
-
-const collaborations = [
-  "Eugenia Galateri",
-  "Piera Codognotto",
-  "Paola De Ferrari",
-  "Fiamma Spinelli",
-  "Simonetta De Fazi",
-  "Luciana Tufani",
-  "Marzia Vaccari (ServerDonne)",
-  "Paola D'Arcangelo",
-  "Le attrici di Amleta",
-  "Antonella Civale",
-  "Francesco Buttarazzi",
-  "Ambasciatore Memmo",
-  "Francesca Genti",
-];
 
 export default function AboutPage() {
   return (
@@ -42,7 +27,7 @@ export default function AboutPage() {
             </h1>
             <p className="mt-4 max-w-3xl text-base text-muted sm:text-lg">
               Sono Stefania De Biase, ma parlo al plurale. Se questa piattaforma di
-              audiolibri e oggi realta, lo devo a tutte le donne della Rete Lilith
+              audiolibri è oggi realtà, lo devo a tutte le donne della Rete Lilith
               e del movimento femminista che hanno incrociato il mio cammino.
             </p>
           </section>
@@ -101,19 +86,29 @@ export default function AboutPage() {
             <aside className="space-y-4">
               <article className="panel rounded-2xl p-5">
                 <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-accent">
-                  <HeartHandshake size={14} />
-                  Collaborazioni
+                  <Sparkles size={14} />
+                  Associazioni partner
                 </p>
-                <ul className="mt-4 space-y-2 text-sm text-muted">
-                  {collaborations.map((name) => (
-                    <li
-                      key={name}
-                      className="rounded-xl border border-accent/14 bg-white/62 px-3 py-2"
-                    >
-                      {name}
-                    </li>
-                  ))}
-                </ul>
+                <div className="mt-4 space-y-3">
+                  <div className="rounded-2xl border border-accent/14 bg-white/62 px-3 py-3">
+                    <Image
+                      src="/partners/amleta-logo.png"
+                      alt="Logo Amleta"
+                      width={564}
+                      height={140}
+                      className="h-12 w-auto"
+                    />
+                  </div>
+                  <div className="rounded-2xl border border-accent/14 bg-white/62 px-3 py-3">
+                    <Image
+                      src="/partners/rete-lilith-logo.png"
+                      alt="Logo Rete informativa Lilith"
+                      width={118}
+                      height={73}
+                      className="h-12 w-auto"
+                    />
+                  </div>
+                </div>
               </article>
 
               <article className="panel rounded-2xl p-5">

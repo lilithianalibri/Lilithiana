@@ -24,6 +24,10 @@
   --font-display: var(--font-space-grotesk);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background:
     radial-gradient(circle at 12% 18%, rgba(196, 122, 124, 0.36), transparent 34%),
@@ -35,32 +39,6 @@ body {
   color: var(--foreground);
   font-family: var(--font-manrope), system-ui, sans-serif;
   line-height: 1.45;
-}
-
-@media (pointer: fine) {
-  body {
-    cursor: url("/cursors/rename-cursor.png?v=5") 4 4, auto;
-  }
-
-  a,
-  button,
-  [role="button"],
-  summary,
-  label,
-  select,
-  input[type="submit"],
-  input[type="button"],
-  input[type="range"] {
-    cursor: url("/cursors/rename-pointer.png?v=5") 5 5, pointer;
-  }
-
-  input[type="text"],
-  input[type="search"],
-  input[type="email"],
-  input[type="password"],
-  textarea {
-    cursor: text;
-  }
 }
 
 * {

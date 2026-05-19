@@ -15,6 +15,7 @@ import {
 import { BookCover } from "./components/book-cover";
 import { MainNav } from "./components/main-nav";
 import { getAllAudiobooks, getFeaturedBook } from "./lib/audiobooks";
+import { getEditorialTrack } from "./lib/editorial-track";
 
 const whyLilithianaCards = [
   {
@@ -26,7 +27,7 @@ const whyLilithianaCards = [
   {
     title: "Capitolo per capitolo",
     description:
-      "Passa a qualunque capitolo in pochi secondi e segui la storia con massima precisione.",
+      "Passa a qualunque capitolo in pochi secondi o segui la storia con massima precisione.",
     icon: ListMusic,
   },
   {
@@ -141,7 +142,9 @@ export default function Home() {
                   className="h-72"
                 />
               </div>
-              <p className="mt-4 text-sm text-muted">{featuredBook.vibe}</p>
+              <p className="mt-4 text-sm text-muted">
+                Percorso: {getEditorialTrack(featuredBook.category)}
+              </p>
               <div className="mt-5 flex items-center justify-between rounded-xl bg-white/65 px-4 py-3">
                 <div className="flex items-center gap-2 text-sm font-semibold text-accent">
                   <Clock3 size={16} />
@@ -155,6 +158,25 @@ export default function Home() {
                 </Link>
               </div>
             </motion.aside>
+          </section>
+
+          <section className="panel rounded-3xl px-6 py-8 sm:px-8">
+            <div className="mx-auto max-w-4xl text-center">
+              <p className="text-xs uppercase tracking-[0.2em] text-accent">
+                Ascolto libero
+              </p>
+              <p className="mt-4 text-lg leading-relaxed text-foreground sm:text-xl">
+                Ascolta gratis e senza alcuna profilazione questi libri, inediti
+                nella versione audio, fondamentali per la cultura delle donne per
+                contenuti, sperimentazioni e finezza di scrittura.
+              </p>
+              <Link
+                href="/library"
+                className="mt-6 inline-flex items-center justify-center rounded-full bg-accent px-6 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+              >
+                Vai al catalogo
+              </Link>
+            </div>
           </section>
 
           <section className="panel rounded-3xl p-6 sm:p-8">
@@ -190,6 +212,54 @@ export default function Home() {
                 >
                   Ascolta Gratis
                 </Link>
+              </article>
+            </div>
+          </section>
+
+          <section id="progetto" className="panel rounded-3xl p-6 sm:p-8">
+            <div className="grid gap-6 lg:grid-cols-[1.35fr_1fr]">
+              <article>
+                <p className="text-xs uppercase tracking-[0.2em] text-muted">
+                  Il progetto
+                </p>
+                <h2 className="mt-3 font-display text-3xl leading-tight sm:text-4xl">
+                  Una libreria audio femminista, scelta con cura
+                </h2>
+                <div className="mt-4 space-y-4 text-base text-muted">
+                  <p>
+                    Questo progetto nasce dall&apos;idea che non possiamo lasciare solo
+                    a piattaforme generaliste la possibilita di decidere quali libri
+                    trasmettere in audio.
+                  </p>
+                  <p>
+                    Nel web e importante dire anche la parola di noi femministe,
+                    scegliere i testi che riteniamo importanti e renderli disponibili
+                    anche alle nuove generazioni, che forse usano questo mezzo piu di
+                    quanto accadesse in passato.
+                  </p>
+                  <p>
+                    Il progetto nasce anche da una grande voglia di dialogo fra
+                    generazioni ed esperienze diverse: fatemi sapere cosa pensate,
+                    consigli, suggerimenti per il futuro (magari nuove sezioni, poesia,
+                    ragazz*), candidature per nuove voci.
+                  </p>
+                </div>
+              </article>
+
+              <article className="panel rounded-2xl bg-white/70 p-5">
+                <p className="text-xs uppercase tracking-[0.2em] text-muted">
+                  Contatti
+                </p>
+                <p className="mt-3 text-sm text-muted">
+                  Se vuoi contribuire con idee, testi o voce narrante, scrivi
+                  direttamente all&apos;indirizzo del progetto.
+                </p>
+                <a
+                  href="mailto:lilithiana@gmail.com"
+                  className="mt-5 inline-flex items-center justify-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+                >
+                  lilithiana@gmail.com
+                </a>
               </article>
             </div>
           </section>
@@ -291,9 +361,7 @@ export default function Home() {
                             {book.title}
                           </h3>
                           <p className="text-sm text-muted">Autrice: {book.author}</p>
-                          <p className="text-sm text-muted">
-                            Narratrice: {book.narrator}
-                          </p>
+                          <p className="text-sm text-muted">Legge {book.narrator}</p>
                           <div className="gold-line mt-2 h-px w-full" />
                           <p className="text-sm font-semibold text-accent">
                             Durata totale: {book.totalDuration}

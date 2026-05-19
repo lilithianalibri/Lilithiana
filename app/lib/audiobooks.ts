@@ -29,7 +29,7 @@ export type AudioBook = {
 const audiobooks: AudioBook[] = [
   {
     slug: "briganta",
-    title: "Briganta",
+    title: "La briganta",
     author: "Maria Rosa Cutrufelli",
     narrator: "Antonella Civale",
     category: "Narrativa",

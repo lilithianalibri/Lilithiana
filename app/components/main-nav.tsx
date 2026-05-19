@@ -5,8 +5,10 @@ import { NavAuthActions } from "./nav-auth-actions";
 
 const menuItems = [
   { label: "Home", href: "/" },
+  { label: "Progetto", href: "/#progetto" },
   { label: "Catalogo", href: "/library" },
   { label: "Chi siamo", href: "/chi-siamo" },
+  { label: "Contatti", href: "/contatti" },
 ];
 
 type MainNavProps = {
@@ -52,7 +54,7 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
               type="search"
               name="q"
               defaultValue={searchQuery}
-              placeholder="Cerca titolo, autrice o atmosfera"
+              placeholder="Cerca titolo, autrice o categoria"
               className="w-full rounded-full border border-accent/24 bg-white/72 py-2.5 pl-11 pr-16 text-sm outline-none ring-accent/25 transition placeholder:text-muted focus:ring-2"
             />
             <button

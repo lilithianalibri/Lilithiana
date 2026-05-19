@@ -1,9 +1,11 @@
+﻿import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = [
   { label: "Home", href: "/" },
   { label: "Catalogo", href: "/library" },
   { label: "Chi siamo", href: "/chi-siamo" },
+  { label: "Contatti", href: "/contatti" },
   { label: "Accedi", href: "/accedi" },
 ] as const;
 
@@ -16,8 +18,13 @@ export function SiteFooter() {
         <div className="panel rounded-3xl px-6 py-5 sm:px-8">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="font-display text-xl tracking-wide text-foreground">LILITHIANA</p>
-              <p className="mt-1 text-sm text-muted">Audiolibri di autrici, ascolto con anima.</p>
+              <Image
+                src="/lilithiana-logo-transparent.png"
+                alt="Lilithiana"
+                width={1572}
+                height={715}
+                className="h-9 w-auto sm:h-10"
+              />
             </div>
 
             <nav className="flex flex-wrap items-center gap-2 text-sm">
@@ -35,10 +42,11 @@ export function SiteFooter() {
 
           <div className="gold-line mt-4 h-px w-full" />
           <p className="mt-4 text-xs uppercase tracking-[0.13em] text-muted">
-            © {year} Lilithiana. Tutti i diritti riservati.
+            &copy; {year} Lilithiana. Tutti i diritti riservati.
           </p>
         </div>
       </div>
     </footer>
   );
 }
+
