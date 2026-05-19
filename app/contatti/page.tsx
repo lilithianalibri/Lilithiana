@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Megaphone, Sparkles, Users } from "lucide-react";
+import { Mail, Sparkles } from "lucide-react";
 import { MainNav } from "../components/main-nav";
 
 export const metadata: Metadata = {
@@ -27,7 +27,7 @@ export default function ContactsPage() {
             </h1>
             <p className="mt-4 max-w-3xl text-base text-muted sm:text-lg">
               Scrivici per proposte, suggerimenti, candidature per nuove voci e
-              collaborazioni culturali legate al progetto LILITHIANA.
+              collaborazioni culturali legate al progetto.
             </p>
           </section>
 
@@ -35,45 +35,22 @@ export default function ContactsPage() {
             <article className="panel rounded-3xl p-6 sm:p-8">
               <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-accent">
                 <Mail size={14} />
-                Email principale
+                Contatto principale
               </p>
               <a
-                href="mailto:lilithiana@gmail.com"
+                href="mailto:lilithianalibri@gmail.com"
                 className="mt-3 inline-flex rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
               >
-                lilithiana@gmail.com
+                lilithianalibri@gmail.com
               </a>
               <p className="mt-4 text-sm leading-6 text-muted">
-                Questo indirizzo e attivo per richieste generali, dialogo sul
-                catalogo, nuove idee editoriali e candidature voce.
-              </p>
-
-              <div className="gold-line mt-6 h-px w-full" />
-
-              <p className="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-accent">
-                <Users size={14} />
-                Collaborazioni
-              </p>
-              <p className="mt-3 text-sm leading-6 text-muted">
-                Se vuoi contribuire con testi, letture, supporto tecnico o iniziative
-                sul territorio, scrivici una breve presentazione e ti ricontattiamo.
+                Scrivici qui per richieste generali, dialogo sul catalogo e
+                candidature voce.
               </p>
             </article>
 
             <article className="panel rounded-3xl p-6 sm:p-8">
-              <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-accent">
-                <Megaphone size={14} />
-                Promozione e stampa
-              </p>
-              <p className="mt-3 text-sm leading-6 text-muted">
-                Qui inseriremo i riferimenti della persona che si occupa della
-                promozione non appena definiti.
-              </p>
-              <p className="mt-3 rounded-2xl border border-accent/16 bg-white/62 px-4 py-3 text-xs uppercase tracking-[0.1em] text-muted">
-                Sezione in aggiornamento
-              </p>
-
-              <div className="mt-5 rounded-2xl border border-accent/14 bg-white/62 px-4 py-4">
+              <div className="rounded-2xl border border-accent/14 bg-white/62 px-4 py-4">
                 <p className="text-xs font-semibold uppercase tracking-[0.12em] text-muted">
                   Partner ufficiali
                 </p>
@@ -86,8 +63,8 @@ export default function ContactsPage() {
                     className="h-8 w-auto"
                   />
                   <Image
-                    src="/partners/rete-lilith-logo.png"
-                    alt="Rete informativa Lilith"
+                    src="/lilith.png"
+                    alt="Lilith"
                     width={118}
                     height={73}
                     className="h-8 w-auto"

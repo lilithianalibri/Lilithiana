@@ -33,6 +33,14 @@ type DbChapter = {
   audio_url: string;
 };
 
+const BOOK_TITLE_OVERRIDES: Record<string, string> = {
+  briganta: "La briganta",
+};
+
+function resolveBookTitle(slug: string, title: string) {
+  return BOOK_TITLE_OVERRIDES[slug] ?? title;
+}
+
 function parseDurationToSeconds(duration: string) {
   const hourMatch = duration.match(/(\d+)\s*h/i);
   const minuteMatch = duration.match(/(\d+)\s*m/i);
@@ -63,6 +71,7 @@ function normalizeMockBooks() {
 
     return {
       ...book,
+      title: resolveBookTitle(book.slug, book.title),
       id: book.id ?? `mock-${book.slug}`,
       totalDurationSeconds,
       chapters: mappedChapters,
@@ -103,7 +112,7 @@ function joinBooksFromDatabase(books: DbBook[], chapters: DbChapter[]): AudioBoo
     return {
       id: book.id,
       slug: book.slug,
-      title: book.title,
+      title: resolveBookTitle(book.slug, book.title),
       author: book.author,
       narrator: book.narrator,
       category: book.category,

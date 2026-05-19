@@ -101,8 +101,8 @@ export default function AboutPage() {
                   </div>
                   <div className="rounded-2xl border border-accent/14 bg-white/62 px-3 py-3">
                     <Image
-                      src="/partners/rete-lilith-logo.png"
-                      alt="Logo Rete informativa Lilith"
+                      src="/lilith.png"
+                      alt="Logo Lilith"
                       width={118}
                       height={73}
                       className="h-12 w-auto"

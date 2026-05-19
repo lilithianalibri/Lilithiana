@@ -51,11 +51,11 @@ export default function ProjectPage() {
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href="mailto:lilithiana@gmail.com"
+                  href="mailto:lilithianalibri@gmail.com"
                   className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:brightness-110"
                 >
                   <Mail size={14} />
-                  lilithiana@gmail.com
+                  lilithianalibri@gmail.com
                 </a>
                 <Link
                   href="/library"
@@ -84,8 +84,8 @@ export default function ProjectPage() {
                   </div>
                   <div className="rounded-2xl border border-accent/14 bg-white/62 px-3 py-3">
                     <Image
-                      src="/partners/rete-lilith-logo.png"
-                      alt="Logo Rete informativa Lilith"
+                      src="/lilith.png"
+                      alt="Logo Lilith"
                       width={118}
                       height={73}
                       className="h-12 w-auto"

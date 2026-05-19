@@ -100,9 +100,9 @@ export default function Home() {
               </h1>
 
               <p className="max-w-2xl text-lg text-muted">
-                Una libreria audio elegante dedicata alle autrici: scopri storie
-                intense, voci curate e un ascolto ordinato capitolo per capitolo,
-                sempre dentro il singolo libro.
+                Ascolta gratis e senza alcuna profilazione questi libri, inediti
+                nella versione audio, fondamentali per la cultura delle donne per
+                contenuti, sperimentazioni e finezza di scrittura.
               </p>
 
               <div className="flex flex-col gap-4 sm:flex-row">

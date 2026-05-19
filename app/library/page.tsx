@@ -169,7 +169,7 @@ export default async function LibraryPage({ searchParams }: LibraryPageProps) {
             {visibleBooks.length === 0 ? (
               <article className="panel rounded-3xl p-6 text-sm text-muted md:col-span-2 xl:col-span-3">
                 Nessun libro trovato per questa ricerca. Prova con titolo o autrice, ad esempio{" "}
-                <span className="font-semibold text-foreground">Briganta</span>.
+                <span className="font-semibold text-foreground">La briganta</span>.
               </article>
             ) : null}
           </section>
