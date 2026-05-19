@@ -1,14 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4ede5;
-  --foreground: #21191d;
-  --surface: rgba(255, 255, 255, 0.8);
+  --background: #efe3d4;
+  --foreground: #2a1f22;
+  --surface: rgba(255, 255, 255, 0.82);
   --surface-strong: rgba(255, 255, 255, 0.94);
   --accent: #8f2f45;
   --accent-soft: #b86f76;
   --gold: #bb8a2f;
   --muted: #5f5358;
+  --bg-radial-wine: rgba(156, 82, 106, 0.26);
+  --bg-radial-gold: rgba(196, 149, 79, 0.24);
+  --bg-radial-plum: rgba(117, 78, 90, 0.22);
+  --bg-grad-start: #f7f0e8;
+  --bg-grad-mid: #ecdecd;
+  --bg-grad-end: #ddc6a9;
+  --bg-noise-light: rgba(43, 30, 34, 0.08);
+  --bg-noise-gold: rgba(187, 138, 47, 0.09);
+  --bg-vignette-top: rgba(255, 252, 245, 0.28);
+  --bg-vignette-bottom: rgba(60, 38, 30, 0.2);
 }
 
 @theme inline {
@@ -30,13 +40,20 @@ html {
 
 body {
   background:
-    radial-gradient(130% 80% at 8% 0%, rgba(143, 47, 69, 0.36), transparent 58%),
-    radial-gradient(95% 72% at 92% 8%, rgba(187, 138, 47, 0.3), transparent 60%),
-    radial-gradient(110% 85% at 15% 95%, rgba(89, 49, 57, 0.22), transparent 62%),
-    linear-gradient(142deg, #fbf7f2 0%, #efe2d0 50%, #e7d4bb 100%);
+    radial-gradient(135% 98% at 6% 0%, var(--bg-radial-wine), transparent 58%),
+    radial-gradient(112% 92% at 100% 8%, var(--bg-radial-gold), transparent 62%),
+    radial-gradient(125% 112% at 10% 100%, var(--bg-radial-plum), transparent 64%),
+    linear-gradient(
+      146deg,
+      var(--bg-grad-start) 0%,
+      var(--bg-grad-mid) 43%,
+      var(--bg-grad-end) 100%
+    );
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-manrope), system-ui, sans-serif;
   line-height: 1.45;
+  background-attachment: fixed;
 }
 
 body::before {
@@ -46,11 +63,33 @@ body::before {
   pointer-events: none;
   z-index: -1;
   background-image:
-    radial-gradient(rgba(33, 25, 29, 0.06) 0.45px, transparent 0.45px),
-    radial-gradient(rgba(187, 138, 47, 0.05) 0.45px, transparent 0.45px);
-  background-position: 0 0, 2px 2px;
-  background-size: 4px 4px;
-  opacity: 0.22;
+    url("/patterns/literary-silhouettes.svg"),
+    url("/patterns/literary-silhouettes.svg"),
+    radial-gradient(var(--bg-noise-light) 0.5px, transparent 0.5px),
+    radial-gradient(var(--bg-noise-gold) 0.5px, transparent 0.5px);
+  background-repeat: repeat, repeat, repeat, repeat;
+  background-position:
+    center top,
+    -180px 220px,
+    0 0,
+    2px 2px;
+  background-size:
+    900px auto,
+    680px auto,
+    4px 4px,
+    4px 4px;
+  opacity: 0.24;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(90% 68% at 50% -8%, var(--bg-vignette-top), transparent 68%),
+    radial-gradient(100% 86% at 50% 112%, var(--bg-vignette-bottom), transparent 70%);
 }
 
 * {
@@ -75,9 +114,9 @@ input[type="button"].bg-accent {
 
 .panel {
   background: var(--surface);
-  border: 1px solid rgba(49, 25, 31, 0.2);
-  backdrop-filter: blur(9px);
-  box-shadow: 0 18px 42px rgba(48, 30, 35, 0.12);
+  border: 1px solid rgba(49, 25, 31, 0.24);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 44px rgba(67, 45, 38, 0.18);
 }
 
 .title-glow {
@@ -93,41 +132,3 @@ input[type="button"].bg-accent {
   );
 }
 
-.ambient-blob {
-  position: absolute;
-  border-radius: 9999px;
-  filter: blur(78px);
-  opacity: 0.42;
-}
-
-.ambient-blob-a {
-  left: -150px;
-  top: 5%;
-  width: 450px;
-  height: 450px;
-  background: radial-gradient(circle, rgba(196, 122, 124, 0.6) 0%, rgba(196, 122, 124, 0) 70%);
-}
-
-.ambient-blob-b {
-  right: -140px;
-  top: 28%;
-  width: 490px;
-  height: 490px;
-  background: radial-gradient(circle, rgba(187, 138, 47, 0.5) 0%, rgba(187, 138, 47, 0) 72%);
-}
-
-.ambient-blob-c {
-  left: 6%;
-  top: 62%;
-  width: 360px;
-  height: 360px;
-  background: radial-gradient(circle, rgba(143, 47, 69, 0.38) 0%, rgba(143, 47, 69, 0) 72%);
-}
-
-.ambient-blob-d {
-  right: 10%;
-  top: 84%;
-  width: 320px;
-  height: 320px;
-  background: radial-gradient(circle, rgba(196, 122, 124, 0.36) 0%, rgba(196, 122, 124, 0) 74%);
-}

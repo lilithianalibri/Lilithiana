@@ -35,12 +35,6 @@ export default function RootLayout({
       className={`${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="relative isolate min-h-full flex flex-col overflow-x-hidden">
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
-          <div className="ambient-blob ambient-blob-a" />
-          <div className="ambient-blob ambient-blob-b" />
-          <div className="ambient-blob ambient-blob-c" />
-          <div className="ambient-blob ambient-blob-d" />
-        </div>
         {children}
         <SiteFooter />
       </body>
