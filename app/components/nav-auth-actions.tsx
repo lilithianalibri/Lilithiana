@@ -47,17 +47,13 @@ export function NavAuthActions() {
     router.refresh();
   }
 
-  if (!supabase) {
-    return null;
-  }
-
-  if (!userId) {
+  if (!supabase || !userId) {
     return (
       <Link
         href="/accedi"
         className="whitespace-nowrap rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
       >
-        Entra nel club
+        Accedi
       </Link>
     );
   }

@@ -42,28 +42,30 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
           ))}
         </nav>
 
-        <form action="/library" method="get" className="relative lg:ml-auto lg:w-[300px] xl:w-[340px]">
-          <Search
-            size={16}
-            className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-accent/80"
-          />
-          <input
-            type="search"
-            name="q"
-            defaultValue={searchQuery}
-            placeholder="Cerca titolo, autrice o atmosfera"
-            className="w-full rounded-full border border-accent/24 bg-white/72 py-2.5 pl-11 pr-16 text-sm outline-none ring-accent/25 transition placeholder:text-muted focus:ring-2"
-          />
-          <button
-            type="submit"
-            aria-label="Cerca in libreria"
-            className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border border-accent/16 bg-white px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-accent transition hover:bg-white"
-          >
-            Cerca
-          </button>
-        </form>
+        <div className="flex flex-col gap-2 sm:flex-row sm:items-center lg:ml-auto">
+          <form action="/library" method="get" className="relative sm:w-[300px] xl:w-[340px]">
+            <Search
+              size={16}
+              className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-accent/80"
+            />
+            <input
+              type="search"
+              name="q"
+              defaultValue={searchQuery}
+              placeholder="Cerca titolo, autrice o atmosfera"
+              className="w-full rounded-full border border-accent/24 bg-white/72 py-2.5 pl-11 pr-16 text-sm outline-none ring-accent/25 transition placeholder:text-muted focus:ring-2"
+            />
+            <button
+              type="submit"
+              aria-label="Cerca in libreria"
+              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full border border-accent/16 bg-white px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.1em] text-accent transition hover:bg-white"
+            >
+              Cerca
+            </button>
+          </form>
 
-        <NavAuthActions />
+          <NavAuthActions />
+        </div>
       </div>
     </header>
   );
