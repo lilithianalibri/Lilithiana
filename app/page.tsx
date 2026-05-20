@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
@@ -97,6 +98,19 @@ export default function Home() {
                 contenuti, sperimentazioni e finezza di scrittura.
               </h1>
 
+              <div className="panel inline-flex w-fit max-w-full items-center gap-3 rounded-2xl px-4 py-2.5">
+                <p className="text-sm font-semibold text-muted">
+                  creato a partire dalla rete Lilith
+                </p>
+                <Image
+                  src="/lilith.png"
+                  alt="Logo Rete Lilith"
+                  width={118}
+                  height={73}
+                  className="h-8 w-auto"
+                />
+              </div>
+
               <div className="flex flex-col gap-4 sm:flex-row">
                 <Link
                   href="#catalogo"
@@ -179,12 +193,14 @@ export default function Home() {
                   Ascolta gratuitamente dal catalogo online: capitoli ordinati,
                   player diretto e accesso immediato ai titoli in evidenza.
                 </p>
-                <Link
-                  href={`/libri/${featuredBook.slug}?play=from-start#player`}
-                  className="mt-5 inline-flex items-center justify-center rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
-                >
-                  Ascolta Gratis
-                </Link>
+                <div className="mt-6 flex justify-center">
+                  <Link
+                    href={`/libri/${featuredBook.slug}?play=from-start#player`}
+                    className="inline-flex items-center justify-center rounded-full bg-accent px-8 py-3 text-base font-semibold text-white transition hover:brightness-110"
+                  >
+                    Ascolta Gratis
+                  </Link>
+                </div>
               </article>
             </div>
           </section>
@@ -311,13 +327,20 @@ export default function Home() {
           >
             <div className="mx-auto max-w-5xl">
               <p className="text-center text-xs uppercase tracking-[0.24em] text-muted">
-                Perche funziona
+                Come funziona
               </p>
               <h2
                 id="why-lilithiana"
-                className="mt-3 text-center font-display text-3xl sm:text-4xl"
+                className="mt-3 flex flex-wrap items-center justify-center gap-3 text-center font-display text-3xl sm:text-4xl"
               >
-                Perche LILITHIANA funziona
+                <span>Come funziona</span>
+                <Image
+                  src="/lilithiana-logo-transparent.png"
+                  alt="Lilithiana"
+                  width={1572}
+                  height={715}
+                  className="h-10 w-auto sm:h-12"
+                />
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-muted sm:text-base">
                 Un&apos;esperienza di ascolto pensata per seguire la tua storia con ritmo,

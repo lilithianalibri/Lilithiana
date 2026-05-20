@@ -85,11 +85,7 @@ export default function AboutPage() {
 
             <aside className="space-y-4">
               <article className="panel rounded-2xl p-5">
-                <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-accent">
-                  <Sparkles size={14} />
-                  Partner
-                </p>
-                <div className="mt-4 space-y-3">
+                <div className="space-y-3">
                   <div className="rounded-2xl border border-accent/14 bg-white/62 px-3 py-3">
                     <Image
                       src="/partners/amleta-logo.png"

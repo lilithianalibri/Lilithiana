@@ -51,10 +51,7 @@ export default function ContactsPage() {
 
             <article className="panel rounded-3xl p-6 sm:p-8">
               <div className="rounded-2xl border border-accent/14 bg-white/62 px-4 py-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-muted">
-                  Partner ufficiali
-                </p>
-                <div className="mt-3 flex flex-wrap items-center gap-3">
+                <div className="flex flex-wrap items-center gap-3">
                   <Image
                     src="/partners/amleta-logo.png"
                     alt="Amleta"

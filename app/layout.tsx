@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import { CookieConsentBanner } from "./components/cookie-consent-banner";
 import { SiteFooter } from "./components/site-footer";
 import "./globals.css";
 
@@ -36,6 +37,7 @@ export default function RootLayout({
     >
       <body className="relative isolate min-h-full flex flex-col overflow-x-hidden">
         {children}
+        <CookieConsentBanner />
         <SiteFooter />
       </body>
     </html>

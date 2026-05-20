@@ -10,6 +10,13 @@ const footerLinks = [
   { label: "Accedi", href: "/accedi" },
 ] as const;
 
+const legalLinks = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Cookie Policy", href: "/cookie-policy" },
+  { label: "Termini e Condizioni", href: "/termini-condizioni" },
+  { label: "Preferenze Cookie", href: "/preferenze-cookie" },
+] as const;
+
 export function SiteFooter() {
   const year = new Date().getFullYear();
 
@@ -42,10 +49,7 @@ export function SiteFooter() {
           </div>
 
           <div className="gold-line mt-4 h-px w-full" />
-          <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-accent/14 bg-white/58 px-4 py-3">
-            <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted">
-              Partner ufficiali
-            </p>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-3 rounded-2xl border border-accent/14 bg-white/58 px-4 py-3">
             <div className="flex flex-wrap items-center gap-4">
               <Image
                 src="/partners/amleta-logo.png"
@@ -92,6 +96,17 @@ export function SiteFooter() {
                 D&apos;Arcangelo
               </p>
             </div>
+          </div>
+          <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs uppercase tracking-[0.1em] text-muted">
+            {legalLinks.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="font-semibold text-accent transition hover:underline"
+              >
+                {item.label}
+              </Link>
+            ))}
           </div>
           <p className="mt-4 text-xs uppercase tracking-[0.13em] text-muted">
             &copy; {year} Lilithiana. Tutti i diritti riservati.

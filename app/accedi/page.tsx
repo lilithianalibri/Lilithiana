@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ShieldCheck, Sparkles } from "lucide-react";
 import { AuthCard } from "../components/auth-card";
@@ -49,8 +50,15 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
               <Sparkles size={14} />
               Accesso al club
             </p>
-            <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
-              Entra in LILITHIANA
+            <h1 className="mt-3 flex flex-wrap items-center gap-3 font-display text-4xl leading-tight sm:text-5xl">
+              <span>Entra in</span>
+              <Image
+                src="/lilithiana-logo-transparent.png"
+                alt="Lilithiana"
+                width={1572}
+                height={715}
+                className="h-11 w-auto sm:h-14"
+              />
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
               Crea il tuo account per ritrovare sempre il punto esatto di ascolto,
