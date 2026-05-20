@@ -50,14 +50,14 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
               <Sparkles size={14} />
               Accesso al club
             </p>
-            <h1 className="mt-3 flex flex-wrap items-center gap-3 font-display text-4xl leading-tight sm:text-5xl">
+            <h1 className="mt-3 flex flex-nowrap items-start gap-3 font-display text-4xl leading-tight sm:text-5xl">
               <span>Entra in</span>
               <Image
                 src="/lilithiana-logo-transparent.png"
                 alt="Lilithiana"
                 width={1572}
                 height={715}
-                className="h-11 w-auto sm:h-14"
+                className="-mt-3 h-16 w-auto sm:-mt-4 sm:h-20"
               />
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">
@@ -71,8 +71,9 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
                 Sicurezza account
               </p>
               <p className="mt-2 text-sm text-muted">
-                La registrazione supporta CAPTCHA anti-bot. Dopo la conferma email,
-                l&apos;accesso viene sincronizzato lato server in cookie sicuri.
+                La registrazione supporta Cloudflare Turnstile anti-bot. Dopo la
+                conferma email, l&apos;accesso viene sincronizzato lato server in cookie
+                sicuri.
               </p>
             </div>
 

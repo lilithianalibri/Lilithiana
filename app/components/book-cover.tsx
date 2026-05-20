@@ -30,15 +30,25 @@ export function BookCover({
   return (
     <div
       style={coverStyle}
-      className={`relative overflow-hidden rounded-2xl border border-white/25 ${className}`}
+      className={`book-cover book-cover--animated relative overflow-hidden rounded-2xl border border-white/25 ${className}`}
     >
+      {!compact ? (
+        <div aria-hidden className="book-cover-motion">
+          <div className="book-cover-spine" />
+          <div className="book-cover-pages-stack" />
+          <div className="book-cover-page book-cover-page-a" />
+          <div className="book-cover-page book-cover-page-b" />
+          <div className="book-cover-glint" />
+          <div className="book-cover-turn-shadow" />
+        </div>
+      ) : null}
       <div className="absolute inset-0 bg-[linear-gradient(135deg,transparent_0%,rgba(0,0,0,0.12)_45%,rgba(0,0,0,0.34)_100%)]" />
       {compact ? (
-        <div className="relative flex h-full flex-col justify-end p-2 text-white">
+        <div className="relative z-20 flex h-full flex-col justify-end p-2 text-white">
           <h3 className="text-[11px] leading-tight font-semibold">{title}</h3>
         </div>
       ) : (
-        <div className="relative flex h-full flex-col justify-between p-5 text-white">
+        <div className="relative z-20 flex h-full flex-col justify-between p-5 text-white">
           <p className="text-[10px] uppercase tracking-[0.32em] text-white/80">
             LILITHIANA Originale
           </p>

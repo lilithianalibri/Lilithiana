@@ -331,7 +331,7 @@ export default function Home() {
               </p>
               <h2
                 id="why-lilithiana"
-                className="mt-3 flex flex-wrap items-center justify-center gap-3 text-center font-display text-3xl sm:text-4xl"
+                className="mt-3 flex flex-wrap items-start justify-center gap-3 text-center font-display text-3xl sm:text-4xl"
               >
                 <span>Come funziona</span>
                 <Image
@@ -339,7 +339,7 @@ export default function Home() {
                   alt="Lilithiana"
                   width={1572}
                   height={715}
-                  className="h-10 w-auto sm:h-12"
+                  className="-mt-2 h-[3.25rem] w-auto sm:-mt-3 sm:h-[3.85rem]"
                 />
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-muted sm:text-base">

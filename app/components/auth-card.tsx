@@ -1,6 +1,6 @@
 "use client";
 
-import HCaptcha from "@hcaptcha/react-hcaptcha";
+import { Turnstile } from "@marsidev/react-turnstile";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
@@ -53,7 +53,9 @@ export function AuthCard({ compact = false, redirectTo = "/dashboard" }: AuthCar
   const [message, setMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const siteKey = process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY;
+  const siteKey =
+    process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ??
+    process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY;
   const authRedirect = sanitizeRedirect(redirectTo);
   const registrationRequiresCaptcha = Boolean(siteKey);
 
@@ -296,10 +298,11 @@ export function AuthCard({ compact = false, redirectTo = "/dashboard" }: AuthCar
 
       {mode === "signup" && siteKey ? (
         <div className="mt-4 overflow-hidden rounded-xl border border-accent/16 bg-white p-2">
-          <HCaptcha
+          <Turnstile
             key={captchaNonce}
-            sitekey={siteKey}
-            onVerify={(token) => {
+            siteKey={siteKey}
+            options={{ theme: "light", size: "normal" }}
+            onSuccess={(token) => {
               setCaptchaToken(token);
             }}
             onExpire={() => {
@@ -315,8 +318,9 @@ export function AuthCard({ compact = false, redirectTo = "/dashboard" }: AuthCar
 
       {mode === "signup" && !siteKey ? (
         <p className="mt-3 text-xs text-muted">
-          CAPTCHA non configurato: aggiungi <code>NEXT_PUBLIC_HCAPTCHA_SITE_KEY</code>{" "}
-          per attivare la protezione anti-bot in registrazione.
+          CAPTCHA non configurato: aggiungi{" "}
+          <code>NEXT_PUBLIC_TURNSTILE_SITE_KEY</code> per attivare la protezione
+          anti-bot in registrazione.
         </p>
       ) : null}
 
