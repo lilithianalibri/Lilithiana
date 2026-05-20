@@ -31,14 +31,14 @@ export default function ProjectPage() {
               <div className="space-y-5 text-base leading-8 text-foreground/92">
                 <p>
                   Questo progetto nasce dall&apos;idea che non possiamo lasciare solo a
-                  piattaforme generaliste la possibilita di decidere quali libri
+                  piattaforme generaliste la possibilità di decidere quali libri
                   trasmettere in audio.
                 </p>
                 <p>
-                  Nel web e importante dire anche la parola di noi femministe,
+                  Nel web è importante dire anche la parola di noi femministe,
                   scegliere quei testi che riteniamo importanti e renderli disponibili
                   anche per le nuove generazioni che forse sfruttano questo mezzo, in
-                  cui io credo molto, piu di quanto non fosse in passato.
+                  cui io credo molto, più di quanto non fosse in passato.
                 </p>
                 <p>
                   Il progetto nasce anche da una grande voglia di dialogo fra
@@ -72,7 +72,7 @@ export default function ProjectPage() {
                 </p>
                 <p className="mt-3 text-sm leading-6 text-muted">
                   Ascolta gratis e senza profilazione testi fondamentali per la
-                  cultura delle donne, con cura editoriale e qualita audio.
+                  cultura delle donne, con cura editoriale e qualità audio.
                 </p>
               </article>
             </aside>
@@ -82,3 +82,4 @@ export default function ProjectPage() {
     </div>
   );
 }
+

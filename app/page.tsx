@@ -22,7 +22,7 @@ const whyLilithianaCards = [
   {
     title: "Un libro, un percorso completo",
     description:
-      "Ogni audiolibro e pensato dall'inizio alla fine, con capitoli ordinati e ascolto lineare.",
+      "Ogni audiolibro \u00E8 pensato dall'inizio alla fine, con capitoli ordinati e ascolto lineare.",
     icon: Headphones,
   },
   {
@@ -40,7 +40,7 @@ const whyLilithianaCards = [
   {
     title: "Ascolto fluido e naturale",
     description:
-      "Regola velocita, usa avanti/indietro e continua ad ascoltare in modo semplice e immediato.",
+      "Regola velocit\u00E0, usa avanti/indietro e continua ad ascoltare in modo semplice e immediato.",
     icon: SlidersHorizontal,
   },
 ] as const;
@@ -100,7 +100,7 @@ export default function Home() {
 
               <div className="panel inline-flex w-fit max-w-full items-center gap-3 rounded-2xl px-4 py-2.5">
                 <p className="text-sm font-semibold text-muted">
-                  creato a partire dalla rete Lilith
+                  creato a partire dalla Rete Lilith
                 </p>
                 <Image
                   src="/lilith.png"
@@ -176,9 +176,9 @@ export default function Home() {
                   L&apos;ascolto che unisce cultura e passione politica
                 </h2>
                 <blockquote className="mt-4 max-w-3xl border-l-2 border-accent/35 pl-4 text-base text-muted">
-                  &quot;La speranza e che questo sforzo, seppur iniziale e incompleto,
+                  &quot;La speranza &egrave; che questo sforzo, seppur iniziale e incompleto,
                   possa creare uno scambio di competenze tra donne di diverse
-                  professionalita e mosse da diverse passioni politiche.&quot;
+                  professionalit&agrave; e mosse da diverse passioni politiche.&quot;
                 </blockquote>
                 <p className="mt-2 text-sm font-semibold text-accent">
                   Paola De Ferrari.
@@ -344,7 +344,7 @@ export default function Home() {
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-muted sm:text-base">
                 Un&apos;esperienza di ascolto pensata per seguire la tua storia con ritmo,
-                chiarezza e continuita.
+                chiarezza e continuit&agrave;.
               </p>
 
               <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -373,3 +373,4 @@ export default function Home() {
     </div>
   );
 }
+

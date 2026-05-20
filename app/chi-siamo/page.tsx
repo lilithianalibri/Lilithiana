@@ -36,13 +36,13 @@ export default function AboutPage() {
             <article className="panel rounded-3xl p-6 sm:p-8">
               <div className="space-y-5 text-base leading-8 text-foreground/92">
                 <p>
-                  Dall&apos;esperienza della Rete, con DWF prima e Archivia poi, ho
-                  ereditato l&apos;amore per le carte delle donne. Ho sentito il bisogno
-                  di trasformare alcuni scritti, spesso trascurati dall&apos;editoria
-                  tradizionale, in voce e suono.
+                  Dall&apos;esperienza della Rete Lilith, con DWF prima e Archivia poi,
+                  ho ereditato l&apos;amore per le carte delle donne. Ho sentito il
+                  bisogno di trasformare alcuni scritti, spesso trascurati
+                  dall&apos;editoria tradizionale, in voce e suono.
                 </p>
                 <p>
-                  E stato un lavoro corale. Dai consigli di Eugenia Galateri,
+                  È stato un lavoro corale. Dai consigli di Eugenia Galateri,
                   Piera Codognotto e dell&apos;amatissima Paola De Ferrari, alla
                   grafica preziosa di Fiamma Spinelli e ai suoi suggerimenti; dai
                   saggi di Simonetta De Fazi e Luciana Tufani, al supporto di
@@ -51,15 +51,15 @@ export default function AboutPage() {
                 </p>
                 <p>
                   Le voci che ascolterete sono quelle delle attrici di Amleta,
-                  mentre la cura tecnica e nata tra le mura di casa mia: grazie ad
+                  mentre la cura tecnica è nata tra le mura di casa mia: grazie ad
                   Antonella Civale, una delle attrici, ho allestito lo studio,
                   chiedendo poi all&apos;informatico Francesco Buttarazzi di insegnarmi
-                  a usare il software di registrazione, anche se poi il piu l&apos;ho
+                  a usare il software di registrazione, anche se poi il più l&apos;ho
                   fatto da sola.
                 </p>
                 <p>
                   Oggi, con orgoglio, porto questo patrimonio alle vostre orecchie.
-                  Ringrazio infine l&apos;ambasciatore Memmo che, in qualita di erede di
+                  Ringrazio infine l&apos;ambasciatore Memmo che, in qualità di erede di
                   Paola Masino, mi ha ceduto gratuitamente i diritti su
                   quell&apos;opera preziosissima; e ringrazio Francesca Genti che, sempre
                   gratuitamente, mi ha permesso di realizzare l&apos;audio della sua
@@ -135,3 +135,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = [
@@ -49,24 +49,6 @@ export function SiteFooter() {
           </div>
 
           <div className="gold-line mt-4 h-px w-full" />
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-3 rounded-2xl border border-accent/14 bg-white/58 px-4 py-3">
-            <div className="flex flex-wrap items-center gap-4">
-              <Image
-                src="/partners/amleta-logo.png"
-                alt="Amleta"
-                width={564}
-                height={140}
-                className="h-7 w-auto"
-              />
-              <Image
-                src="/lilith.png"
-                alt="Lilith"
-                width={118}
-                height={73}
-                className="h-7 w-auto"
-              />
-            </div>
-          </div>
           <div className="mt-4 rounded-2xl border border-accent/14 bg-white/58 px-4 py-4">
             <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted">
               Crediti

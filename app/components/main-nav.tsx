@@ -33,12 +33,12 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
         </div>
 
         <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
-          <nav className="flex min-w-0 flex-nowrap items-center justify-center gap-2 overflow-x-auto px-1 py-1 text-sm whitespace-nowrap lg:flex-1 lg:justify-start lg:overflow-x-visible [&::-webkit-scrollbar]:hidden">
+          <nav className="grid grid-cols-2 gap-2 px-1 text-sm sm:grid-cols-3 lg:flex lg:min-w-0 lg:flex-1 lg:items-center lg:justify-start lg:gap-2 lg:py-1">
             {menuItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
-                className="whitespace-nowrap rounded-full border border-accent/16 bg-white/55 px-3 py-1.5 font-medium transition hover:bg-white hover:shadow-[0_8px_22px_rgba(33,25,29,0.12)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/30"
+                className="block rounded-full border border-accent/16 bg-white/55 px-3 py-1.5 text-center font-medium transition hover:bg-white hover:shadow-[0_8px_22px_rgba(33,25,29,0.12)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/30 lg:whitespace-nowrap"
               >
                 {item.label}
               </Link>

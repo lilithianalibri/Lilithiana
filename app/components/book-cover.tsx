@@ -8,6 +8,7 @@ type BookCoverProps = {
   to: string;
   className?: string;
   compact?: boolean;
+  showIllustration?: boolean;
 };
 
 export function BookCover({
@@ -18,6 +19,7 @@ export function BookCover({
   to,
   className = "",
   compact = false,
+  showIllustration = true,
 }: BookCoverProps) {
   const coverStyle = {
     background: `
@@ -32,7 +34,7 @@ export function BookCover({
       style={coverStyle}
       className={`book-cover book-cover--animated relative overflow-hidden rounded-2xl border border-white/25 ${className}`}
     >
-      {!compact ? (
+      {!compact && showIllustration ? (
         <div aria-hidden className="book-illustration">
           <div className="book-illustration-shadow" />
           <div className="book-illustration-body">
