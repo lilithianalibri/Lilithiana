@@ -57,7 +57,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
                 alt="Lilithiana"
                 width={1572}
                 height={715}
-                className="-mt-3 h-16 w-auto sm:-mt-4 sm:h-20"
+                className="-mt-4 h-16 w-auto sm:-mt-6 sm:h-20"
               />
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">

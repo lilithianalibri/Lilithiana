@@ -339,7 +339,7 @@ export default function Home() {
                   alt="Lilithiana"
                   width={1572}
                   height={715}
-                  className="-mt-2 h-[3.25rem] w-auto sm:-mt-3 sm:h-[3.85rem]"
+                  className="-mt-4 h-[3.45rem] w-auto sm:-mt-5 sm:h-[4.1rem]"
                 />
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-muted sm:text-base">

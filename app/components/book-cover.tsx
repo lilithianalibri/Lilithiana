@@ -33,13 +33,16 @@ export function BookCover({
       className={`book-cover book-cover--animated relative overflow-hidden rounded-2xl border border-white/25 ${className}`}
     >
       {!compact ? (
-        <div aria-hidden className="book-cover-motion">
-          <div className="book-cover-spine" />
-          <div className="book-cover-pages-stack" />
-          <div className="book-cover-page book-cover-page-a" />
-          <div className="book-cover-page book-cover-page-b" />
-          <div className="book-cover-glint" />
-          <div className="book-cover-turn-shadow" />
+        <div aria-hidden className="book-illustration">
+          <div className="book-illustration-shadow" />
+          <div className="book-illustration-body">
+            <div className="book-illustration-spine" />
+            <div className="book-illustration-left-cover" />
+            <div className="book-illustration-right-pages" />
+            <div className="book-illustration-page book-illustration-page-a" />
+            <div className="book-illustration-page book-illustration-page-b" />
+            <div className="book-illustration-glint" />
+          </div>
         </div>
       ) : null}
       <div className="absolute inset-0 bg-[linear-gradient(135deg,transparent_0%,rgba(0,0,0,0.12)_45%,rgba(0,0,0,0.34)_100%)]" />
