@@ -105,8 +105,9 @@ export default function Home() {
                 <span className="font-bold text-accent">Ascolta gratis</span> e senza alcuna
                 profilazione questi <span className="font-bold text-accent">libri</span>,
                 inediti nella versione <span className="font-bold text-accent">audio</span>,
-                fondamentali per la cultura delle donne per contenuti,
-                sperimentazioni e finezza di scrittura.
+                fondamentali per la{" "}
+                <span className="font-bold text-accent">cultura delle donne</span> per
+                contenuti, sperimentazioni e finezza di scrittura.
               </h1>
 
               <div className="panel inline-flex w-fit max-w-full items-center gap-3 rounded-2xl px-4 py-2.5">

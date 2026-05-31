@@ -47,6 +47,10 @@ function clamp(value: number, min: number, max: number) {
   return Math.min(Math.max(value, min), max);
 }
 
+function isParagraphChapter(title: string) {
+  return title.trim() === "§";
+}
+
 export function AudioPlayer({
   book,
   forceStartFromBeginning = false,
@@ -770,11 +774,16 @@ export function AudioPlayer({
       <ol className="mt-5 space-y-2">
         {chapters.map((chapter, index) => {
           const isActive = chapter.id === selectedChapterId;
+          const isParagraph = isParagraphChapter(chapter.title);
           return (
-            <li key={chapter.id}>
+            <li key={chapter.id} className={isParagraph ? "pl-7 sm:pl-12" : undefined}>
               <div
                 className={`panel rounded-2xl px-4 py-3 transition ${
-                  isActive ? "border-accent/60 bg-white" : "bg-white/62"
+                  isActive
+                    ? "border-accent/60 bg-white"
+                    : isParagraph
+                      ? "border-accent/14 bg-white/50"
+                      : "bg-white/62"
                 }`}
               >
                 <div className="flex flex-wrap items-center justify-between gap-3">
@@ -783,10 +792,20 @@ export function AudioPlayer({
                     onClick={() => jumpToChapter(chapter.id)}
                     className="flex min-w-0 flex-1 items-center gap-3 text-left"
                   >
-                    <span className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-accent/12 text-xs font-semibold text-accent">
+                    <span
+                      className={`inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-xs font-semibold ${
+                        isParagraph
+                          ? "bg-white text-muted ring-1 ring-accent/16"
+                          : "bg-accent/12 text-accent"
+                      }`}
+                    >
                       {index + 1}
                     </span>
-                    <span className="truncate text-sm font-medium sm:text-base">
+                    <span
+                      className={`truncate text-sm sm:text-base ${
+                        isParagraph ? "font-semibold text-muted" : "font-medium"
+                      }`}
+                    >
                       {chapter.title}
                     </span>
                   </button>

@@ -1052,7 +1052,7 @@ with target_book as (
   select id from public.audiobooks where slug = 'un-americana-a-parigi'
 )
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am', 1, 'am', 755, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/01am.wav' from target_book
+select id, 'am', 1, 'Un’americana a Parigi', 755, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/01am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1060,7 +1060,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-2', 2, 'am', 219, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/02am.wav' from target_book
+select id, 'am-2', 2, '§', 219, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/02am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1068,7 +1068,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-3', 3, 'am', 555, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/03am.wav' from target_book
+select id, 'am-3', 3, '§', 555, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/03am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1076,7 +1076,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-4', 4, 'am', 830, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/04am.wav' from target_book
+select id, 'am-4', 4, '§', 830, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/04am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1084,7 +1084,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amnel', 5, 'amnel', 842, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/05amnel.wav' from target_book
+select id, 'amnel', 5, '§', 842, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/05amnel.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1092,7 +1092,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amnel-2', 6, 'amnel', 1103, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/06amnel.wav' from target_book
+select id, 'amnel-2', 6, '§', 1103, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/06amnel.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1100,7 +1100,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amflorence', 7, 'amflorence', 978, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/07amflorence.wav' from target_book
+select id, 'amflorence', 7, '§', 978, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/07amflorence.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1108,7 +1108,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amflorence-2', 8, 'amflorence', 747, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/08amflorence.wav' from target_book
+select id, 'amflorence-2', 8, '§', 747, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/08amflorence.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1116,7 +1116,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-5', 9, 'am', 1336, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/09am.wav' from target_book
+select id, 'am-5', 9, '§', 1336, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/09am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1124,7 +1124,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-6', 10, 'am', 1110, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/10am.wav' from target_book
+select id, 'am-6', 10, '§', 1110, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/10am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1132,7 +1132,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-7', 11, 'am', 367, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/11am.wav' from target_book
+select id, 'am-7', 11, '§', 367, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/11am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1140,7 +1140,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-8', 12, 'am', 834, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/12am.wav' from target_book
+select id, 'am-8', 12, '§', 834, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/12am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1148,7 +1148,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-9', 13, 'am', 811, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/13am.wav' from target_book
+select id, 'am-9', 13, '§', 811, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/13am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1156,7 +1156,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-10', 14, 'am', 322, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/14am.wav' from target_book
+select id, 'am-10', 14, '§', 322, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/14am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1164,7 +1164,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-11', 15, 'am', 537, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/15am.wav' from target_book
+select id, 'am-11', 15, '§', 537, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/15am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1172,7 +1172,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-12', 16, 'am', 635, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/16am.wav' from target_book
+select id, 'am-12', 16, '§', 635, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/16am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1180,7 +1180,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-13', 17, 'am', 643, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/17am.wav' from target_book
+select id, 'am-13', 17, '§', 643, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/17am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1188,7 +1188,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-14', 18, 'am', 1327, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/18am.wav' from target_book
+select id, 'am-14', 18, '§', 1327, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/18am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1196,7 +1196,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-15', 19, 'am', 437, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/19am.wav' from target_book
+select id, 'am-15', 19, '§', 437, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/19am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1204,7 +1204,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-16', 20, 'am', 887, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/20am.wav' from target_book
+select id, 'am-16', 20, '§', 887, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/20am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1212,7 +1212,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-17', 21, 'am', 303, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/21am.wav' from target_book
+select id, 'am-17', 21, '§', 303, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/21am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1220,7 +1220,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amlabirint', 22, 'amlabirint', 868, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/22amlabirint.wav' from target_book
+select id, 'amlabirint', 22, 'Il labirinto', 868, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/22amlabirint.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1228,7 +1228,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amlabirint-2', 23, 'amlabirint', 714, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/23amlabirint.wav' from target_book
+select id, 'amlabirint-2', 23, '§', 714, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/23amlabirint.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1236,7 +1236,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'labir', 24, 'labir', 997, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/24labir.wav' from target_book
+select id, 'labir', 24, '§', 997, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/24labir.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1244,7 +1244,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'labir-2', 25, 'labir', 524, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/25labir.wav' from target_book
+select id, 'labir-2', 25, '§', 524, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/25labir.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1252,7 +1252,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'labir-3', 26, 'labir', 501, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/26labir.wav' from target_book
+select id, 'labir-3', 26, '§', 501, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/26labir.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1260,7 +1260,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'labir-4', 27, 'labir', 274, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/27labir.wav' from target_book
+select id, 'labir-4', 27, '§', 274, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/27labir.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1268,7 +1268,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sestastrada', 28, 'sestastrada', 630, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/28sestastrada.wav' from target_book
+select id, 'sestastrada', 28, 'Sesta Strada', 630, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/28sestastrada.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1276,7 +1276,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sestastrada-2', 29, 'sestastrada', 230, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/29sestastrada.wav' from target_book
+select id, 'sestastrada-2', 29, '§', 230, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/29sestastrada.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1284,7 +1284,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sestastrada-3', 30, 'sestastrada', 614, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/30sestastrada.wav' from target_book
+select id, 'sestastrada-3', 30, '§', 614, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/30sestastrada.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1292,7 +1292,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sesta', 31, 'sesta', 592, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/31sesta.wav' from target_book
+select id, 'sesta', 31, '§', 592, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/31sesta.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1300,7 +1300,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sesta-2', 32, 'sesta', 430, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/32sesta.wav' from target_book
+select id, 'sesta-2', 32, '§', 430, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/32sesta.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1308,7 +1308,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-18', 33, 'am', 461, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/33am.wav' from target_book
+select id, 'am-18', 33, '§', 461, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/33am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1316,7 +1316,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-19', 34, 'am', 641, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/34am.wav' from target_book
+select id, 'am-19', 34, '§', 641, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/34am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1324,7 +1324,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-20', 35, 'am', 358, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/35am.wav' from target_book
+select id, 'am-20', 35, '§', 358, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/35am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1332,7 +1332,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-21', 36, 'am', 936, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/36am.wav' from target_book
+select id, 'am-21', 36, '§', 936, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/36am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1340,7 +1340,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-22', 37, 'am', 412, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/37am.wav' from target_book
+select id, 'am-22', 37, '§', 412, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/37am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1348,7 +1348,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-23', 38, 'am', 1203, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/38am.wav' from target_book
+select id, 'am-23', 38, '§', 1203, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/38am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1356,7 +1356,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-24', 39, 'am', 317, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/39am.wav' from target_book
+select id, 'am-24', 39, '§', 317, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/39am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1364,7 +1364,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-25', 40, 'am', 316, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/40am.wav' from target_book
+select id, 'am-25', 40, '§', 316, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/40am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1372,7 +1372,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-26', 41, 'am', 498, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/41am.wav' from target_book
+select id, 'am-26', 41, '§', 498, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/41am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1380,7 +1380,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amladies', 42, 'amladies', 939, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/42amladies.wav' from target_book
+select id, 'amladies', 42, 'Ladies don’t', 939, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/42amladies.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1388,7 +1388,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'am-27', 43, 'am', 1243, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/43am.wav' from target_book
+select id, 'am-27', 43, 'Piccole donne uccidono', 1243, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/43am.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -1396,7 +1396,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'ampost', 44, 'ampost', 1179, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/44ampost.wav' from target_book
+select id, 'ampost', 44, 'Postfazione', 1179, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/44ampost.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
