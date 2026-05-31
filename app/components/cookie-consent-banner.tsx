@@ -30,6 +30,7 @@ export function CookieConsentBanner() {
   const [functional, setFunctional] = useState(false);
   const [analytics, setAnalytics] = useState(false);
   const [profiling, setProfiling] = useState(false);
+  const [hasLoadedPreferences, setHasLoadedPreferences] = useState(false);
 
   useEffect(() => {
     queueMicrotask(() => {
@@ -43,6 +44,8 @@ export function CookieConsentBanner() {
       } else {
         setIsVisible(true);
       }
+
+      setHasLoadedPreferences(true);
     });
 
     function openPreferences() {
@@ -65,6 +68,10 @@ export function CookieConsentBanner() {
   }, []);
 
   const statusLabel = useMemo(() => {
+    if (!hasLoadedPreferences) {
+      return "Preferenze cookie";
+    }
+
     if (!consent) {
       return "Preferenze non impostate";
     }
@@ -78,7 +85,7 @@ export function CookieConsentBanner() {
     }
 
     return "Solo cookie necessari";
-  }, [consent]);
+  }, [consent, hasLoadedPreferences]);
 
   function applyConsent(nextConsent: CookieConsentState) {
     persistConsent(nextConsent);
