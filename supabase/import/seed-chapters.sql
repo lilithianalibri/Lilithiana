@@ -188,7 +188,7 @@ with target_book as (
   select id from public.audiobooks where slug = 'cera-una-volta-la-rete-lilith-e-ce-ancora'
 )
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'retelilith', 1, 'retelilith', 1592, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/cera-una-volta-la-rete-lilith-e-ce-ancora/retelilith.wav' from target_book
+select id, 'retelilith', 1, 'Cos’è stata e quali scelte ha compiuto ed indicato nel mondo femminista la Rete Lilith', 1592, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/cera-una-volta-la-rete-lilith-e-ce-ancora/retelilith.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
