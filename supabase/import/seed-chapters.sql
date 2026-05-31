@@ -23,7 +23,7 @@ insert into public.audiobooks (
   'Maria Rosa Cutrufelli',
   'Antonella Civale',
   'Narrativa',
-  'Dal carcere in cui e rinchiusa ormai da vent''anni, una donna rivive i suoi giorni da briganta quando, all''indomani dell''unita d''Italia, si aggrego alle bande di ribelli che sconvolsero le regioni meridionali nella speranza di un illusorio riscatto sociale. Prima pubblicazione: 1990.',
+  'Dal carcere in cui è rinchiusa ormai da vent’anni, una donna rivive i suoi giorni da briganta quando, all’indomani dell’unità d’Italia, si aggregò alle bande di ribelli che sconvolsero le regioni meridionali nella speranza di un illusorio riscatto sociale. Prima pubblicazione: 1990.',
   14395,
   '#6e1f3b',
   '#bc6f79',

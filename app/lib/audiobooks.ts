@@ -159,7 +159,7 @@ const audiobooks: AudioBook[] = [
     narrator: "Antonella Civale",
     category: "Narrativa",
     description:
-      "Dal carcere in cui e rinchiusa ormai da vent'anni, una donna rivive i suoi giorni da briganta quando, all'indomani dell'unita d'Italia, si aggrego alle bande di ribelli che sconvolsero le regioni meridionali nella speranza di un illusorio riscatto sociale.",
+      "Dal carcere in cui è rinchiusa ormai da vent’anni, una donna rivive i suoi giorni da briganta quando, all’indomani dell’unità d’Italia, si aggregò alle bande di ribelli che sconvolsero le regioni meridionali nella speranza di un illusorio riscatto sociale.",
     totalDuration: "3h 59m 55s",
     coverFrom: "#6e1f3b",
     coverVia: "#bc6f79",
