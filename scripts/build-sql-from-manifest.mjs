@@ -40,6 +40,25 @@ function pickCover(slug) {
   return COVER_PALETTE[hash % COVER_PALETTE.length];
 }
 
+function resolveCover(slug, override) {
+  const fallback = pickCover(slug);
+
+  return {
+    from:
+      typeof override.cover_from === "string" && override.cover_from.trim()
+        ? override.cover_from.trim()
+        : fallback.from,
+    via:
+      typeof override.cover_via === "string" && override.cover_via.trim()
+        ? override.cover_via.trim()
+        : fallback.via,
+    to:
+      typeof override.cover_to === "string" && override.cover_to.trim()
+        ? override.cover_to.trim()
+        : fallback.to,
+  };
+}
+
 if (!existsSync(INPUT_PATH)) {
   console.error(`Manifest non trovato: ${INPUT_PATH}`);
   process.exit(1);
@@ -121,7 +140,7 @@ for (const [bookSlug, chapters] of grouped.entries()) {
   const safeCategory = escapeSqlText(resolvedCategory);
   const safeVibe = escapeSqlText(resolvedVibe);
   const safeDescription = escapeSqlText(resolvedDescription);
-  const cover = pickCover(bookSlug);
+  const cover = resolveCover(bookSlug, override);
   const totalBookDuration = chapters.reduce(
     (acc, row) => acc + (Number(row.duration_seconds) || 0),
     0,

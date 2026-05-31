@@ -165,9 +165,9 @@ insert into public.audiobooks (
   'Saggistica',
   'Racconto e memoria politica della Rete Lilith, rete informativa dei centri di documentazione, archivi e biblioteche delle donne.',
   1592,
-  '#244066',
-  '#5e8bb7',
-  '#121f31',
+  '#0f3d35',
+  '#1f5c4a',
+  '#071c1a',
   'Archivi femministi, memoria, reti delle donne',
   true
 )
@@ -225,9 +225,9 @@ insert into public.audiobooks (
   'Narrativa',
   'Romanzo in versi dedicato alla vita, alla musica e alla presa di coscienza politica di Nina Simone. Prima pubblicazione: 2021.',
   4427,
-  '#624220',
-  '#d3a372',
-  '#29170d',
+  '#1a1838',
+  '#4a2f76',
+  '#080711',
   'Romanzo in versi, musica, biografia poetica',
   true
 )
@@ -493,9 +493,9 @@ insert into public.audiobooks (
   'Saggistica',
   'Descrizione temporanea per Scrittrici Italiane Dal Xiii Al Xxi Secolo Profili Biobibliografici.',
   7550,
-  '#304f66',
-  '#79a6b2',
-  '#101a2b',
+  '#221433',
+  '#4a2a68',
+  '#0f0a19',
   'Profili biobibliografici, storia letteraria, scrittrici italiane',
   true
 )
@@ -569,9 +569,9 @@ insert into public.audiobooks (
   'Saggistica',
   'Ricostruzione biografica, storica e archivistica dell''esperienza Server Donne, nata nel 1996 come infrastruttura digitale femminista. Prima pubblicazione: 2025.',
   36500,
-  '#304f66',
-  '#79a6b2',
-  '#101a2b',
+  '#351124',
+  '#7a1d49',
+  '#150812',
   'Tecnologie femministe, archivi digitali, autonomia in rete',
   true
 )
@@ -1029,9 +1029,9 @@ insert into public.audiobooks (
   'Narrativa',
   'Quattro racconti ambientati nella Parigi degli anni Venti, pubblicati con lo pseudonimo Elinor Rigby.',
   30455,
-  '#624220',
-  '#d3a372',
-  '#29170d',
+  '#123642',
+  '#1f5a63',
+  '#081820',
   'Racconti, Parigi anni Venti, scrittura lesbica',
   true
 )

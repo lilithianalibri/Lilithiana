@@ -45,6 +45,25 @@ function pickCover(slug) {
   return COVER_PALETTE[hash % COVER_PALETTE.length];
 }
 
+function resolveCover(slug, override) {
+  const fallback = pickCover(slug);
+
+  return {
+    from:
+      typeof override.cover_from === "string" && override.cover_from.trim()
+        ? override.cover_from.trim()
+        : fallback.from,
+    via:
+      typeof override.cover_via === "string" && override.cover_via.trim()
+        ? override.cover_via.trim()
+        : fallback.via,
+    to:
+      typeof override.cover_to === "string" && override.cover_to.trim()
+        ? override.cover_to.trim()
+        : fallback.to,
+  };
+}
+
 function readJson(path) {
   if (!existsSync(path)) {
     fail(`File non trovato: ${path}`);
@@ -61,7 +80,7 @@ function resolveBookRow(bookSlug, chapters, metadataOverrides) {
     override.description && Number.isFinite(publicationYear)
       ? `${override.description} Prima pubblicazione: ${publicationYear}.`
       : override.description;
-  const cover = pickCover(bookSlug);
+  const cover = resolveCover(bookSlug, override);
   const totalDuration = chapters.reduce(
     (acc, row) => acc + (Number(row.duration_seconds) || 0),
     0,

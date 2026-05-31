@@ -13,7 +13,10 @@
     "author": "Margherita Giacobino (Elinor Rigby)",
     "category": "Narrativa",
     "description": "Quattro racconti ambientati nella Parigi degli anni Venti, pubblicati con lo pseudonimo Elinor Rigby.",
-    "vibe": "Racconti, Parigi anni Venti, scrittura lesbica"
+    "vibe": "Racconti, Parigi anni Venti, scrittura lesbica",
+    "cover_from": "#123642",
+    "cover_via": "#1f5a63",
+    "cover_to": "#081820"
   },
   "server-donne-leccami-la-password": {
     "title": "Server Donne. Leccami la password",
@@ -21,20 +24,29 @@
     "category": "Saggistica",
     "description": "Ricostruzione biografica, storica e archivistica dell'esperienza Server Donne, nata nel 1996 come infrastruttura digitale femminista.",
     "publication_year": 2025,
-    "vibe": "Tecnologie femministe, archivi digitali, autonomia in rete"
+    "vibe": "Tecnologie femministe, archivi digitali, autonomia in rete",
+    "cover_from": "#351124",
+    "cover_via": "#7a1d49",
+    "cover_to": "#150812"
   },
   "cera-una-volta-la-rete-lilith-e-ce-ancora": {
     "title": "C'era una volta la rete Lilith. E c'è ancora",
     "author": "Simonetta De Fazi",
     "category": "Saggistica",
     "description": "Racconto e memoria politica della Rete Lilith, rete informativa dei centri di documentazione, archivi e biblioteche delle donne.",
-    "vibe": "Archivi femministi, memoria, reti delle donne"
+    "vibe": "Archivi femministi, memoria, reti delle donne",
+    "cover_from": "#0f3d35",
+    "cover_via": "#1f5c4a",
+    "cover_to": "#071c1a"
   },
   "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici": {
     "title": "Scrittrici italiane: dal XIII al XXI secolo: profili biobibliografici",
     "author": "Luciana Tufani",
     "category": "Saggistica",
-    "vibe": "Profili biobibliografici, storia letteraria, scrittrici italiane"
+    "vibe": "Profili biobibliografici, storia letteraria, scrittrici italiane",
+    "cover_from": "#221433",
+    "cover_via": "#4a2a68",
+    "cover_to": "#0f0a19"
   },
   "la-ballata-di-nina-simone": {
     "title": "La ballata di Nina Simone",
@@ -42,6 +54,9 @@
     "category": "Narrativa",
     "description": "Romanzo in versi dedicato alla vita, alla musica e alla presa di coscienza politica di Nina Simone.",
     "publication_year": 2021,
-    "vibe": "Romanzo in versi, musica, biografia poetica"
+    "vibe": "Romanzo in versi, musica, biografia poetica",
+    "cover_from": "#1a1838",
+    "cover_via": "#4a2f76",
+    "cover_to": "#080711"
   }
 }

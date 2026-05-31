@@ -47,6 +47,9 @@ type BookMetadataOverride = {
   description?: string;
   publication_year?: number;
   vibe?: string;
+  cover_from?: string;
+  cover_via?: string;
+  cover_to?: string;
 };
 
 const chaptersManifest = chaptersManifestJson as ManifestChapter[];
@@ -77,6 +80,16 @@ function pickCover(slug: string) {
   return coverPalette[hash % coverPalette.length];
 }
 
+function resolveCover(slug: string, metadata: BookMetadataOverride) {
+  const fallback = pickCover(slug);
+
+  return {
+    from: metadata.cover_from?.trim() || fallback.from,
+    via: metadata.cover_via?.trim() || fallback.via,
+    to: metadata.cover_to?.trim() || fallback.to,
+  };
+}
+
 function buildImportedAudiobooks(): AudioBook[] {
   const chaptersByBook = new Map<string, ManifestChapter[]>();
 
@@ -97,7 +110,7 @@ function buildImportedAudiobooks(): AudioBook[] {
         (acc, chapter) => acc + (Number(chapter.duration_seconds) || 0),
         0,
       );
-      const cover = pickCover(slug);
+      const cover = resolveCover(slug, metadata);
       const title = metadata.title?.trim() || titleFromSlug(slug);
       const description = metadata.description?.trim()
         ? metadata.description.trim()
