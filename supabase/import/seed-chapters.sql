@@ -248,7 +248,7 @@ with target_book as (
   select id from public.audiobooks where slug = 'la-ballata-di-nina-simone'
 )
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'intro', 1, 'intro', 14, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/01intro.wav' from target_book
+select id, 'intro', 1, 'Intro', 14, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/01intro.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -256,7 +256,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'invocazionione', 2, 'invocazionione', 126, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/02invocazionione.wav' from target_book
+select id, 'invocazionione', 2, 'Invocazione', 126, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/02invocazionione.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -264,7 +264,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'cantieunice', 3, 'cantieunice', 299, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/03cantieunice.wav' from target_book
+select id, 'cantieunice', 3, 'Canti di Eunice Waymon', 299, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/03cantieunice.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -272,7 +272,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amicizia', 4, 'amicizia', 212, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/04amicizia.wav' from target_book
+select id, 'amicizia', 4, 'Canto dell''amicizia', 212, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/04amicizia.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -280,7 +280,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'umiliazione', 5, 'umiliazione', 212, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/05umiliazione.wav' from target_book
+select id, 'umiliazione', 5, 'Canto dell''umiliazione', 212, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/05umiliazione.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -288,7 +288,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sogno', 6, 'sogno', 165, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/06sogno.wav' from target_book
+select id, 'sogno', 6, 'Il sogno di Nina', 165, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/06sogno.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -296,7 +296,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'primo', 7, 'primo', 197, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/07primo.wav' from target_book
+select id, 'primo', 7, 'Canto del primo amore', 197, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/07primo.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -304,7 +304,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'lontananza', 8, 'lontananza', 197, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/08lontananza.wav' from target_book
+select id, 'lontananza', 8, 'Canto della lontananza', 197, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/08lontananza.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -320,7 +320,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'harlem', 10, 'harlem', 205, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/10harlem.wav' from target_book
+select id, 'harlem', 10, 'Canto di Harlem', 205, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/10harlem.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -328,7 +328,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'errore', 11, 'errore', 74, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/11errore.wav' from target_book
+select id, 'errore', 11, 'Ricetta per un Errore Madornale eseguito a regola d''arte (improvvisazione su sinnerman, Nina Simone)', 74, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/11errore.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -336,7 +336,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sconfitta', 12, 'sconfitta', 176, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/12sconfitta.wav' from target_book
+select id, 'sconfitta', 12, 'Canto della sconfitta', 176, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/12sconfitta.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -344,7 +344,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'forza', 13, 'forza', 204, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/13forza.wav' from target_book
+select id, 'forza', 13, 'Canto della forza e del sudore', 204, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/13forza.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -352,7 +352,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'imprwork', 14, 'imprwork', 42, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/14imprwork.wav' from target_book
+select id, 'imprwork', 14, 'Improvvisazione su "Sinnerman", Nina Simone', 42, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/14imprwork.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -360,7 +360,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'notte', 15, 'notte', 204, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/15notte.wav' from target_book
+select id, 'notte', 15, 'Canto della notte', 204, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/15notte.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -368,7 +368,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'atlantic', 16, 'atlantic', 189, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/16atlantic.wav' from target_book
+select id, 'atlantic', 16, 'Canto di Atlantic City', 189, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/16atlantic.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -376,7 +376,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'assoluto', 17, 'assoluto', 73, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/17assoluto.wav' from target_book
+select id, 'assoluto', 17, 'L''orecchio assoluto Improvvisazione I hear music, Ella Fitzgerald', 73, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/17assoluto.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -384,7 +384,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'illuminazione', 18, 'illuminazione', 198, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/18illuminazione.wav' from target_book
+select id, 'illuminazione', 18, 'Canto dell''illuminazione', 198, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/18illuminazione.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -392,7 +392,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'nina', 19, 'nina', 203, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/19nina.wav' from target_book
+select id, 'nina', 19, 'Canto di Nina Simone', 203, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/19nina.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -400,7 +400,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'origine', 20, 'origine', 187, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/20origine.wav' from target_book
+select id, 'origine', 20, 'Canto dell''origine dei soldi', 187, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/20origine.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -408,7 +408,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'donross', 21, 'donross', 196, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/21donross.wav' from target_book
+select id, 'donross', 21, 'Canto di Don Ross', 196, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/21donross.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -416,7 +416,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'whykeeponbreaking', 22, 'whykeeponbreaking', 42, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/22whykeeponbreaking.wav' from target_book
+select id, 'whykeeponbreaking', 22, 'Improvvisazione su Why keep on breaking my heart, Nina Simone', 42, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/22whykeeponbreaking.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -424,7 +424,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'dollari', 23, 'dollari', 199, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/23dollari.wav' from target_book
+select id, 'dollari', 23, 'Canto dei tremila dollari', 199, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/23dollari.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -432,7 +432,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'beethoven', 24, 'beethoven', 20, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/24beethoven.wav' from target_book
+select id, 'beethoven', 24, 'Scordatevi Beethoven (improvvisazione su roll over Beethoven, Chuck Berry)', 20, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/24beethoven.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -440,7 +440,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'littlegirlblue', 25, 'littlegirlblue', 203, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/25littlegirlblue.wav' from target_book
+select id, 'littlegirlblue', 25, 'Canto di Little girl Blue', 203, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/25littlegirlblue.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -448,7 +448,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'townhall', 26, 'townhall', 196, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/26townhall.wav' from target_book
+select id, 'townhall', 26, 'Canto del Town Hall', 196, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/26townhall.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -456,7 +456,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'stroud', 27, 'stroud', 192, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/27stroud.wav' from target_book
+select id, 'stroud', 27, 'Canto di Andrew Stroud', 192, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/27stroud.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,

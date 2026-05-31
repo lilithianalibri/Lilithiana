@@ -98,6 +98,30 @@ function resolveBookSlug(bookFolder, overrides) {
   return resolved || normalized;
 }
 
+function resolveChapterTitleOverride(overrides, bookSlug, chapterIndex, chapterSlug) {
+  const bookOverrides = overrides?.[bookSlug];
+  if (!bookOverrides || typeof bookOverrides !== "object") {
+    return "";
+  }
+
+  const candidates = [
+    bookOverrides.by_slug?.[chapterSlug],
+    bookOverrides.bySlug?.[chapterSlug],
+    bookOverrides.by_index?.[String(chapterIndex)],
+    bookOverrides.byIndex?.[String(chapterIndex)],
+    bookOverrides[String(chapterIndex)],
+    bookOverrides[chapterIndex],
+  ];
+
+  for (const candidate of candidates) {
+    if (typeof candidate === "string" && candidate.trim().length > 0) {
+      return candidate.trim();
+    }
+  }
+
+  return "";
+}
+
 function toSlug(value) {
   return value
     .toLowerCase()
@@ -389,14 +413,17 @@ for (const [bookSlug, entries] of grouped.entries()) {
   for (let i = 0; i < entries.length; i += 1) {
     const entry = entries[i];
     const chapterIndex = i + 1;
-    const overrideTitle =
-      chapterTitleOverrides?.[bookSlug]?.[String(chapterIndex)] ??
-      chapterTitleOverrides?.[bookSlug]?.[chapterIndex];
+    const overrideTitle = resolveChapterTitleOverride(
+      chapterTitleOverrides,
+      bookSlug,
+      chapterIndex,
+      entry.chapterSlug,
+    );
     const finalTitle =
       typeof overrideTitle === "string" && overrideTitle.trim().length > 0
         ? overrideTitle.trim()
         : entry.chapterTitle || `Capitolo ${chapterIndex}`;
-    const baseSlug = toSlug(finalTitle) || entry.chapterSlug || `chapter-${chapterIndex}`;
+    const baseSlug = entry.chapterSlug || toSlug(finalTitle) || `chapter-${chapterIndex}`;
     let finalSlug = baseSlug;
     let duplicateIndex = 2;
 
