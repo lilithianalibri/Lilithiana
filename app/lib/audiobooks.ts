@@ -1,3 +1,7 @@
+import chaptersManifestJson from "../../supabase/import/chapters-manifest.json";
+import bookMetadataOverridesJson from "../../supabase/import/book-metadata-overrides.json";
+import { formatDurationLabel } from "./time";
+
 export type Chapter = {
   id: string;
   title: string;
@@ -25,6 +29,114 @@ export type AudioBook = {
   resumeChapterId: string;
   resumeAt: string;
 };
+
+type ManifestChapter = {
+  book_slug: string;
+  chapter_index: number;
+  chapter_slug: string;
+  chapter_title: string;
+  duration_seconds: number;
+  audio_url: string;
+};
+
+type BookMetadataOverride = {
+  title?: string;
+  author?: string;
+  narrator?: string;
+  category?: string;
+  description?: string;
+  publication_year?: number;
+  vibe?: string;
+};
+
+const chaptersManifest = chaptersManifestJson as ManifestChapter[];
+const bookMetadataOverrides = bookMetadataOverridesJson as Record<
+  string,
+  BookMetadataOverride
+>;
+
+const coverPalette = [
+  { from: "#6e1f3b", via: "#bc6f79", to: "#26131d" },
+  { from: "#304f66", via: "#79a6b2", to: "#101a2b" },
+  { from: "#624220", via: "#d3a372", to: "#29170d" },
+  { from: "#3f2b5e", via: "#8d6ca8", to: "#1a1227" },
+  { from: "#4f2948", via: "#a06f90", to: "#1f1220" },
+  { from: "#244066", via: "#5e8bb7", to: "#121f31" },
+];
+
+function titleFromSlug(slug: string) {
+  return slug
+    .split("-")
+    .filter(Boolean)
+    .map((word) => `${word[0]?.toUpperCase() ?? ""}${word.slice(1)}`)
+    .join(" ");
+}
+
+function pickCover(slug: string) {
+  const hash = [...slug].reduce((acc, char) => acc + char.charCodeAt(0), 0);
+  return coverPalette[hash % coverPalette.length];
+}
+
+function buildImportedAudiobooks(): AudioBook[] {
+  const chaptersByBook = new Map<string, ManifestChapter[]>();
+
+  for (const chapter of chaptersManifest) {
+    if (!chaptersByBook.has(chapter.book_slug)) {
+      chaptersByBook.set(chapter.book_slug, []);
+    }
+    chaptersByBook.get(chapter.book_slug)?.push(chapter);
+  }
+
+  return [...chaptersByBook.entries()]
+    .map(([slug, chapters]) => {
+      const metadata = bookMetadataOverrides[slug] ?? {};
+      const sortedChapters = chapters
+        .slice()
+        .sort((a, b) => Number(a.chapter_index) - Number(b.chapter_index));
+      const totalDurationSeconds = sortedChapters.reduce(
+        (acc, chapter) => acc + (Number(chapter.duration_seconds) || 0),
+        0,
+      );
+      const cover = pickCover(slug);
+      const title = metadata.title?.trim() || titleFromSlug(slug);
+      const description = metadata.description?.trim()
+        ? metadata.description.trim()
+        : `Audiolibro disponibile nel catalogo LILITHIANA: ${title}.`;
+
+      return {
+        id: `static-${slug}`,
+        slug,
+        title,
+        author: metadata.author?.trim() || "Autrice da aggiornare",
+        narrator: metadata.narrator?.trim() || "Voce da aggiornare",
+        category: metadata.category?.trim() || "Narrativa",
+        description:
+          metadata.publication_year && Number.isFinite(metadata.publication_year)
+            ? `${description} Prima pubblicazione: ${metadata.publication_year}.`
+            : description,
+        totalDuration: formatDurationLabel(totalDurationSeconds),
+        totalDurationSeconds,
+        coverFrom: cover.from,
+        coverVia: cover.via,
+        coverTo: cover.to,
+        vibe: metadata.vibe?.trim() || "Audiolibro LILITHIANA",
+        chapters: sortedChapters.map((chapter) => ({
+          id: `${slug}-${chapter.chapter_slug}`,
+          title: chapter.chapter_title,
+          duration: formatDurationLabel(Number(chapter.duration_seconds) || 0),
+          durationSeconds: Number(chapter.duration_seconds) || 0,
+          audioUrl: chapter.audio_url || null,
+          order: Number(chapter.chapter_index) || 1,
+        })),
+        resumeChapterId:
+          sortedChapters.length > 0
+            ? `${slug}-${sortedChapters[0].chapter_slug}`
+            : "",
+        resumeAt: "00:00",
+      } satisfies AudioBook;
+    })
+    .sort((a, b) => a.title.localeCompare(b.title, "it"));
+}
 
 const audiobooks: AudioBook[] = [
   {
@@ -290,6 +402,12 @@ const audiobooks: AudioBook[] = [
 const ACTIVE_BOOK_SLUGS = new Set(["briganta"]);
 
 export function getAllAudiobooks() {
+  const importedAudiobooks = buildImportedAudiobooks();
+
+  if (importedAudiobooks.length > 0) {
+    return importedAudiobooks;
+  }
+
   return audiobooks.filter((book) => ACTIVE_BOOK_SLUGS.has(book.slug));
 }
 
