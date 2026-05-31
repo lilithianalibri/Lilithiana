@@ -1,10 +1,19 @@
 "use client";
 
 import { Turnstile } from "@marsidev/react-turnstile";
+import {
+  ArrowRight,
+  KeyRound,
+  Loader2,
+  LogOut,
+  MailCheck,
+  ShieldCheck,
+  UserRoundPlus,
+} from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
-import { KeyRound, Loader2, LogOut, MailCheck, ShieldCheck, UserRoundPlus } from "lucide-react";
+import type { FormEvent } from "react";
+import { useEffect, useId, useMemo, useState } from "react";
 import { getSupabaseBrowserClient } from "../lib/supabase/browser";
 
 type AuthCardProps = {
@@ -14,6 +23,41 @@ type AuthCardProps = {
 };
 
 export type AuthMode = "signin" | "signup" | "forgot" | "reset";
+
+const authCopy: Record<
+  AuthMode,
+  {
+    eyebrow: string;
+    title: string;
+    description: string;
+    submit: string;
+  }
+> = {
+  signin: {
+    eyebrow: "Accesso",
+    title: "Bentornata",
+    description: "Accedi con email e password per ritrovare ascolti, segnalibri e libreria.",
+    submit: "Accedi",
+  },
+  signup: {
+    eyebrow: "Registrazione",
+    title: "Crea il tuo account",
+    description: "Dopo l'invio riceverai una mail: basta confermarla e puoi entrare.",
+    submit: "Registrati",
+  },
+  forgot: {
+    eyebrow: "Recupero password",
+    title: "Recupera l'accesso",
+    description: "Inserisci la tua email e ti arriva il link per scegliere una nuova password.",
+    submit: "Invia link",
+  },
+  reset: {
+    eyebrow: "Nuova password",
+    title: "Scegli una nuova password",
+    description: "Imposta la password nuova dopo aver aperto il link ricevuto via email.",
+    submit: "Aggiorna password",
+  },
+};
 
 function sanitizeRedirect(path?: string) {
   if (!path || !path.startsWith("/")) {
@@ -47,6 +91,7 @@ export function AuthCard({
 }: AuthCardProps) {
   const supabase = useMemo(() => getSupabaseBrowserClient(), []);
   const router = useRouter();
+  const formId = useId();
   const [mode, setMode] = useState<AuthMode>(initialMode);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -62,9 +107,12 @@ export function AuthCard({
   const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
   const authRedirect = sanitizeRedirect(redirectTo);
   const authActionRequiresCaptcha = Boolean(siteKey) && mode !== "reset";
+  const currentCopy = authCopy[mode];
 
   function switchMode(nextMode: AuthMode) {
     setMode(nextMode);
+    setPassword("");
+    setPasswordConfirm("");
     setMessage(null);
     setCaptchaToken(null);
     setCaptchaNonce((current) => current + 1);
@@ -120,7 +168,7 @@ export function AuthCard({
     }
 
     if (authActionRequiresCaptcha && !captchaToken) {
-      setMessage("Completa il CAPTCHA per procedere.");
+      setMessage("Completa il controllo anti-bot per procedere.");
       return;
     }
 
@@ -158,8 +206,13 @@ export function AuthCard({
       return;
     }
 
+    if (password.length < 8) {
+      setMessage("La password deve avere almeno 8 caratteri.");
+      return;
+    }
+
     if (authActionRequiresCaptcha && !captchaToken) {
-      setMessage("Completa il CAPTCHA per procedere con la registrazione.");
+      setMessage("Completa il controllo anti-bot per procedere con la registrazione.");
       return;
     }
 
@@ -189,9 +242,7 @@ export function AuthCard({
       return;
     }
 
-    setMessage(
-      "Registrazione inviata. Controlla la mail e conferma l'account per entrare nella dashboard.",
-    );
+    setMessage("Registrazione inviata. Controlla la mail e conferma l'account.");
   }
 
   async function handlePasswordResetRequest() {
@@ -205,20 +256,20 @@ export function AuthCard({
     }
 
     if (authActionRequiresCaptcha && !captchaToken) {
-      setMessage("Completa il CAPTCHA per procedere.");
+      setMessage("Completa il controllo anti-bot per procedere.");
       return;
     }
 
     setLoading(true);
     setMessage(null);
 
-    const redirectTo =
+    const resetRedirect =
       typeof window !== "undefined"
         ? `${window.location.origin}/auth/callback?next=${encodeURIComponent("/accedi?mode=reset")}`
         : undefined;
 
     const { error } = await supabase.auth.resetPasswordForEmail(email, {
-      redirectTo,
+      redirectTo: resetRedirect,
       captchaToken: captchaToken ?? undefined,
     });
 
@@ -293,9 +344,42 @@ export function AuthCard({
     router.refresh();
   }
 
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    if (loading) {
+      return;
+    }
+
+    if (mode === "signin") {
+      void handleSignIn();
+      return;
+    }
+
+    if (mode === "signup") {
+      void handleSignUp();
+      return;
+    }
+
+    if (mode === "forgot") {
+      void handlePasswordResetRequest();
+      return;
+    }
+
+    void handlePasswordUpdate();
+  }
+
   const wrapperClass = compact
     ? "rounded-2xl border border-accent/18 bg-white/72 p-4"
-    : "panel rounded-3xl p-6 sm:p-7";
+    : "panel rounded-3xl p-5 sm:p-7";
+
+  const inputClass =
+    "w-full rounded-xl border border-accent/24 bg-white px-4 py-3 text-sm text-foreground outline-none ring-accent/25 transition placeholder:text-muted/70 focus:border-accent/55 focus:ring-2";
+  const labelClass = "text-xs font-semibold uppercase tracking-[0.12em] text-muted";
+  const tabClass = (active: boolean) =>
+    `inline-flex min-h-11 items-center justify-center rounded-xl px-3 py-2 text-sm font-semibold transition ${
+      active ? "bg-accent text-white shadow-sm" : "text-accent hover:bg-accent/10"
+    }`;
 
   if (userEmail && mode !== "reset") {
     return (
@@ -334,194 +418,187 @@ export function AuthCard({
 
   return (
     <div className={wrapperClass}>
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-muted">
-          <KeyRound size={12} />
-          {mode === "forgot"
-            ? "Recupero password"
-            : mode === "reset"
-              ? "Nuova password"
-              : "Accesso utente"}
-        </p>
-        <div className="inline-flex rounded-full border border-accent/20 bg-white/80 p-1 text-xs">
-          <button
-            type="button"
-            onClick={() => switchMode("signin")}
-            className={`rounded-full px-3 py-1.5 font-semibold transition ${
-              mode === "signin"
-                ? "bg-accent text-white"
-                : "text-accent hover:bg-accent/10"
-            }`}
-          >
-            Login
-          </button>
-          <button
-            type="button"
-            onClick={() => switchMode("signup")}
-            className={`rounded-full px-3 py-1.5 font-semibold transition ${
-              mode === "signup"
-                ? "bg-accent text-white"
-                : "text-accent hover:bg-accent/10"
-            }`}
-          >
-            Registrati
-          </button>
-          <button
-            type="button"
-            onClick={() => switchMode("forgot")}
-            className={`rounded-full px-3 py-1.5 font-semibold transition ${
-              mode === "forgot" || mode === "reset"
-                ? "bg-accent text-white"
-                : "text-accent hover:bg-accent/10"
-            }`}
-          >
-            Recupera
-          </button>
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-muted">
+            <KeyRound size={12} />
+            {currentCopy.eyebrow}
+          </p>
+          <h2 className="mt-2 font-display text-2xl leading-tight text-foreground">
+            {currentCopy.title}
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-muted">{currentCopy.description}</p>
         </div>
+      </div>
+
+      <div className="mt-5 grid grid-cols-2 gap-1 rounded-2xl border border-accent/18 bg-white/72 p-1">
+        <button
+          type="button"
+          onClick={() => switchMode("signin")}
+          className={tabClass(mode === "signin")}
+          aria-pressed={mode === "signin"}
+        >
+          Accedi
+        </button>
+        <button
+          type="button"
+          onClick={() => switchMode("signup")}
+          className={tabClass(mode === "signup")}
+          aria-pressed={mode === "signup"}
+        >
+          Registrati
+        </button>
       </div>
 
       {mode === "reset" && !userEmail ? (
-        <p className="mt-4 rounded-2xl border border-accent/16 bg-white/70 px-4 py-3 text-xs text-muted">
-          Apri il link ricevuto via email per attivare la sessione di recupero e
-          scegliere una nuova password.
+        <p className="mt-4 rounded-xl border border-accent/16 bg-white/70 px-4 py-3 text-xs text-muted">
+          Apri il link ricevuto via email per attivare la sessione di recupero.
         </p>
       ) : null}
 
-      <div className="mt-4 grid gap-2">
+      <form className="mt-5 grid gap-4" onSubmit={handleSubmit}>
         {mode === "signup" ? (
-          <input
-            type="text"
-            autoComplete="name"
-            placeholder="Nome visualizzato (opzionale)"
-            value={displayName}
-            onChange={(event) => setDisplayName(event.target.value)}
-            className="w-full rounded-full border border-accent/22 bg-white px-4 py-2.5 text-sm outline-none ring-accent/25 focus:ring-2"
-          />
+          <div className="grid gap-1.5">
+            <label className={labelClass} htmlFor={`${formId}-name`}>
+              Nome
+            </label>
+            <input
+              id={`${formId}-name`}
+              name="name"
+              type="text"
+              autoComplete="name"
+              placeholder="Nome visualizzato, opzionale"
+              value={displayName}
+              onChange={(event) => setDisplayName(event.target.value)}
+              className={inputClass}
+            />
+          </div>
         ) : null}
+
         {mode !== "reset" ? (
-          <input
-            type="email"
-            autoComplete="email"
-            placeholder="Email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-            className="w-full rounded-full border border-accent/22 bg-white px-4 py-2.5 text-sm outline-none ring-accent/25 focus:ring-2"
-          />
+          <div className="grid gap-1.5">
+            <label className={labelClass} htmlFor={`${formId}-email`}>
+              Email
+            </label>
+            <input
+              id={`${formId}-email`}
+              name="email"
+              type="email"
+              autoComplete="email"
+              placeholder="nome@email.it"
+              value={email}
+              onChange={(event) => setEmail(event.target.value)}
+              className={inputClass}
+              required
+            />
+          </div>
         ) : null}
+
         {mode !== "forgot" ? (
-          <input
-            type="password"
-            autoComplete={mode === "signin" ? "current-password" : "new-password"}
-            placeholder={mode === "reset" ? "Nuova password" : "Password"}
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-            className="w-full rounded-full border border-accent/22 bg-white px-4 py-2.5 text-sm outline-none ring-accent/25 focus:ring-2"
-          />
+          <div className="grid gap-1.5">
+            <label className={labelClass} htmlFor={`${formId}-password`}>
+              {mode === "reset" ? "Nuova password" : "Password"}
+            </label>
+            <input
+              id={`${formId}-password`}
+              name="password"
+              type="password"
+              autoComplete={mode === "signin" ? "current-password" : "new-password"}
+              placeholder={mode === "signin" ? "Password" : "Almeno 8 caratteri"}
+              value={password}
+              onChange={(event) => setPassword(event.target.value)}
+              className={inputClass}
+              minLength={mode === "signin" ? undefined : 8}
+              required
+            />
+          </div>
         ) : null}
+
         {mode === "reset" ? (
-          <input
-            type="password"
-            autoComplete="new-password"
-            placeholder="Conferma nuova password"
-            value={passwordConfirm}
-            onChange={(event) => setPasswordConfirm(event.target.value)}
-            className="w-full rounded-full border border-accent/22 bg-white px-4 py-2.5 text-sm outline-none ring-accent/25 focus:ring-2"
-          />
+          <div className="grid gap-1.5">
+            <label className={labelClass} htmlFor={`${formId}-password-confirm`}>
+              Conferma password
+            </label>
+            <input
+              id={`${formId}-password-confirm`}
+              name="password-confirm"
+              type="password"
+              autoComplete="new-password"
+              placeholder="Ripeti la nuova password"
+              value={passwordConfirm}
+              onChange={(event) => setPasswordConfirm(event.target.value)}
+              className={inputClass}
+              minLength={8}
+              required
+            />
+          </div>
         ) : null}
-      </div>
 
-      {authActionRequiresCaptcha && siteKey ? (
-        <div className="mt-4 overflow-hidden rounded-xl border border-accent/16 bg-white p-2">
-          <Turnstile
-            key={captchaNonce}
-            siteKey={siteKey}
-            options={{ theme: "light", size: "normal" }}
-            onSuccess={(token) => {
-              setCaptchaToken(token);
-            }}
-            onExpire={() => {
-              setCaptchaToken(null);
-            }}
-            onError={() => {
-              setCaptchaToken(null);
-              setMessage("Captcha non valido. Riprova.");
-            }}
-          />
-        </div>
-      ) : null}
+        {authActionRequiresCaptcha && siteKey ? (
+          <div className="overflow-hidden rounded-xl border border-accent/16 bg-white p-2">
+            <Turnstile
+              key={captchaNonce}
+              siteKey={siteKey}
+              options={{ theme: "light", size: "normal" }}
+              onSuccess={(token) => {
+                setCaptchaToken(token);
+              }}
+              onExpire={() => {
+                setCaptchaToken(null);
+              }}
+              onError={() => {
+                setCaptchaToken(null);
+                setMessage("Controllo anti-bot non valido. Riprova.");
+              }}
+            />
+          </div>
+        ) : null}
 
-      {mode === "signup" && !siteKey ? (
-        <p className="mt-3 text-xs text-muted">
-          CAPTCHA non configurato: aggiungi{" "}
-          <code>NEXT_PUBLIC_TURNSTILE_SITE_KEY</code> per attivare la protezione
-          anti-bot in registrazione.
-        </p>
-      ) : null}
+        {message ? (
+          <p className="rounded-xl border border-accent/16 bg-white/70 px-4 py-3 text-sm text-muted">
+            {message}
+          </p>
+        ) : null}
 
-      <div className="mt-4 flex flex-wrap gap-2">
+        <button
+          type="submit"
+          disabled={loading || (mode === "reset" && !userEmail)}
+          className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-accent px-4 py-3 text-sm font-semibold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70"
+        >
+          {loading ? <Loader2 size={16} className="animate-spin" /> : null}
+          {mode === "signup" ? <UserRoundPlus size={16} /> : null}
+          {mode === "forgot" ? <MailCheck size={16} /> : null}
+          {mode === "signin" ? <ArrowRight size={16} /> : null}
+          {currentCopy.submit}
+        </button>
+      </form>
+
+      <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm">
         {mode === "signin" ? (
           <button
             type="button"
-            onClick={handleSignIn}
-            disabled={loading}
-            className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 disabled:opacity-70"
-          >
-            {loading ? <Loader2 size={14} className="animate-spin" /> : null}
-            Entra
-          </button>
-        ) : mode === "signup" ? (
-          <button
-            type="button"
-            onClick={handleSignUp}
-            disabled={loading}
-            className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 disabled:opacity-70"
-          >
-            {loading ? <Loader2 size={14} className="animate-spin" /> : null}
-            <UserRoundPlus size={14} />
-            Crea account
-          </button>
-        ) : mode === "forgot" ? (
-          <button
-            type="button"
-            onClick={handlePasswordResetRequest}
-            disabled={loading}
-            className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 disabled:opacity-70"
-          >
-            {loading ? <Loader2 size={14} className="animate-spin" /> : null}
-            <MailCheck size={14} />
-            Invia link
-          </button>
-        ) : (
-          <button
-            type="button"
-            onClick={handlePasswordUpdate}
-            disabled={loading || !userEmail}
-            className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 disabled:opacity-70"
-          >
-            {loading ? <Loader2 size={14} className="animate-spin" /> : null}
-            Aggiorna password
-          </button>
-        )}
-        {mode !== "signin" ? (
-          <button
-            type="button"
-            onClick={() => switchMode("signin")}
-            className="rounded-full border border-accent/20 bg-white px-4 py-2 text-sm font-semibold text-accent transition hover:bg-white"
-          >
-            Torna al login
-          </button>
-        ) : (
-          <button
-            type="button"
             onClick={() => switchMode("forgot")}
-            className="rounded-full border border-accent/20 bg-white px-4 py-2 text-sm font-semibold text-accent transition hover:bg-white"
+            className="font-semibold text-accent underline-offset-4 transition hover:underline"
           >
             Password dimenticata?
           </button>
+        ) : (
+          <button
+            type="button"
+            onClick={() => switchMode("signin")}
+            className="font-semibold text-accent underline-offset-4 transition hover:underline"
+          >
+            Torna al login
+          </button>
         )}
-      </div>
 
-      {message ? <p className="mt-3 text-xs text-muted">{message}</p> : null}
+        {mode === "signup" ? (
+          <span className="inline-flex items-center gap-1 text-xs text-muted">
+            <MailCheck size={13} />
+            Conferma via email
+          </span>
+        ) : null}
+      </div>
     </div>
   );
 }
