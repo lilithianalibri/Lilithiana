@@ -592,7 +592,7 @@ with target_book as (
   select id from public.audiobooks where slug = 'server-donne-leccami-la-password'
 )
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'introsd', 1, 'introsd', 13, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/00introsd.wav' from target_book
+select id, 'introsd', 1, 'Intro', 13, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/00introsd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -600,7 +600,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'serverdonne', 2, 'serverdonne', 542, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/01serverdonne.wav' from target_book
+select id, 'serverdonne', 2, 'I server femministi sono un sogno ancora lontano', 542, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/01serverdonne.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -608,7 +608,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'serverdonne-unito', 3, 'serverdonne unito', 408, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/02serverdonne_unito.wav' from target_book
+select id, 'serverdonne-unito', 3, 'Le infrastrutture digitali pubbliche', 408, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/02serverdonne_unito.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -616,7 +616,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'serverdonne-2', 4, 'serverdonne', 776, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/03serverdonne.wav' from target_book
+select id, 'serverdonne-2', 4, 'Tempo tecnologico, crossmedialità e assemblaggi cognitivi', 776, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/03serverdonne.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -624,7 +624,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-unito-3', 5, 'sd unito 3', 634, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/04sd_unito_3.wav' from target_book
+select id, 'sd-unito-3', 5, 'Coinvolgimento personale e l’amicizia con le macchine', 634, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/04sd_unito_3.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -632,7 +632,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'severdonne', 6, 'severdonne', 276, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/05severdonne.wav' from target_book
+select id, 'severdonne', 6, 'Scrivere e legare tutto dentro a un artefatto tecnico', 276, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/05severdonne.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -640,7 +640,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'serverdonne-3', 7, 'serverdonne', 201, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/06serverdonne.wav' from target_book
+select id, 'serverdonne-3', 7, '2 Server Donne: una macchina femminista', 201, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/06serverdonne.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -648,7 +648,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'serverdonne-4', 8, 'serverdonne', 266, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/07serverdonne.wav' from target_book
+select id, 'serverdonne-4', 8, 'Prima fase: dal 1996 al 2010', 266, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/07serverdonne.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -656,7 +656,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'serverdonne-5', 9, 'serverdonne', 487, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/08serverdonne.wav' from target_book
+select id, 'serverdonne-5', 9, 'La scena politica e culturale', 487, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/08serverdonne.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -664,7 +664,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'serverdonne-6', 10, 'serverdonne', 542, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/09serverdonne.wav' from target_book
+select id, 'serverdonne-6', 10, 'Nella scena dei femminismi', 542, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/09serverdonne.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -672,7 +672,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'serverdonne-7', 11, 'serverdonne', 425, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/10serverdonne.wav' from target_book
+select id, 'serverdonne-7', 11, 'A cavallo del nuovo millennio', 425, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/10serverdonne.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -680,7 +680,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 's', 12, 's', 151, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/11s.wav' from target_book
+select id, 's', 12, 'La società neoliberista', 151, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/11s.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -688,7 +688,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd', 13, 'sd', 323, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/12sd.wav' from target_book
+select id, 'sd', 13, 'Il paradigma del riconoscimento', 323, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/12sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -696,7 +696,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-2', 14, 'sd', 208, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/13sd.wav' from target_book
+select id, 'sd-2', 14, 'Seconda fase: dal 2011 al 2016', 208, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/13sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -704,7 +704,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-3', 15, 'sd', 244, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/14sd.wav' from target_book
+select id, 'sd-3', 15, 'Populismo e sovranismo', 244, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/14sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -712,7 +712,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-4', 16, 'sd', 548, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/15sd.wav' from target_book
+select id, 'sd-4', 16, 'Femmismo moralista?', 548, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/15sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -720,7 +720,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'nuovosd', 17, 'nuovosd', 240, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/16nuovosd.wav' from target_book
+select id, 'nuovosd', 17, 'Tra mediatizzazione e capitalismo delle piattaforme', 240, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/16nuovosd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -728,7 +728,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-5', 18, 'sd', 436, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/17sd.wav' from target_book
+select id, 'sd-5', 18, 'La colonizzazione attraverso le piattaforme', 436, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/17sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -736,7 +736,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-6', 19, 'sd', 628, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/18sd.wav' from target_book
+select id, 'sd-6', 19, 'L’intermediazione', 628, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/18sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -744,7 +744,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-7', 20, 'sd', 790, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/19sd.wav' from target_book
+select id, 'sd-7', 20, 'IV ondata', 790, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/19sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -752,7 +752,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-8', 21, 'sd', 412, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/20sd.wav' from target_book
+select id, 'sd-8', 21, 'Cyberfemminismo', 412, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/20sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -760,7 +760,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-9', 22, 'sd', 315, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/21sd.wav' from target_book
+select id, 'sd-9', 22, 'VNS matrix', 315, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/21sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -768,7 +768,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-10', 23, 'sd', 648, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/22sd.wav' from target_book
+select id, 'sd-10', 23, 'L’amicizia con le macchine e il postumano', 648, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/22sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -776,7 +776,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-11', 24, 'sd', 1109, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/23sd.wav' from target_book
+select id, 'sd-11', 24, '3 I molti inizi', 1109, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/23sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -784,7 +784,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-unito', 25, 'sd unito', 1367, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/24sd_unito.wav' from target_book
+select id, 'sd-unito', 25, 'Gli inizi del Server Donne', 1367, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/24sd_unito.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -792,7 +792,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-unito-2', 26, 'sd unito', 440, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/25sd_unito.wav' from target_book
+select id, 'sd-unito-2', 26, 'All’origine della macchina server donne', 440, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/25sd_unito.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -800,7 +800,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-12', 27, 'sd', 625, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/26sd.wav' from target_book
+select id, 'sd-12', 27, 'Abitare la rete', 625, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/26sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -808,7 +808,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-13', 28, 'sd', 595, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/27sd.wav' from target_book
+select id, 'sd-13', 28, 'Essere un internet server provider', 595, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/27sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -816,7 +816,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-14', 29, 'sd', 993, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/28sd.wav' from target_book
+select id, 'sd-14', 29, 'Il server all’epoca dei social', 993, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/28sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -824,7 +824,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, '29', 30, '29', 299, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/29.wav' from target_book
+select id, '29', 30, 'Il networking fai da te', 299, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/29.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -832,7 +832,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-15', 31, 'sd', 690, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/30sd.wav' from target_book
+select id, 'sd-15', 31, 'La sistemista inesistente', 690, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/30sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -840,7 +840,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-16', 32, 'sd', 649, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/31sd.wav' from target_book
+select id, 'sd-16', 32, 'Agilulfo...', 649, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/31sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -848,7 +848,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-17', 33, 'sd', 502, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/32sd.wav' from target_book
+select id, 'sd-17', 33, 'L’autonoma gestione di un server', 502, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/32sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -856,7 +856,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-18', 34, 'sd', 738, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/33sd.wav' from target_book
+select id, 'sd-18', 34, 'I luoghi fisici del progetto SD...', 738, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/33sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -864,7 +864,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-19', 35, 'sd', 712, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/34sd.wav' from target_book
+select id, 'sd-19', 35, 'CRM...', 712, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/34sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -872,7 +872,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-20', 36, 'sd', 339, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/35sd.wav' from target_book
+select id, 'sd-20', 36, 'R@W-Recycle@women', 339, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/35sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -880,7 +880,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-21', 37, 'sd', 897, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/36sd.wav' from target_book
+select id, 'sd-21', 37, 'Il movimento degli hackerspace femministi...', 897, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/36sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -888,7 +888,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-22', 38, 'sd', 1088, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/37sd.wav' from target_book
+select id, 'sd-22', 38, 'Altri inizi Cataloghi-biblioteche-sistemi informativi...', 1088, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/37sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -896,7 +896,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-23', 39, 'sd', 1429, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/38sd.wav' from target_book
+select id, 'sd-23', 39, 'Nel colto linguaggio femminista di allora...', 1429, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/38sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -904,7 +904,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-24', 40, 'sd', 218, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/39sd.wav' from target_book
+select id, 'sd-24', 40, 'L’ironia della memoria perduta', 218, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/39sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -912,7 +912,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-25', 41, 'sd', 1057, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/40sd.wav' from target_book
+select id, 'sd-25', 41, '5 Dalla cultura dei siti alla conversazione dei social...', 1057, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/40sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -920,7 +920,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-26', 42, 'sd', 906, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/41sd.wav' from target_book
+select id, 'sd-26', 42, 'Leccami la password...', 906, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/41sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -928,7 +928,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-27', 43, 'sd', 1039, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/42sd.wav' from target_book
+select id, 'sd-27', 43, 'Women.it con Archivarix...', 1039, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/42sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -936,7 +936,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-28', 44, 'sd', 712, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/43sd.wav' from target_book
+select id, 'sd-28', 44, 'La posta elettronica prima dei social e degli smartphone', 712, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/43sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -944,7 +944,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-29', 45, 'sd', 955, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/44sd.wav' from target_book
+select id, 'sd-29', 45, 'Crossmedialità', 955, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/44sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -952,7 +952,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-30', 46, 'sd', 1512, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/45sd.wav' from target_book
+select id, 'sd-30', 46, '6 Cercatrice di Rete...', 1512, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/45sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -960,7 +960,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-31', 47, 'sd', 976, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/46sd.wav' from target_book
+select id, 'sd-31', 47, 'La costruzione dell’artefatto, la realizzazione di un motore di ricerca gender oriented...', 976, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/46sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -968,7 +968,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-32', 48, 'sd', 1696, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/47sd.wav' from target_book
+select id, 'sd-32', 48, 'Cercatrice per la Regione Emilia-Romagna e la proposta di un ricco ingaggio...', 1696, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/47sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -976,7 +976,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-33', 49, 'sd', 1636, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/48sd.wav' from target_book
+select id, 'sd-33', 49, '7 Separazione non voluta...', 1636, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/48sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -984,7 +984,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'sd-34', 50, 'sd', 3773, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/49sd.wav' from target_book
+select id, 'sd-34', 50, 'Il ricatto degli spettri...', 3773, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/49sd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -992,7 +992,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'finalesd', 51, 'finalesd', 35, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/50finalesd.wav' from target_book
+select id, 'finalesd', 51, 'Post scriptum', 35, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/50finalesd.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
