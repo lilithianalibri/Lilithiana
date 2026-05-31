@@ -6,7 +6,7 @@ import { MainNav } from "../components/main-nav";
 export const metadata: Metadata = {
   title: "Termini e Condizioni | LILITHIANA",
   description:
-    "Termini e condizioni d'uso della piattaforma LILITHIANA: accesso, account, regole d'uso, proprietà intellettuale e responsabilità.",
+    "Termini e condizioni d’uso della piattaforma LILITHIANA: accesso, account, regole d’uso, proprietà intellettuale e responsabilità.",
 };
 
 export default function TermsPage() {
@@ -22,7 +22,7 @@ export default function TermsPage() {
               Termini e Condizioni
             </p>
             <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
-              Condizioni d&apos;uso della piattaforma
+              Condizioni d’uso della piattaforma
             </h1>
             <p className="mt-4 text-sm text-muted">Ultimo aggiornamento: 20 maggio 2026</p>
           </section>
@@ -32,7 +32,7 @@ export default function TermsPage() {
               <section>
                 <h2 className="font-display text-2xl">1. Ambito</h2>
                 <p className="mt-2">
-                  Questi Termini regolano l&apos;uso del sito LILITHIANA e delle relative funzionalità
+                  Questi Termini regolano l’uso del sito LILITHIANA e delle relative funzionalità
                   (catalogo, ascolto, account, dashboard, segnalibri).
                 </p>
               </section>
@@ -49,13 +49,13 @@ export default function TermsPage() {
               <section>
                 <h2 className="font-display text-2xl">3. Account utente</h2>
                 <p className="mt-2">
-                  L&apos;utente è responsabile delle credenziali di accesso e dell&apos;uso del proprio
-                  account. È vietato cedere l&apos;account o utilizzare identità altrui.
+                  L’utente è responsabile delle credenziali di accesso e dell’uso del proprio
+                  account. È vietato cedere l’account o utilizzare identità altrui.
                 </p>
               </section>
 
               <section>
-                <h2 className="font-display text-2xl">4. Regole d&apos;uso</h2>
+                <h2 className="font-display text-2xl">4. Regole d’uso</h2>
                 <p className="mt-2">
                   È vietato usare il servizio per attività illecite, tentativi di intrusione,
                   scraping aggressivo, abuso dei sistemi di autenticazione o aggiramento delle misure
@@ -85,7 +85,7 @@ export default function TermsPage() {
                 <p className="mt-2">
                   Nei limiti di legge, il titolare non risponde per interruzioni temporanee,
                   indisponibilità dovute a terzi o danni indiretti non prevedibili derivanti
-                  dall&apos;uso del servizio.
+                  dall’uso del servizio.
                 </p>
               </section>
 

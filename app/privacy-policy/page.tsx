@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
                 <p className="mt-2">
                   Trattiamo i dati necessari a erogare la piattaforma: email e credenziali di
                   accesso (gestite tramite Supabase Auth), metadati profilo inseriti
-                  volontariamente, dati di utilizzo funzionali all&apos;ascolto (progresso,
+                  volontariamente, dati di utilizzo funzionali all’ascolto (progresso,
                   capitolo, segnalibri), dati tecnici di sessione e sicurezza (log essenziali,
                   protezione anti-bot in registrazione).
                 </p>
@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
                   <br />- prevenire abusi e proteggere la piattaforma (art. 6.1.f GDPR: legittimo
                   interesse del titolare);
                   <br />- eventuali funzioni opzionali di tracciamento/profilazione, solo se
-                  attivate e accettate dall&apos;utente (art. 6.1.a GDPR: consenso).
+                  attivate e accettate dall’utente (art. 6.1.a GDPR: consenso).
                 </p>
               </section>
 
@@ -72,14 +72,14 @@ export default function PrivacyPolicyPage() {
                 <p className="mt-2">
                   Alla data di questo aggiornamento non utilizziamo profilazione commerciale né
                   advertising comportamentale. Le preferenze cookie sono comunque gestibili in ogni
-                  momento dall&apos;utente.
+                  momento dall’utente.
                 </p>
               </section>
 
               <section>
                 <h2 className="font-display text-2xl">5. Natura del conferimento</h2>
                 <p className="mt-2">
-                  Il conferimento dei dati necessari all&apos;account è facoltativo, ma senza tali dati
+                  Il conferimento dei dati necessari all’account è facoltativo, ma senza tali dati
                   non è possibile usare funzioni riservate (login, dashboard, segnalibri,
                   sincronizzazione progresso).
                 </p>
@@ -90,7 +90,7 @@ export default function PrivacyPolicyPage() {
                 <p className="mt-2">
                   I dati possono essere trattati da fornitori tecnici che operano quali responsabili
                   del trattamento (es. infrastruttura applicativa, autenticazione, hosting, sistemi
-                  anti-abuso/CAPTCHA), nei limiti necessari all&apos;erogazione del servizio.
+                  anti-abuso/CAPTCHA), nei limiti necessari all’erogazione del servizio.
                 </p>
               </section>
 
@@ -98,9 +98,9 @@ export default function PrivacyPolicyPage() {
                 <h2 className="font-display text-2xl">7. Conservazione</h2>
                 <p className="mt-2">
                   Conserviamo i dati personali per il tempo necessario alle finalità indicate:
-                  <br />- dati account: fino alla cancellazione dell&apos;account, salvo obblighi di
+                  <br />- dati account: fino alla cancellazione dell’account, salvo obblighi di
                   legge;
-                  <br />- dati funzionali di ascolto/segnalibri: finché l&apos;account resta attivo o
+                  <br />- dati funzionali di ascolto/segnalibri: finché l’account resta attivo o
                   fino a richiesta di cancellazione;
                   <br />- log e dati di sicurezza: per periodi proporzionati alla prevenzione abusi
                   e alla tutela della piattaforma.
@@ -108,7 +108,7 @@ export default function PrivacyPolicyPage() {
               </section>
 
               <section>
-                <h2 className="font-display text-2xl">8. Diritti dell&apos;interessato</h2>
+                <h2 className="font-display text-2xl">8. Diritti dell’interessato</h2>
                 <p className="mt-2">
                   Puoi esercitare i diritti previsti dagli artt. 15-22 GDPR (accesso, rettifica,
                   cancellazione, limitazione, opposizione, portabilità, revoca del consenso) scrivendo

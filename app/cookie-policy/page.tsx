@@ -33,7 +33,7 @@ export default function CookiePolicyPage() {
               <section>
                 <h2 className="font-display text-2xl">1. Cosa sono i cookie</h2>
                 <p className="mt-2">
-                  I cookie sono stringhe di testo che il sito salva sul dispositivo dell&apos;utente per
+                  I cookie sono stringhe di testo che il sito salva sul dispositivo dell’utente per
                   finalità tecniche o, quando previsto, per finalità ulteriori (analytics,
                   profilazione, personalizzazione avanzata).
                 </p>
@@ -69,7 +69,7 @@ export default function CookiePolicyPage() {
                       <tr className="border-b border-accent/10">
                         <td className="px-4 py-3">Preferenza consenso cookie</td>
                         <td className="px-4 py-3">
-                          Memorizza le scelte privacy dell&apos;utente.
+                          Memorizza le scelte privacy dell’utente.
                         </td>
                         <td className="px-4 py-3">Obbligo informativo e accountability</td>
                       </tr>

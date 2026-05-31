@@ -30,7 +30,7 @@ export default function ProjectPage() {
             <article className="panel rounded-3xl p-6 sm:p-8">
               <div className="space-y-5 text-base leading-8 text-foreground/92">
                 <p>
-                  Questo progetto nasce dall&apos;idea che non possiamo lasciare solo a
+                  Questo progetto nasce dall’idea che non possiamo lasciare solo a
                   piattaforme generaliste la possibilità di decidere quali libri
                   trasmettere in audio.
                 </p>
@@ -48,11 +48,11 @@ export default function ProjectPage() {
                 </p>
                 <p>
                   Quindi se sul sito non trovi i grandi numeri o le classifiche delle
-                  piattaforme pi&ugrave; famose, &egrave; perch&eacute; abbiamo scelto una strada diversa.
+                  piattaforme più famose, è perché abbiamo scelto una strada diversa.
                   Privilegiamo lo scambio reale e le opinioni delle lettrici, invitando
                   chi ci segue a valutare e considerare con cura ogni nostra scelta.
-                  Quello che sembra un limite &egrave; la nostra forza: rimettere al centro il
-                  valore di una comunit&agrave; consapevole.
+                  Quello che sembra un limite è la nostra forza: rimettere al centro il
+                  valore di una comunità consapevole.
                 </p>
               </div>
 

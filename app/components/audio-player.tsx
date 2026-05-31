@@ -492,7 +492,7 @@ export function AudioPlayer({
     const first = chapters[0];
     if (!first) return;
     jumpToChapter(first.id, { seekTo: 0, autoplay: true });
-    setStatusMessage("Ascolto dall'inizio.");
+    setStatusMessage("Ascolto dall’inizio.");
   }, [chapters, jumpToChapter]);
 
   useEffect(() => {
@@ -568,7 +568,7 @@ export function AudioPlayer({
           >
             <Play size={13} className="text-white" />
             <span aria-hidden className="h-3 w-px bg-white/70" />
-            Ascolta dall&apos;inizio
+            Ascolta dall’inizio
           </button>
           <button
             type="button"
@@ -584,7 +584,7 @@ export function AudioPlayer({
             className="inline-flex items-center gap-2 rounded-full border border-accent/20 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-accent transition hover:bg-white"
           >
             <RotateCcw size={13} />
-            Dall&apos;inizio
+            Dall’inizio
           </button>
         </div>
         <p className="mt-3 text-xs text-muted">

@@ -44,12 +44,12 @@ const authCopy: Record<
   signup: {
     eyebrow: "Registrazione",
     title: "Crea il tuo account",
-    description: "Dopo l'invio riceverai una mail: basta confermarla e puoi entrare.",
+    description: "Dopo l’invio riceverai una mail: basta confermarla e puoi entrare.",
     submit: "Registrati",
   },
   forgot: {
     eyebrow: "Recupero password",
-    title: "Recupera l'accesso",
+    title: "Recupera l’accesso",
     description: "Inserisci la tua email e ti arriva il link per scegliere una nuova password.",
     submit: "Invia link",
   },
@@ -257,7 +257,7 @@ export function AuthCard({
       return;
     }
 
-    setMessage("Registrazione inviata. Controlla la mail e conferma l'account.");
+    setMessage("Registrazione inviata. Controlla la mail e conferma l’account.");
   }
 
   async function handlePasswordResetRequest() {
@@ -266,7 +266,7 @@ export function AuthCard({
     }
 
     if (!email) {
-      setMessage("Inserisci l'email del tuo account.");
+      setMessage("Inserisci l’email del tuo account.");
       return;
     }
 

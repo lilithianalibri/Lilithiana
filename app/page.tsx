@@ -20,7 +20,7 @@ const whyLilithianaCards = [
   {
     title: "Un libro, un percorso completo",
     description:
-      "Ogni audiolibro \u00E8 pensato dall'inizio alla fine, con capitoli ordinati e ascolto lineare.",
+      "Ogni audiolibro è pensato dall’inizio alla fine, con capitoli ordinati e ascolto lineare.",
     icon: Headphones,
   },
   {
@@ -38,7 +38,7 @@ const whyLilithianaCards = [
   {
     title: "Ascolto fluido e naturale",
     description:
-      "Regola velocit\u00E0, usa avanti/indietro e continua ad ascoltare in modo semplice e immediato.",
+      "Regola velocità, usa avanti/indietro e continua ad ascoltare in modo semplice e immediato.",
     icon: SlidersHorizontal,
   },
 ] as const;
@@ -142,12 +142,12 @@ export default function Home() {
                   Visione editoriale
                 </p>
                 <h2 className="mt-3 font-display text-3xl font-bold leading-tight text-accent sm:text-4xl">
-                  L&apos;ascolto che unisce cultura e passione politica
+                  L’ascolto che unisce cultura e passione politica
                 </h2>
                 <blockquote className="mt-4 max-w-3xl border-l-2 border-accent/35 pl-4 text-base text-muted">
-                  &quot;La speranza &egrave; che questo sforzo, seppur iniziale e incompleto,
+                  &quot;La speranza è che questo sforzo, seppur iniziale e incompleto,
                   possa creare uno scambio di competenze tra donne di diverse
-                  professionalit&agrave; e mosse da diverse passioni politiche.&quot;
+                  professionalità e mosse da diverse passioni politiche.&quot;
                 </blockquote>
                 <p className="mt-2 text-sm font-semibold text-accent">
                   Paola De Ferrari.
@@ -328,8 +328,8 @@ export default function Home() {
                 />
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-muted sm:text-base">
-                Un&apos;esperienza di ascolto pensata per seguire la tua storia con ritmo,
-                chiarezza e continuit&agrave;.
+                Un’esperienza di ascolto pensata per seguire la tua storia con ritmo,
+                chiarezza e continuità.
               </p>
 
               <div className="mt-9 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

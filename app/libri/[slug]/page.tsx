@@ -126,7 +126,7 @@ export default async function BookPage({ params, searchParams }: BookPageProps) 
                 >
                   <PlayCircle size={18} className="text-white" />
                   <span aria-hidden className="h-3 w-px bg-white/70" />
-                  Ascolta dall&apos;inizio
+                  Ascolta dall’inizio
                 </Link>
                 <a
                   href="#player"

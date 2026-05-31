@@ -63,7 +63,7 @@ export function SiteFooter() {
               </p>
               <p>
                 <span className="font-semibold">Relazioni esterne:</span> Paola
-                D&apos;Arcangelo
+                D’Arcangelo
               </p>
             </div>
           </div>

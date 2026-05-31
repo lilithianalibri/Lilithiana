@@ -159,7 +159,7 @@ insert into public.audiobooks (
   is_published
 ) values (
   'cera-una-volta-la-rete-lilith-e-ce-ancora',
-  'C''era una volta la rete Lilith. E c''è ancora',
+  'C’era una volta la rete Lilith. E c’è ancora',
   'Simonetta De Fazi',
   'Voce da aggiornare',
   'Saggistica',
@@ -272,7 +272,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'amicizia', 4, 'Canto dell''amicizia', 212, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/04amicizia.wav' from target_book
+select id, 'amicizia', 4, 'Canto dell’amicizia', 212, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/04amicizia.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -280,7 +280,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'umiliazione', 5, 'Canto dell''umiliazione', 212, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/05umiliazione.wav' from target_book
+select id, 'umiliazione', 5, 'Canto dell’umiliazione', 212, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/05umiliazione.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -328,7 +328,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'errore', 11, 'Ricetta per un Errore Madornale eseguito a regola d''arte (improvvisazione su sinnerman, Nina Simone)', 74, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/11errore.wav' from target_book
+select id, 'errore', 11, 'Ricetta per un Errore Madornale eseguito a regola d’arte (improvvisazione su sinnerman, Nina Simone)', 74, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/11errore.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -376,7 +376,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'assoluto', 17, 'L''orecchio assoluto Improvvisazione I hear music, Ella Fitzgerald', 73, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/17assoluto.wav' from target_book
+select id, 'assoluto', 17, 'L’orecchio assoluto Improvvisazione I hear music, Ella Fitzgerald', 73, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/17assoluto.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -384,7 +384,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'illuminazione', 18, 'Canto dell''illuminazione', 198, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/18illuminazione.wav' from target_book
+select id, 'illuminazione', 18, 'Canto dell’illuminazione', 198, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/18illuminazione.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -400,7 +400,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'origine', 20, 'Canto dell''origine dei soldi', 187, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/20origine.wav' from target_book
+select id, 'origine', 20, 'Canto dell’origine dei soldi', 187, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/20origine.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -567,7 +567,7 @@ insert into public.audiobooks (
   'Marzia Vaccari',
   'Voce da aggiornare',
   'Saggistica',
-  'Ricostruzione biografica, storica e archivistica dell''esperienza Server Donne, nata nel 1996 come infrastruttura digitale femminista. Prima pubblicazione: 2025.',
+  'Ricostruzione biografica, storica e archivistica dell’esperienza Server Donne, nata nel 1996 come infrastruttura digitale femminista. Prima pubblicazione: 2025.',
   36500,
   '#351124',
   '#7a1d49',
@@ -1023,7 +1023,7 @@ insert into public.audiobooks (
   is_published
 ) values (
   'un-americana-a-parigi',
-  'Un''americana a Parigi',
+  'Un’americana a Parigi',
   'Margherita Giacobino (Elinor Rigby)',
   'Voce da aggiornare',
   'Narrativa',

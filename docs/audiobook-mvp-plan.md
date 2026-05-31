@@ -4,8 +4,8 @@
 - Catalogo libri cliccabili.
 - Player audio per capitolo direttamente da sito.
 - Indicazione capitolo attuale + barra avanzamento + minutaggio.
-- Ripresa dall'ultimo punto.
-- Segnalibri legati all'account.
+- Ripresa dall’ultimo punto.
+- Segnalibri legati all’account.
 
 ## Stack free scelto
 - Frontend: Next.js (già in repo).

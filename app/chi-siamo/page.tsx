@@ -35,33 +35,33 @@ export default function AboutPage() {
             <article className="panel rounded-3xl p-6 sm:p-8">
               <div className="space-y-5 text-base leading-8 text-foreground/92">
                 <p>
-                  Dall&apos;esperienza della Rete Lilith, con DWF prima e Archivia poi,
-                  ho ereditato l&apos;amore per le carte delle donne. Ho sentito il
+                  Dall’esperienza della Rete Lilith, con DWF prima e Archivia poi,
+                  ho ereditato l’amore per le carte delle donne. Ho sentito il
                   bisogno di trasformare alcuni scritti, spesso trascurati
-                  dall&apos;editoria tradizionale, in voce e suono.
+                  dall’editoria tradizionale, in voce e suono.
                 </p>
                 <p>
                   È stato un lavoro corale. Dai consigli di Eugenia Galateri,
-                  Piera Codognotto e dell&apos;amatissima Paola De Ferrari, alla
+                  Piera Codognotto e dell’amatissima Paola De Ferrari, alla
                   grafica preziosa di Fiamma Spinelli e ai suoi suggerimenti; dai
                   saggi di Simonetta De Fazi e Luciana Tufani, al supporto di
                   Marzia Vaccari con il suo ServerDonne e alla diffusione della
-                  piattaforma da parte di Paola D&apos;Arcangelo.
+                  piattaforma da parte di Paola D’Arcangelo.
                 </p>
                 <p>
                   Le voci che ascolterete sono quelle delle attrici di Amleta,
                   mentre la cura tecnica è nata tra le mura di casa mia: grazie ad
                   Antonella Civale, una delle attrici, ho allestito lo studio,
-                  chiedendo poi all&apos;informatico Francesco Buttarazzi di insegnarmi
-                  a usare il software di registrazione, anche se poi il più l&apos;ho
+                  chiedendo poi all’informatico Francesco Buttarazzi di insegnarmi
+                  a usare il software di registrazione, anche se poi il più l’ho
                   fatto da sola.
                 </p>
                 <p>
                   Oggi, con orgoglio, porto questo patrimonio alle vostre orecchie.
-                  Ringrazio infine l&apos;ambasciatore Memmo che, in qualità di erede di
+                  Ringrazio infine l’ambasciatore Memmo che, in qualità di erede di
                   Paola Masino, mi ha ceduto gratuitamente i diritti su
-                  quell&apos;opera preziosissima; e ringrazio Francesca Genti che, sempre
-                  gratuitamente, mi ha permesso di realizzare l&apos;audio della sua
+                  quell’opera preziosissima; e ringrazio Francesca Genti che, sempre
+                  gratuitamente, mi ha permesso di realizzare l’audio della sua
                   bellissima Ballata di Nina Simone.
                 </p>
               </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
                   Iniziativa indipendente
                 </p>
                 <p className="mt-3 text-sm leading-6 text-muted">
-                  Si tratta di un&apos;iniziativa interamente autofinanziata e senza
+                  Si tratta di un’iniziativa interamente autofinanziata e senza
                   scopo di lucro, volta a promuovere la cultura delle donne.
                 </p>
               </article>
