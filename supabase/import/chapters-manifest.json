@@ -97,5 +97,1139 @@
     "duration_seconds": 456,
     "r2_key": "briganta/11-postfazione-la-briganta-e-io.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/11-postfazione-la-briganta-e-io.wav"
+  },
+  {
+    "book_slug": "cera-una-volta-la-rete-lilith-e-ce-ancora",
+    "chapter_index": 1,
+    "chapter_slug": "retelilith",
+    "chapter_title": "retelilith",
+    "duration_seconds": 1592,
+    "r2_key": "cera-una-volta-la-rete-lilith-e-ce-ancora/retelilith.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/cera-una-volta-la-rete-lilith-e-ce-ancora/retelilith.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 1,
+    "chapter_slug": "intro",
+    "chapter_title": "intro",
+    "duration_seconds": 14,
+    "r2_key": "la-ballata-di-nina-simone/01intro.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/01intro.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 2,
+    "chapter_slug": "invocazionione",
+    "chapter_title": "invocazionione",
+    "duration_seconds": 126,
+    "r2_key": "la-ballata-di-nina-simone/02invocazionione.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/02invocazionione.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 3,
+    "chapter_slug": "cantieunice",
+    "chapter_title": "cantieunice",
+    "duration_seconds": 299,
+    "r2_key": "la-ballata-di-nina-simone/03cantieunice.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/03cantieunice.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 4,
+    "chapter_slug": "amicizia",
+    "chapter_title": "amicizia",
+    "duration_seconds": 212,
+    "r2_key": "la-ballata-di-nina-simone/04amicizia.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/04amicizia.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 5,
+    "chapter_slug": "umiliazione",
+    "chapter_title": "umiliazione",
+    "duration_seconds": 212,
+    "r2_key": "la-ballata-di-nina-simone/05umiliazione.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/05umiliazione.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 6,
+    "chapter_slug": "sogno",
+    "chapter_title": "sogno",
+    "duration_seconds": 165,
+    "r2_key": "la-ballata-di-nina-simone/06sogno.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/06sogno.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 7,
+    "chapter_slug": "primo",
+    "chapter_title": "primo",
+    "duration_seconds": 197,
+    "r2_key": "la-ballata-di-nina-simone/07primo.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/07primo.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 8,
+    "chapter_slug": "lontananza",
+    "chapter_title": "lontananza",
+    "duration_seconds": 197,
+    "r2_key": "la-ballata-di-nina-simone/08lontananza.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/08lontananza.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 9,
+    "chapter_slug": "zombie",
+    "chapter_title": "zombie",
+    "duration_seconds": 202,
+    "r2_key": "la-ballata-di-nina-simone/09zombie.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/09zombie.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 10,
+    "chapter_slug": "harlem",
+    "chapter_title": "harlem",
+    "duration_seconds": 205,
+    "r2_key": "la-ballata-di-nina-simone/10harlem.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/10harlem.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 11,
+    "chapter_slug": "errore",
+    "chapter_title": "errore",
+    "duration_seconds": 74,
+    "r2_key": "la-ballata-di-nina-simone/11errore.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/11errore.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 12,
+    "chapter_slug": "sconfitta",
+    "chapter_title": "sconfitta",
+    "duration_seconds": 176,
+    "r2_key": "la-ballata-di-nina-simone/12sconfitta.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/12sconfitta.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 13,
+    "chapter_slug": "forza",
+    "chapter_title": "forza",
+    "duration_seconds": 204,
+    "r2_key": "la-ballata-di-nina-simone/13forza.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/13forza.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 14,
+    "chapter_slug": "imprwork",
+    "chapter_title": "imprwork",
+    "duration_seconds": 42,
+    "r2_key": "la-ballata-di-nina-simone/14imprwork.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/14imprwork.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 15,
+    "chapter_slug": "notte",
+    "chapter_title": "notte",
+    "duration_seconds": 204,
+    "r2_key": "la-ballata-di-nina-simone/15notte.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/15notte.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 16,
+    "chapter_slug": "atlantic",
+    "chapter_title": "atlantic",
+    "duration_seconds": 189,
+    "r2_key": "la-ballata-di-nina-simone/16atlantic.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/16atlantic.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 17,
+    "chapter_slug": "assoluto",
+    "chapter_title": "assoluto",
+    "duration_seconds": 73,
+    "r2_key": "la-ballata-di-nina-simone/17assoluto.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/17assoluto.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 18,
+    "chapter_slug": "illuminazione",
+    "chapter_title": "illuminazione",
+    "duration_seconds": 198,
+    "r2_key": "la-ballata-di-nina-simone/18illuminazione.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/18illuminazione.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 19,
+    "chapter_slug": "nina",
+    "chapter_title": "nina",
+    "duration_seconds": 203,
+    "r2_key": "la-ballata-di-nina-simone/19nina.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/19nina.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 20,
+    "chapter_slug": "origine",
+    "chapter_title": "origine",
+    "duration_seconds": 187,
+    "r2_key": "la-ballata-di-nina-simone/20origine.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/20origine.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 21,
+    "chapter_slug": "donross",
+    "chapter_title": "donross",
+    "duration_seconds": 196,
+    "r2_key": "la-ballata-di-nina-simone/21donross.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/21donross.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 22,
+    "chapter_slug": "whykeeponbreaking",
+    "chapter_title": "whykeeponbreaking",
+    "duration_seconds": 42,
+    "r2_key": "la-ballata-di-nina-simone/22whykeeponbreaking.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/22whykeeponbreaking.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 23,
+    "chapter_slug": "dollari",
+    "chapter_title": "dollari",
+    "duration_seconds": 199,
+    "r2_key": "la-ballata-di-nina-simone/23dollari.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/23dollari.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 24,
+    "chapter_slug": "beethoven",
+    "chapter_title": "beethoven",
+    "duration_seconds": 20,
+    "r2_key": "la-ballata-di-nina-simone/24beethoven.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/24beethoven.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 25,
+    "chapter_slug": "littlegirlblue",
+    "chapter_title": "littlegirlblue",
+    "duration_seconds": 203,
+    "r2_key": "la-ballata-di-nina-simone/25littlegirlblue.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/25littlegirlblue.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 26,
+    "chapter_slug": "townhall",
+    "chapter_title": "townhall",
+    "duration_seconds": 196,
+    "r2_key": "la-ballata-di-nina-simone/26townhall.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/26townhall.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 27,
+    "chapter_slug": "stroud",
+    "chapter_title": "stroud",
+    "duration_seconds": 192,
+    "r2_key": "la-ballata-di-nina-simone/27stroud.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/27stroud.wav"
+  },
+  {
+    "book_slug": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici",
+    "chapter_index": 1,
+    "chapter_slug": "introscrittrici",
+    "chapter_title": "introscrittrici",
+    "duration_seconds": 19,
+    "r2_key": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/00introscrittrici.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/00introscrittrici.wav"
+  },
+  {
+    "book_slug": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici",
+    "chapter_index": 2,
+    "chapter_slug": "premessascrittrici",
+    "chapter_title": "premessascrittrici",
+    "duration_seconds": 184,
+    "r2_key": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/02premessascrittrici.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/02premessascrittrici.wav"
+  },
+  {
+    "book_slug": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici",
+    "chapter_index": 3,
+    "chapter_slug": "scrittrici",
+    "chapter_title": "scrittrici",
+    "duration_seconds": 7347,
+    "r2_key": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/03scrittrici.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/03scrittrici.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 1,
+    "chapter_slug": "introsd",
+    "chapter_title": "introsd",
+    "duration_seconds": 13,
+    "r2_key": "server-donne-leccami-la-password/00introsd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/00introsd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 2,
+    "chapter_slug": "serverdonne",
+    "chapter_title": "serverdonne",
+    "duration_seconds": 542,
+    "r2_key": "server-donne-leccami-la-password/01serverdonne.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/01serverdonne.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 3,
+    "chapter_slug": "serverdonne-unito",
+    "chapter_title": "serverdonne unito",
+    "duration_seconds": 408,
+    "r2_key": "server-donne-leccami-la-password/02serverdonne_unito.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/02serverdonne_unito.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 4,
+    "chapter_slug": "serverdonne-2",
+    "chapter_title": "serverdonne",
+    "duration_seconds": 776,
+    "r2_key": "server-donne-leccami-la-password/03serverdonne.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/03serverdonne.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 5,
+    "chapter_slug": "sd-unito-3",
+    "chapter_title": "sd unito 3",
+    "duration_seconds": 634,
+    "r2_key": "server-donne-leccami-la-password/04sd_unito_3.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/04sd_unito_3.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 6,
+    "chapter_slug": "severdonne",
+    "chapter_title": "severdonne",
+    "duration_seconds": 276,
+    "r2_key": "server-donne-leccami-la-password/05severdonne.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/05severdonne.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 7,
+    "chapter_slug": "serverdonne-3",
+    "chapter_title": "serverdonne",
+    "duration_seconds": 201,
+    "r2_key": "server-donne-leccami-la-password/06serverdonne.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/06serverdonne.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 8,
+    "chapter_slug": "serverdonne-4",
+    "chapter_title": "serverdonne",
+    "duration_seconds": 266,
+    "r2_key": "server-donne-leccami-la-password/07serverdonne.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/07serverdonne.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 9,
+    "chapter_slug": "serverdonne-5",
+    "chapter_title": "serverdonne",
+    "duration_seconds": 487,
+    "r2_key": "server-donne-leccami-la-password/08serverdonne.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/08serverdonne.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 10,
+    "chapter_slug": "serverdonne-6",
+    "chapter_title": "serverdonne",
+    "duration_seconds": 542,
+    "r2_key": "server-donne-leccami-la-password/09serverdonne.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/09serverdonne.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 11,
+    "chapter_slug": "serverdonne-7",
+    "chapter_title": "serverdonne",
+    "duration_seconds": 425,
+    "r2_key": "server-donne-leccami-la-password/10serverdonne.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/10serverdonne.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 12,
+    "chapter_slug": "s",
+    "chapter_title": "s",
+    "duration_seconds": 151,
+    "r2_key": "server-donne-leccami-la-password/11s.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/11s.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 13,
+    "chapter_slug": "sd",
+    "chapter_title": "sd",
+    "duration_seconds": 323,
+    "r2_key": "server-donne-leccami-la-password/12sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/12sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 14,
+    "chapter_slug": "sd-2",
+    "chapter_title": "sd",
+    "duration_seconds": 208,
+    "r2_key": "server-donne-leccami-la-password/13sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/13sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 15,
+    "chapter_slug": "sd-3",
+    "chapter_title": "sd",
+    "duration_seconds": 244,
+    "r2_key": "server-donne-leccami-la-password/14sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/14sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 16,
+    "chapter_slug": "sd-4",
+    "chapter_title": "sd",
+    "duration_seconds": 548,
+    "r2_key": "server-donne-leccami-la-password/15sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/15sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 17,
+    "chapter_slug": "nuovosd",
+    "chapter_title": "nuovosd",
+    "duration_seconds": 240,
+    "r2_key": "server-donne-leccami-la-password/16nuovosd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/16nuovosd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 18,
+    "chapter_slug": "sd-5",
+    "chapter_title": "sd",
+    "duration_seconds": 436,
+    "r2_key": "server-donne-leccami-la-password/17sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/17sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 19,
+    "chapter_slug": "sd-6",
+    "chapter_title": "sd",
+    "duration_seconds": 628,
+    "r2_key": "server-donne-leccami-la-password/18sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/18sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 20,
+    "chapter_slug": "sd-7",
+    "chapter_title": "sd",
+    "duration_seconds": 790,
+    "r2_key": "server-donne-leccami-la-password/19sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/19sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 21,
+    "chapter_slug": "sd-8",
+    "chapter_title": "sd",
+    "duration_seconds": 412,
+    "r2_key": "server-donne-leccami-la-password/20sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/20sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 22,
+    "chapter_slug": "sd-9",
+    "chapter_title": "sd",
+    "duration_seconds": 315,
+    "r2_key": "server-donne-leccami-la-password/21sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/21sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 23,
+    "chapter_slug": "sd-10",
+    "chapter_title": "sd",
+    "duration_seconds": 648,
+    "r2_key": "server-donne-leccami-la-password/22sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/22sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 24,
+    "chapter_slug": "sd-11",
+    "chapter_title": "sd",
+    "duration_seconds": 1109,
+    "r2_key": "server-donne-leccami-la-password/23sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/23sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 25,
+    "chapter_slug": "sd-unito",
+    "chapter_title": "sd unito",
+    "duration_seconds": 1367,
+    "r2_key": "server-donne-leccami-la-password/24sd_unito.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/24sd_unito.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 26,
+    "chapter_slug": "sd-unito-2",
+    "chapter_title": "sd unito",
+    "duration_seconds": 440,
+    "r2_key": "server-donne-leccami-la-password/25sd_unito.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/25sd_unito.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 27,
+    "chapter_slug": "sd-12",
+    "chapter_title": "sd",
+    "duration_seconds": 625,
+    "r2_key": "server-donne-leccami-la-password/26sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/26sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 28,
+    "chapter_slug": "sd-13",
+    "chapter_title": "sd",
+    "duration_seconds": 595,
+    "r2_key": "server-donne-leccami-la-password/27sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/27sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 29,
+    "chapter_slug": "sd-14",
+    "chapter_title": "sd",
+    "duration_seconds": 993,
+    "r2_key": "server-donne-leccami-la-password/28sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/28sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 30,
+    "chapter_slug": "29",
+    "chapter_title": "29",
+    "duration_seconds": 299,
+    "r2_key": "server-donne-leccami-la-password/29.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/29.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 31,
+    "chapter_slug": "sd-15",
+    "chapter_title": "sd",
+    "duration_seconds": 690,
+    "r2_key": "server-donne-leccami-la-password/30sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/30sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 32,
+    "chapter_slug": "sd-16",
+    "chapter_title": "sd",
+    "duration_seconds": 649,
+    "r2_key": "server-donne-leccami-la-password/31sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/31sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 33,
+    "chapter_slug": "sd-17",
+    "chapter_title": "sd",
+    "duration_seconds": 502,
+    "r2_key": "server-donne-leccami-la-password/32sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/32sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 34,
+    "chapter_slug": "sd-18",
+    "chapter_title": "sd",
+    "duration_seconds": 738,
+    "r2_key": "server-donne-leccami-la-password/33sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/33sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 35,
+    "chapter_slug": "sd-19",
+    "chapter_title": "sd",
+    "duration_seconds": 712,
+    "r2_key": "server-donne-leccami-la-password/34sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/34sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 36,
+    "chapter_slug": "sd-20",
+    "chapter_title": "sd",
+    "duration_seconds": 339,
+    "r2_key": "server-donne-leccami-la-password/35sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/35sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 37,
+    "chapter_slug": "sd-21",
+    "chapter_title": "sd",
+    "duration_seconds": 897,
+    "r2_key": "server-donne-leccami-la-password/36sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/36sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 38,
+    "chapter_slug": "sd-22",
+    "chapter_title": "sd",
+    "duration_seconds": 1088,
+    "r2_key": "server-donne-leccami-la-password/37sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/37sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 39,
+    "chapter_slug": "sd-23",
+    "chapter_title": "sd",
+    "duration_seconds": 1429,
+    "r2_key": "server-donne-leccami-la-password/38sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/38sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 40,
+    "chapter_slug": "sd-24",
+    "chapter_title": "sd",
+    "duration_seconds": 218,
+    "r2_key": "server-donne-leccami-la-password/39sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/39sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 41,
+    "chapter_slug": "sd-25",
+    "chapter_title": "sd",
+    "duration_seconds": 1057,
+    "r2_key": "server-donne-leccami-la-password/40sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/40sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 42,
+    "chapter_slug": "sd-26",
+    "chapter_title": "sd",
+    "duration_seconds": 906,
+    "r2_key": "server-donne-leccami-la-password/41sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/41sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 43,
+    "chapter_slug": "sd-27",
+    "chapter_title": "sd",
+    "duration_seconds": 1039,
+    "r2_key": "server-donne-leccami-la-password/42sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/42sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 44,
+    "chapter_slug": "sd-28",
+    "chapter_title": "sd",
+    "duration_seconds": 712,
+    "r2_key": "server-donne-leccami-la-password/43sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/43sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 45,
+    "chapter_slug": "sd-29",
+    "chapter_title": "sd",
+    "duration_seconds": 955,
+    "r2_key": "server-donne-leccami-la-password/44sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/44sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 46,
+    "chapter_slug": "sd-30",
+    "chapter_title": "sd",
+    "duration_seconds": 1512,
+    "r2_key": "server-donne-leccami-la-password/45sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/45sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 47,
+    "chapter_slug": "sd-31",
+    "chapter_title": "sd",
+    "duration_seconds": 976,
+    "r2_key": "server-donne-leccami-la-password/46sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/46sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 48,
+    "chapter_slug": "sd-32",
+    "chapter_title": "sd",
+    "duration_seconds": 1696,
+    "r2_key": "server-donne-leccami-la-password/47sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/47sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 49,
+    "chapter_slug": "sd-33",
+    "chapter_title": "sd",
+    "duration_seconds": 1636,
+    "r2_key": "server-donne-leccami-la-password/48sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/48sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 50,
+    "chapter_slug": "sd-34",
+    "chapter_title": "sd",
+    "duration_seconds": 3773,
+    "r2_key": "server-donne-leccami-la-password/49sd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/49sd.wav"
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapter_index": 51,
+    "chapter_slug": "finalesd",
+    "chapter_title": "finalesd",
+    "duration_seconds": 35,
+    "r2_key": "server-donne-leccami-la-password/50finalesd.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/50finalesd.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 1,
+    "chapter_slug": "am",
+    "chapter_title": "am",
+    "duration_seconds": 755,
+    "r2_key": "unamericana-a-parigi/01am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/01am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 2,
+    "chapter_slug": "am-2",
+    "chapter_title": "am",
+    "duration_seconds": 219,
+    "r2_key": "unamericana-a-parigi/02am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/02am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 3,
+    "chapter_slug": "am-3",
+    "chapter_title": "am",
+    "duration_seconds": 555,
+    "r2_key": "unamericana-a-parigi/03am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/03am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 4,
+    "chapter_slug": "am-4",
+    "chapter_title": "am",
+    "duration_seconds": 830,
+    "r2_key": "unamericana-a-parigi/04am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/04am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 5,
+    "chapter_slug": "amnel",
+    "chapter_title": "amnel",
+    "duration_seconds": 842,
+    "r2_key": "unamericana-a-parigi/05amnel.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/05amnel.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 6,
+    "chapter_slug": "amnel-2",
+    "chapter_title": "amnel",
+    "duration_seconds": 1103,
+    "r2_key": "unamericana-a-parigi/06amnel.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/06amnel.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 7,
+    "chapter_slug": "amflorence",
+    "chapter_title": "amflorence",
+    "duration_seconds": 978,
+    "r2_key": "unamericana-a-parigi/07amflorence.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/07amflorence.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 8,
+    "chapter_slug": "amflorence-2",
+    "chapter_title": "amflorence",
+    "duration_seconds": 747,
+    "r2_key": "unamericana-a-parigi/08amflorence.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/08amflorence.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 9,
+    "chapter_slug": "am-5",
+    "chapter_title": "am",
+    "duration_seconds": 1336,
+    "r2_key": "unamericana-a-parigi/09am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/09am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 10,
+    "chapter_slug": "am-6",
+    "chapter_title": "am",
+    "duration_seconds": 1110,
+    "r2_key": "unamericana-a-parigi/10am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/10am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 11,
+    "chapter_slug": "am-7",
+    "chapter_title": "am",
+    "duration_seconds": 367,
+    "r2_key": "unamericana-a-parigi/11am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/11am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 12,
+    "chapter_slug": "am-8",
+    "chapter_title": "am",
+    "duration_seconds": 834,
+    "r2_key": "unamericana-a-parigi/12am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/12am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 13,
+    "chapter_slug": "am-9",
+    "chapter_title": "am",
+    "duration_seconds": 811,
+    "r2_key": "unamericana-a-parigi/13am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/13am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 14,
+    "chapter_slug": "am-10",
+    "chapter_title": "am",
+    "duration_seconds": 322,
+    "r2_key": "unamericana-a-parigi/14am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/14am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 15,
+    "chapter_slug": "am-11",
+    "chapter_title": "am",
+    "duration_seconds": 537,
+    "r2_key": "unamericana-a-parigi/15am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/15am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 16,
+    "chapter_slug": "am-12",
+    "chapter_title": "am",
+    "duration_seconds": 635,
+    "r2_key": "unamericana-a-parigi/16am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/16am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 17,
+    "chapter_slug": "am-13",
+    "chapter_title": "am",
+    "duration_seconds": 643,
+    "r2_key": "unamericana-a-parigi/17am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/17am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 18,
+    "chapter_slug": "am-14",
+    "chapter_title": "am",
+    "duration_seconds": 1327,
+    "r2_key": "unamericana-a-parigi/18am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/18am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 19,
+    "chapter_slug": "am-15",
+    "chapter_title": "am",
+    "duration_seconds": 437,
+    "r2_key": "unamericana-a-parigi/19am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/19am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 20,
+    "chapter_slug": "am-16",
+    "chapter_title": "am",
+    "duration_seconds": 887,
+    "r2_key": "unamericana-a-parigi/20am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/20am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 21,
+    "chapter_slug": "am-17",
+    "chapter_title": "am",
+    "duration_seconds": 303,
+    "r2_key": "unamericana-a-parigi/21am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/21am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 22,
+    "chapter_slug": "amlabirint",
+    "chapter_title": "amlabirint",
+    "duration_seconds": 868,
+    "r2_key": "unamericana-a-parigi/22amlabirint.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/22amlabirint.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 23,
+    "chapter_slug": "amlabirint-2",
+    "chapter_title": "amlabirint",
+    "duration_seconds": 714,
+    "r2_key": "unamericana-a-parigi/23amlabirint.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/23amlabirint.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 24,
+    "chapter_slug": "labir",
+    "chapter_title": "labir",
+    "duration_seconds": 997,
+    "r2_key": "unamericana-a-parigi/24labir.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/24labir.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 25,
+    "chapter_slug": "labir-2",
+    "chapter_title": "labir",
+    "duration_seconds": 524,
+    "r2_key": "unamericana-a-parigi/25labir.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/25labir.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 26,
+    "chapter_slug": "labir-3",
+    "chapter_title": "labir",
+    "duration_seconds": 501,
+    "r2_key": "unamericana-a-parigi/26labir.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/26labir.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 27,
+    "chapter_slug": "labir-4",
+    "chapter_title": "labir",
+    "duration_seconds": 274,
+    "r2_key": "unamericana-a-parigi/27labir.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/27labir.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 28,
+    "chapter_slug": "sestastrada",
+    "chapter_title": "sestastrada",
+    "duration_seconds": 630,
+    "r2_key": "unamericana-a-parigi/28sestastrada.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/28sestastrada.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 29,
+    "chapter_slug": "sestastrada-2",
+    "chapter_title": "sestastrada",
+    "duration_seconds": 230,
+    "r2_key": "unamericana-a-parigi/29sestastrada.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/29sestastrada.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 30,
+    "chapter_slug": "sestastrada-3",
+    "chapter_title": "sestastrada",
+    "duration_seconds": 614,
+    "r2_key": "unamericana-a-parigi/30sestastrada.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/30sestastrada.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 31,
+    "chapter_slug": "sesta",
+    "chapter_title": "sesta",
+    "duration_seconds": 592,
+    "r2_key": "unamericana-a-parigi/31sesta.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/31sesta.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 32,
+    "chapter_slug": "sesta-2",
+    "chapter_title": "sesta",
+    "duration_seconds": 430,
+    "r2_key": "unamericana-a-parigi/32sesta.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/32sesta.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 33,
+    "chapter_slug": "am-18",
+    "chapter_title": "am",
+    "duration_seconds": 461,
+    "r2_key": "unamericana-a-parigi/33am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/33am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 34,
+    "chapter_slug": "am-19",
+    "chapter_title": "am",
+    "duration_seconds": 641,
+    "r2_key": "unamericana-a-parigi/34am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/34am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 35,
+    "chapter_slug": "am-20",
+    "chapter_title": "am",
+    "duration_seconds": 358,
+    "r2_key": "unamericana-a-parigi/35am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/35am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 36,
+    "chapter_slug": "am-21",
+    "chapter_title": "am",
+    "duration_seconds": 936,
+    "r2_key": "unamericana-a-parigi/36am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/36am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 37,
+    "chapter_slug": "am-22",
+    "chapter_title": "am",
+    "duration_seconds": 412,
+    "r2_key": "unamericana-a-parigi/37am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/37am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 38,
+    "chapter_slug": "am-23",
+    "chapter_title": "am",
+    "duration_seconds": 1203,
+    "r2_key": "unamericana-a-parigi/38am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/38am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 39,
+    "chapter_slug": "am-24",
+    "chapter_title": "am",
+    "duration_seconds": 317,
+    "r2_key": "unamericana-a-parigi/39am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/39am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 40,
+    "chapter_slug": "am-25",
+    "chapter_title": "am",
+    "duration_seconds": 316,
+    "r2_key": "unamericana-a-parigi/40am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/40am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 41,
+    "chapter_slug": "am-26",
+    "chapter_title": "am",
+    "duration_seconds": 498,
+    "r2_key": "unamericana-a-parigi/41am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/41am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 42,
+    "chapter_slug": "amladies",
+    "chapter_title": "amladies",
+    "duration_seconds": 939,
+    "r2_key": "unamericana-a-parigi/42amladies.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/42amladies.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 43,
+    "chapter_slug": "am-27",
+    "chapter_title": "am",
+    "duration_seconds": 1243,
+    "r2_key": "unamericana-a-parigi/43am.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/43am.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 44,
+    "chapter_slug": "ampost",
+    "chapter_title": "ampost",
+    "duration_seconds": 1179,
+    "r2_key": "unamericana-a-parigi/44ampost.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/44ampost.wav"
   }
 ]

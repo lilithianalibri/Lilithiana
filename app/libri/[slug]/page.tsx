@@ -81,7 +81,7 @@ export default async function BookPage({ params, searchParams }: BookPageProps) 
                 from={book.coverFrom}
                 via={book.coverVia}
                 to={book.coverTo}
-                className="h-[460px]"
+                className="h-[340px] sm:h-[460px]"
                 showIllustration={false}
               />
             </aside>

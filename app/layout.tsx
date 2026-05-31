@@ -33,9 +33,13 @@ export default function RootLayout({
   return (
     <html
       lang="it"
+      data-scroll-behavior="smooth"
       className={`${manrope.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
-      <body className="relative isolate min-h-full flex flex-col overflow-x-hidden">
+      <body
+        suppressHydrationWarning
+        className="relative isolate min-h-full flex flex-col overflow-x-hidden"
+      >
         {children}
         <CookieConsentBanner />
         <SiteFooter />

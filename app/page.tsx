@@ -6,7 +6,6 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useMemo, useState } from "react";
 import {
   BookAudio,
-  Clock3,
   Headphones,
   ListMusic,
   RotateCcw,
@@ -16,7 +15,6 @@ import {
 import { BookCover } from "./components/book-cover";
 import { MainNav } from "./components/main-nav";
 import { getAllAudiobooks, getFeaturedBook } from "./lib/audiobooks";
-import { getEditorialTrack } from "./lib/editorial-track";
 
 const whyLilithianaCards = [
   {
@@ -73,6 +71,22 @@ export default function Home() {
     () => (activeCatalog === "narrativa" ? narrativaBooks : saggisticaBooks),
     [activeCatalog, narrativaBooks, saggisticaBooks],
   );
+  const activeCatalogLogo =
+    activeCatalog === "narrativa"
+      ? {
+          src: "/catalog-logos/narrativa.png",
+          alt: "Logo narrativa",
+          width: 235,
+          height: 99,
+          className: "h-16 w-auto sm:h-20",
+        }
+      : {
+          src: "/catalog-logos/saggistica.png",
+          alt: "Logo saggistica",
+          width: 245,
+          height: 133,
+          className: "h-20 w-auto sm:h-24",
+        };
 
   return (
     <div className="relative min-h-screen px-6 pb-16 pt-6 sm:px-10 lg:px-16">
@@ -80,22 +94,19 @@ export default function Home() {
         <MainNav />
 
         <main className="space-y-10">
-          <section className="grid gap-8 lg:grid-cols-[1.2fr_1fr] lg:items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, ease: "easeOut" }}
-              className="space-y-8"
-            >
+          <section>
+            <div className="space-y-8">
               <span className="panel inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs uppercase tracking-[0.2em] text-accent">
                 <Sparkles size={14} />
                 Edizione LILITHIANA
               </span>
 
               <h1 className="title-glow font-display text-3xl leading-tight sm:text-4xl lg:text-5xl">
-                Ascolta gratis e senza alcuna profilazione questi libri, inediti
-                nella versione audio, fondamentali per la cultura delle donne per
-                contenuti, sperimentazioni e finezza di scrittura.
+                <span className="font-bold text-accent">Ascolta gratis</span> e senza alcuna
+                profilazione questi <span className="font-bold text-accent">libri</span>,
+                inediti nella versione <span className="font-bold text-accent">audio</span>,
+                fondamentali per la cultura delle donne per contenuti,
+                sperimentazioni e finezza di scrittura.
               </h1>
 
               <div className="panel inline-flex w-fit max-w-full items-center gap-3 rounded-2xl px-4 py-2.5">
@@ -118,52 +129,9 @@ export default function Home() {
                 >
                   Esplora catalogo
                 </Link>
-                <Link
-                  href={`/libri/${featuredBook.slug}`}
-                  className="panel inline-flex items-center justify-center gap-2 rounded-full px-7 py-3 font-semibold transition hover:-translate-y-0.5 hover:bg-white"
-                >
-                  <Headphones size={18} />
-                  Apri scheda libro
-                </Link>
               </div>
-            </motion.div>
 
-            <motion.aside
-              id="evidenza"
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1, duration: 0.6, ease: "easeOut" }}
-              className="panel rounded-3xl p-6"
-            >
-              <p className="text-xs uppercase tracking-[0.2em] text-muted">
-                In evidenza
-              </p>
-              <div className="mt-4">
-                <BookCover
-                  title={featuredBook.title}
-                  author={featuredBook.author}
-                  from={featuredBook.coverFrom}
-                  via={featuredBook.coverVia}
-                  to={featuredBook.coverTo}
-                  className="h-72"
-                />
-              </div>
-              <p className="mt-4 text-sm text-muted">
-                Percorso: {getEditorialTrack(featuredBook.category)}
-              </p>
-              <div className="mt-5 flex items-center justify-between rounded-xl bg-white/65 px-4 py-3">
-                <div className="flex items-center gap-2 text-sm font-semibold text-accent">
-                  <Clock3 size={16} />
-                  Riprendi da {featuredBook.resumeAt}
-                </div>
-                <Link
-                  href={`/libri/${featuredBook.slug}`}
-                  className="text-sm font-semibold hover:text-accent"
-                >
-                  Ascolta ora
-                </Link>
-              </div>
-            </motion.aside>
+            </div>
           </section>
 
           <section className="panel rounded-3xl p-6 sm:p-8">
@@ -172,7 +140,7 @@ export default function Home() {
                 <p className="text-xs uppercase tracking-[0.2em] text-muted">
                   Visione editoriale
                 </p>
-                <h2 className="mt-3 font-display text-3xl leading-tight sm:text-4xl">
+                <h2 className="mt-3 font-display text-3xl font-bold leading-tight text-accent sm:text-4xl">
                   L&apos;ascolto che unisce cultura e passione politica
                 </h2>
                 <blockquote className="mt-4 max-w-3xl border-l-2 border-accent/35 pl-4 text-base text-muted">
@@ -191,7 +159,7 @@ export default function Home() {
                 </p>
                 <p className="mt-3 text-sm text-muted">
                   Ascolta gratuitamente dal catalogo online: capitoli ordinati,
-                  player diretto e accesso immediato ai titoli in evidenza.
+                  player diretto e accesso immediato ai titoli disponibili.
                 </p>
                 <div className="mt-6 flex justify-center">
                   <Link
@@ -221,7 +189,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="mb-6 flex flex-wrap items-center gap-3">
+            <div className="mb-6 flex flex-col gap-3">
               <div className="relative inline-flex rounded-full border border-accent/20 bg-white/72 p-1">
                 {[
                   { id: "narrativa" as const, label: "Narrativa", count: narrativaBooks.length },
@@ -262,15 +230,31 @@ export default function Home() {
                   );
                 })}
               </div>
-              <span className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">
-                Vista attiva: {activeCatalog}
-              </span>
+
+              <AnimatePresence mode="wait" initial={false}>
+                <motion.div
+                  key={activeCatalogLogo.src}
+                  initial={false}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -8 }}
+                  transition={{ duration: 0.2, ease: "easeOut" }}
+                  className="flex min-h-[5rem] w-full items-center justify-start sm:min-h-[6rem]"
+                >
+                  <Image
+                    src={activeCatalogLogo.src}
+                    alt={activeCatalogLogo.alt}
+                    width={activeCatalogLogo.width}
+                    height={activeCatalogLogo.height}
+                    className={activeCatalogLogo.className}
+                  />
+                </motion.div>
+              </AnimatePresence>
             </div>
 
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeCatalog}
-                initial={{ opacity: 0, y: 14 }}
+                initial={false}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.28, ease: "easeOut" }}
@@ -280,7 +264,7 @@ export default function Home() {
                   visibleCatalog.map((book, index) => (
                     <motion.article
                       key={book.slug}
-                      initial={{ opacity: 0, y: 18 }}
+                      initial={false}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: index * 0.05, duration: 0.38 }}
                       className="group"
@@ -339,7 +323,7 @@ export default function Home() {
                   alt="Lilithiana"
                   width={1572}
                   height={715}
-                  className="-mt-4 h-[3.45rem] w-auto sm:-mt-5 sm:h-[4.1rem]"
+                  className="-mt-6 h-[3.45rem] w-auto sm:-mt-7 sm:h-[4.1rem]"
                 />
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-muted sm:text-base">
@@ -356,7 +340,7 @@ export default function Home() {
                       className="panel rounded-2xl bg-white/62 px-4 py-5 text-center"
                     >
                       <Icon size={18} className="mx-auto text-accent" />
-                      <h3 className="mt-4 font-display text-xl text-foreground">
+                      <h3 className="mt-4 font-display text-xl font-bold text-accent">
                         {item.title}
                       </h3>
                       <p className="mt-2 text-sm leading-6 text-muted">

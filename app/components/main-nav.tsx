@@ -27,7 +27,7 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
               width={1572}
               height={715}
               preload
-              className="h-16 w-auto sm:h-20 lg:h-24"
+              className="h-16 w-auto sm:h-24 lg:h-28"
             />
           </Link>
         </div>
@@ -46,7 +46,7 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
           </nav>
 
           <div className="flex flex-col gap-2 sm:flex-row sm:items-center lg:ml-auto lg:shrink-0">
-            <form action="/library" method="get" className="relative sm:w-[220px] xl:w-[250px]">
+            <form action="/library" method="get" className="relative w-full sm:w-[220px] xl:w-[250px]">
               <Search
                 size={16}
                 className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-accent/80"
@@ -55,8 +55,8 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
                 type="search"
                 name="q"
                 defaultValue={searchQuery}
-                placeholder="Cerca titolo, autrice o categoria"
-                className="w-full rounded-full border border-accent/24 bg-white/72 py-2 pl-10 pr-14 text-sm outline-none ring-accent/25 transition placeholder:text-muted focus:ring-2"
+                placeholder="Cerca nel catalogo"
+                className="w-full rounded-full border border-accent/24 bg-white/72 py-2 pl-10 pr-20 text-sm outline-none ring-accent/25 transition placeholder:text-muted focus:ring-2"
               />
               <button
                 type="submit"

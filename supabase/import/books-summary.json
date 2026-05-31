@@ -3,5 +3,30 @@
     "book_slug": "briganta",
     "chapters": 11,
     "total_duration_seconds": 14395
+  },
+  {
+    "book_slug": "cera-una-volta-la-rete-lilith-e-ce-ancora",
+    "chapters": 1,
+    "total_duration_seconds": 1592
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapters": 27,
+    "total_duration_seconds": 4427
+  },
+  {
+    "book_slug": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici",
+    "chapters": 3,
+    "total_duration_seconds": 7550
+  },
+  {
+    "book_slug": "server-donne-leccami-la-password",
+    "chapters": 51,
+    "total_duration_seconds": 36500
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapters": 44,
+    "total_duration_seconds": 30455
   }
 ]

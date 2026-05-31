@@ -24,65 +24,27 @@ export function requestOpenCookiePreferences() {
 }
 
 export function CookieConsentBanner() {
-  const [isVisible, setIsVisible] = useState<boolean>(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
-
-    const storedConsent = readConsentFromStorage();
-    return !(storedConsent && storedConsent.version === COOKIE_CONSENT_VERSION);
-  });
+  const [isVisible, setIsVisible] = useState(false);
   const [showPreferences, setShowPreferences] = useState(false);
-  const [consent, setConsent] = useState<CookieConsentState | null>(() => {
-    if (typeof window === "undefined") {
-      return null;
-    }
-
-    const storedConsent = readConsentFromStorage();
-    if (!storedConsent || storedConsent.version !== COOKIE_CONSENT_VERSION) {
-      return null;
-    }
-
-    return storedConsent;
-  });
-  const [functional, setFunctional] = useState<boolean>(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
-
-    const storedConsent = readConsentFromStorage();
-    if (!storedConsent || storedConsent.version !== COOKIE_CONSENT_VERSION) {
-      return false;
-    }
-
-    return storedConsent.preferences.functional;
-  });
-  const [analytics, setAnalytics] = useState<boolean>(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
-
-    const storedConsent = readConsentFromStorage();
-    if (!storedConsent || storedConsent.version !== COOKIE_CONSENT_VERSION) {
-      return false;
-    }
-
-    return storedConsent.preferences.analytics;
-  });
-  const [profiling, setProfiling] = useState<boolean>(() => {
-    if (typeof window === "undefined") {
-      return false;
-    }
-
-    const storedConsent = readConsentFromStorage();
-    if (!storedConsent || storedConsent.version !== COOKIE_CONSENT_VERSION) {
-      return false;
-    }
-
-    return storedConsent.preferences.profiling;
-  });
+  const [consent, setConsent] = useState<CookieConsentState | null>(null);
+  const [functional, setFunctional] = useState(false);
+  const [analytics, setAnalytics] = useState(false);
+  const [profiling, setProfiling] = useState(false);
 
   useEffect(() => {
+    queueMicrotask(() => {
+      const storedConsent = readConsentFromStorage();
+
+      if (storedConsent && storedConsent.version === COOKIE_CONSENT_VERSION) {
+        setConsent(storedConsent);
+        setFunctional(storedConsent.preferences.functional);
+        setAnalytics(storedConsent.preferences.analytics);
+        setProfiling(storedConsent.preferences.profiling);
+      } else {
+        setIsVisible(true);
+      }
+    });
+
     function openPreferences() {
       const storedConsent = readConsentFromStorage();
 

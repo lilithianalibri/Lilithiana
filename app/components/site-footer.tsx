@@ -56,23 +56,11 @@ export function SiteFooter() {
             <div className="mt-2 space-y-1.5 text-sm text-foreground/90">
               <p>
                 <span className="font-semibold">Organizzazione e coordinamento:</span>{" "}
-                Stefania De biase
+                Stefania De Biase
               </p>
               <p>
                 <span className="font-semibold">Design:</span> Fiamma Spinelli
               </p>
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="font-semibold">
-                  Le attrici fanno parte dell&apos;associazione Amleta
-                </span>
-                <Image
-                  src="/partners/amleta-logo.png"
-                  alt="Amleta"
-                  width={564}
-                  height={140}
-                  className="h-5 w-auto"
-                />
-              </div>
               <p>
                 <span className="font-semibold">Relazioni esterne:</span> Paola
                 D&apos;Arcangelo

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-import { Mic2, NotebookPen, Sparkles } from "lucide-react";
+import { HeartHandshake, Mic2, NotebookPen, Sparkles } from "lucide-react";
 import { MainNav } from "../components/main-nav";
 
 export const metadata: Metadata = {
@@ -85,29 +84,6 @@ export default function AboutPage() {
 
             <aside className="space-y-4">
               <article className="panel rounded-2xl p-5">
-                <div className="space-y-3">
-                  <div className="rounded-2xl border border-accent/14 bg-white/62 px-3 py-3">
-                    <Image
-                      src="/partners/amleta-logo.png"
-                      alt="Logo Amleta"
-                      width={564}
-                      height={140}
-                      className="h-12 w-auto"
-                    />
-                  </div>
-                  <div className="rounded-2xl border border-accent/14 bg-white/62 px-3 py-3">
-                    <Image
-                      src="/lilith.png"
-                      alt="Logo Lilith"
-                      width={118}
-                      height={73}
-                      className="h-12 w-auto"
-                    />
-                  </div>
-                </div>
-              </article>
-
-              <article className="panel rounded-2xl p-5">
                 <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-accent">
                   <Mic2 size={14} />
                   Missione audio
@@ -126,6 +102,17 @@ export default function AboutPage() {
                 <p className="mt-3 text-sm leading-6 text-muted">
                   Testi selezionati, registrazione artigianale, lavoro collettivo e
                   attenzione editoriale su ogni capitolo.
+                </p>
+              </article>
+
+              <article className="panel rounded-2xl p-5">
+                <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-accent">
+                  <HeartHandshake size={14} />
+                  Iniziativa indipendente
+                </p>
+                <p className="mt-3 text-sm leading-6 text-muted">
+                  Si tratta di un&apos;iniziativa interamente autofinanziata e senza
+                  scopo di lucro, volta a promuovere la cultura delle donne.
                 </p>
               </article>
             </aside>
