@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ShieldCheck, Sparkles } from "lucide-react";
-import { AuthCard } from "../components/auth-card";
+import { AuthCard, type AuthMode } from "../components/auth-card";
 import { MainNav } from "../components/main-nav";
 
 type LoginPageProps = {
@@ -24,9 +24,24 @@ function resolveNextPath(value: string | string[] | undefined) {
   return candidate;
 }
 
+function resolveAuthMode(value: string | string[] | undefined): AuthMode {
+  const candidate = Array.isArray(value) ? value[0] : value;
+  if (
+    candidate === "signin" ||
+    candidate === "signup" ||
+    candidate === "forgot" ||
+    candidate === "reset"
+  ) {
+    return candidate;
+  }
+
+  return "signin";
+}
+
 export default async function LoginPage({ searchParams }: LoginPageProps) {
   const query = await searchParams;
   const next = resolveNextPath(query.next);
+  const initialMode = resolveAuthMode(query.mode);
   const hasCallbackError = query.error === "callback";
 
   return (
@@ -85,7 +100,7 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
             ) : null}
           </section>
 
-          <AuthCard redirectTo={next} />
+          <AuthCard key={initialMode} redirectTo={next} initialMode={initialMode} />
         </main>
       </div>
     </div>
