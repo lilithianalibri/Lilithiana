@@ -24,6 +24,8 @@ type AuthCardProps = {
 
 export type AuthMode = "signin" | "signup" | "forgot" | "reset";
 
+const defaultTurnstileSiteKey = "0x4AAAAAADbeDWAmRJrx24Lm";
+
 const authCopy: Record<
   AuthMode,
   {
@@ -104,7 +106,7 @@ export function AuthCard({
   const [message, setMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || defaultTurnstileSiteKey;
   const authRedirect = sanitizeRedirect(redirectTo);
   const authActionRequiresCaptcha = Boolean(siteKey) && mode !== "reset";
   const currentCopy = authCopy[mode];
@@ -121,6 +123,19 @@ export function AuthCard({
   function resetCaptcha() {
     setCaptchaToken(null);
     setCaptchaNonce((current) => current + 1);
+  }
+
+  function handleCaptchaError(errorCode?: string) {
+    setCaptchaToken(null);
+
+    if (errorCode === "110200") {
+      setMessage(
+        "Turnstile non autorizzato per questo dominio. Aggiungi il dominio in Cloudflare.",
+      );
+      return;
+    }
+
+    setMessage("Controllo anti-bot non valido. Riprova.");
   }
 
   useEffect(() => {
@@ -546,10 +561,7 @@ export function AuthCard({
               onExpire={() => {
                 setCaptchaToken(null);
               }}
-              onError={() => {
-                setCaptchaToken(null);
-                setMessage("Controllo anti-bot non valido. Riprova.");
-              }}
+              onError={handleCaptchaError}
             />
           </div>
         ) : null}
