@@ -516,7 +516,7 @@ with target_book as (
   select id from public.audiobooks where slug = 'scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici'
 )
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'introscrittrici', 1, 'introscrittrici', 19, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/00introscrittrici.wav' from target_book
+select id, 'introscrittrici', 1, 'Introduzione', 19, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/00introscrittrici.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -524,7 +524,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'premessascrittrici', 2, 'premessascrittrici', 184, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/02premessascrittrici.wav' from target_book
+select id, 'premessascrittrici', 2, 'Premessa', 184, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/02premessascrittrici.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
@@ -532,7 +532,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select id, 'scrittrici', 3, 'scrittrici', 7347, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/03scrittrici.wav' from target_book
+select id, 'scrittrici', 3, 'Breve storia della scrittura delle donne in Italia', 7347, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/03scrittrici.wav' from target_book
 on conflict (book_id, slug) do update set
   chapter_index = excluded.chapter_index,
   title = excluded.title,
