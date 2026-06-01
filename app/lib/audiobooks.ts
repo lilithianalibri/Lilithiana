@@ -16,6 +16,7 @@ export type AudioBook = {
   slug: string;
   title: string;
   author: string;
+  translator?: string;
   narrator: string;
   category: string;
   description: string;
@@ -42,6 +43,7 @@ type ManifestChapter = {
 type BookMetadataOverride = {
   title?: string;
   author?: string;
+  translator?: string;
   narrator?: string;
   category?: string;
   description?: string;
@@ -57,6 +59,39 @@ const bookMetadataOverrides = bookMetadataOverridesJson as Record<
   string,
   BookMetadataOverride
 >;
+
+function cleanOptional(value: string | undefined) {
+  return value?.trim() || undefined;
+}
+
+export function getBookCredits(slug: string) {
+  const metadata = getBookMetadataOverride(slug);
+
+  return {
+    author: metadata.author,
+    translator: metadata.translator,
+    narrator: metadata.narrator,
+  };
+}
+
+export function getBookMetadataOverride(slug: string) {
+  const metadata = bookMetadataOverrides[slug] ?? {};
+  const publicationYear = Number(metadata.publication_year);
+  const description = cleanOptional(metadata.description);
+
+  return {
+    author: cleanOptional(metadata.author),
+    translator: cleanOptional(metadata.translator),
+    narrator: cleanOptional(metadata.narrator),
+    category: cleanOptional(metadata.category),
+    description:
+      description && Number.isFinite(publicationYear)
+        ? `${description} Prima pubblicazione: ${publicationYear}.`
+        : description,
+    title: cleanOptional(metadata.title),
+    vibe: cleanOptional(metadata.vibe),
+  };
+}
 
 const coverPalette = [
   { from: "#6e1f3b", via: "#bc6f79", to: "#26131d" },
@@ -112,6 +147,7 @@ function buildImportedAudiobooks(): AudioBook[] {
       );
       const cover = resolveCover(slug, metadata);
       const title = metadata.title?.trim() || titleFromSlug(slug);
+      const credits = getBookCredits(slug);
       const description = metadata.description?.trim()
         ? metadata.description.trim()
         : `Audiolibro disponibile nel catalogo LILITHIANA: ${title}.`;
@@ -120,8 +156,9 @@ function buildImportedAudiobooks(): AudioBook[] {
         id: `static-${slug}`,
         slug,
         title,
-        author: metadata.author?.trim() || "Autrice da aggiornare",
-        narrator: metadata.narrator?.trim() || "Voce da aggiornare",
+        author: credits.author || "Autrice da aggiornare",
+        translator: credits.translator,
+        narrator: credits.narrator || "Voce da aggiornare",
         category: metadata.category?.trim() || "Narrativa",
         description:
           metadata.publication_year && Number.isFinite(metadata.publication_year)

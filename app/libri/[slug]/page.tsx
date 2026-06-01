@@ -34,7 +34,9 @@ export async function generateMetadata({
 
   return {
     title: `${book.title} | LILITHIANA`,
-    description: `Audiolibro di ${book.author}: capitoli ordinati, player integrato, progresso e ripresa sincronizzabile per account.`,
+    description: book.translator
+      ? `Audiolibro di ${book.author}, traduzione di ${book.translator}: capitoli ordinati, player integrato, progresso e ripresa sincronizzabile per account.`
+      : `Audiolibro di ${book.author}: capitoli ordinati, player integrato, progresso e ripresa sincronizzabile per account.`,
   };
 }
 
@@ -103,6 +105,14 @@ export default async function BookPage({ params, searchParams }: BookPageProps) 
                   <span className="font-semibold text-foreground">Autrice:</span>{" "}
                   {book.author}
                 </p>
+                {book.translator ? (
+                  <p>
+                    <span className="font-semibold text-foreground">
+                      Traduzione:
+                    </span>{" "}
+                    {book.translator}
+                  </p>
+                ) : null}
                 <p>
                   <span className="font-semibold text-foreground">Legge</span>{" "}
                   {book.narrator}

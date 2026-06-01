@@ -67,6 +67,7 @@ export default async function LibraryPage({ searchParams }: LibraryPageProps) {
             [
               book.title,
               book.author,
+              book.translator,
               book.narrator,
               book.category,
               book.description,
@@ -149,6 +150,11 @@ export default async function LibraryPage({ searchParams }: LibraryPageProps) {
                       {book.title}
                     </h2>
                     <p className="text-sm text-muted">di {book.author}</p>
+                    {book.translator ? (
+                      <p className="text-sm text-muted">
+                        Traduzione: {book.translator}
+                      </p>
+                    ) : null}
                     <p className="text-sm text-muted">Legge {book.narrator}</p>
                   </div>
 

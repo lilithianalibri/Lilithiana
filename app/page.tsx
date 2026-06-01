@@ -287,6 +287,11 @@ export default function Home() {
                             {book.title}
                           </h3>
                           <p className="text-sm text-muted">Autrice: {book.author}</p>
+                          {book.translator ? (
+                            <p className="text-sm text-muted">
+                              Traduzione: {book.translator}
+                            </p>
+                          ) : null}
                           <p className="text-sm text-muted">Legge {book.narrator}</p>
                           <div className="gold-line mt-2 h-px w-full" />
                           <p className="text-sm font-semibold text-accent">

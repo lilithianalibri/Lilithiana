@@ -1416,10 +1416,10 @@ insert into public.audiobooks (
 ) values (
   'un-americana-a-parigi',
   'Un’americana a Parigi',
-  'Margherita Giacobino (Elinor Rigby)',
+  'Elinor Rigby',
   'Paola Giglio',
   'Narrativa',
-  'Quattro racconti ambientati nella Parigi degli anni Venti, pubblicati con lo pseudonimo Elinor Rigby.',
+  'Quattro racconti ambientati nella Parigi degli anni Venti.',
   30455,
   '#123642',
   '#1f5a63',

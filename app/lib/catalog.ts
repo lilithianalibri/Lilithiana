@@ -2,6 +2,8 @@ import "server-only";
 
 import {
   getAllAudiobooks as getMockAudiobooks,
+  getBookCredits,
+  getBookMetadataOverride,
   type AudioBook,
   type Chapter,
 } from "./audiobooks";
@@ -90,6 +92,8 @@ function joinBooksFromDatabase(books: DbBook[], chapters: DbChapter[]): AudioBoo
   }
 
   return books.map((book) => {
+    const credits = getBookCredits(book.slug);
+    const metadata = getBookMetadataOverride(book.slug);
     const bookChapters = (chapterByBookId.get(book.id) ?? [])
       .sort((a, b) => a.chapter_index - b.chapter_index)
       .map<Chapter>((chapter) => ({
@@ -112,17 +116,18 @@ function joinBooksFromDatabase(books: DbBook[], chapters: DbChapter[]): AudioBoo
     return {
       id: book.id,
       slug: book.slug,
-      title: resolveBookTitle(book.slug, book.title),
-      author: book.author,
-      narrator: book.narrator,
-      category: book.category,
-      description: book.description,
+      title: metadata.title ?? resolveBookTitle(book.slug, book.title),
+      author: credits.author ?? book.author,
+      translator: credits.translator,
+      narrator: credits.narrator ?? book.narrator,
+      category: metadata.category ?? book.category,
+      description: metadata.description ?? book.description,
       totalDuration: formatDurationLabel(effectiveDurationSeconds),
       totalDurationSeconds: effectiveDurationSeconds,
       coverFrom: book.cover_from,
       coverVia: book.cover_via,
       coverTo: book.cover_to,
-      vibe: book.vibe,
+      vibe: metadata.vibe ?? book.vibe,
       chapters: bookChapters,
       resumeChapterId: bookChapters[0]?.id ?? "",
       resumeAt: "00:00",
