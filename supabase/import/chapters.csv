@@ -1,138 +1,187 @@
 book_slug,chapter_index,chapter_slug,chapter_title,duration_seconds,audio_url,r2_key
-briganta,1,intro,"Intro",20,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/01-intro.wav,briganta/01-intro.wav
-briganta,2,primavera-1883,"Primavera 1883",1288,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/02-primavera-1883.wav,briganta/02-primavera-1883.wav
-briganta,3,marzo-1861,"Marzo 1861",2112,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/03-marzo-1861.wav,briganta/03-marzo-1861.wav
-briganta,4,aprile-1861,"Aprile 1861",1299,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/04-aprile-1861.wav,briganta/04-aprile-1861.wav
-briganta,5,maggio-1861,"Maggio 1861",1646,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/05-maggio-1861.wav,briganta/05-maggio-1861.wav
-briganta,6,giugno-1861,"Giugno 1861",2529,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/06-giugno-1861.wav,briganta/06-giugno-1861.wav
-briganta,7,luglio-1861,"Luglio 1861",1921,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/07-luglio-1861.wav,briganta/07-luglio-1861.wav
-briganta,8,agosto-1861,"Agosto 1861",2418,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/08-agosto-1861.wav,briganta/08-agosto-1861.wav
-briganta,9,primavera-1863,"Primavera 1863",576,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/09-primavera-1863.wav,briganta/09-primavera-1863.wav
-briganta,10,estate-1883,"Estate 1883",130,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/10-estate-1883.wav,briganta/10-estate-1883.wav
-briganta,11,postfazione-la-briganta-e-io,"Postfazione. La briganta e io",456,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/11-postfazione-la-briganta-e-io.wav,briganta/11-postfazione-la-briganta-e-io.wav
-cera-una-volta-la-rete-lilith-e-ce-ancora,1,retelilith,"Cos’è stata e quali scelte ha compiuto ed indicato nel mondo femminista la Rete Lilith",1592,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/cera-una-volta-la-rete-lilith-e-ce-ancora/retelilith.wav,cera-una-volta-la-rete-lilith-e-ce-ancora/retelilith.wav
-la-ballata-di-nina-simone,1,intro,"Intro",14,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/01intro.wav,la-ballata-di-nina-simone/01intro.wav
-la-ballata-di-nina-simone,2,invocazionione,"Invocazione",126,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/02invocazionione.wav,la-ballata-di-nina-simone/02invocazionione.wav
-la-ballata-di-nina-simone,3,cantieunice,"Canti di Eunice Waymon",299,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/03cantieunice.wav,la-ballata-di-nina-simone/03cantieunice.wav
-la-ballata-di-nina-simone,4,amicizia,"Canto dell’amicizia",212,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/04amicizia.wav,la-ballata-di-nina-simone/04amicizia.wav
-la-ballata-di-nina-simone,5,umiliazione,"Canto dell’umiliazione",212,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/05umiliazione.wav,la-ballata-di-nina-simone/05umiliazione.wav
-la-ballata-di-nina-simone,6,sogno,"Il sogno di Nina",165,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/06sogno.wav,la-ballata-di-nina-simone/06sogno.wav
-la-ballata-di-nina-simone,7,primo,"Canto del primo amore",197,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/07primo.wav,la-ballata-di-nina-simone/07primo.wav
-la-ballata-di-nina-simone,8,lontananza,"Canto della lontananza",197,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/08lontananza.wav,la-ballata-di-nina-simone/08lontananza.wav
-la-ballata-di-nina-simone,9,zombie,"zombie",202,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/09zombie.wav,la-ballata-di-nina-simone/09zombie.wav
-la-ballata-di-nina-simone,10,harlem,"Canto di Harlem",205,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/10harlem.wav,la-ballata-di-nina-simone/10harlem.wav
+briganta,1,intro,Intro,20,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/01-intro.wav,briganta/01-intro.wav
+briganta,2,primavera-1883,Primavera 1883,1288,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/02-primavera-1883.wav,briganta/02-primavera-1883.wav
+briganta,3,marzo-1861,Marzo 1861,2112,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/03-marzo-1861.wav,briganta/03-marzo-1861.wav
+briganta,4,aprile-1861,Aprile 1861,1299,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/04-aprile-1861.wav,briganta/04-aprile-1861.wav
+briganta,5,maggio-1861,Maggio 1861,1646,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/05-maggio-1861.wav,briganta/05-maggio-1861.wav
+briganta,6,giugno-1861,Giugno 1861,2529,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/06-giugno-1861.wav,briganta/06-giugno-1861.wav
+briganta,7,luglio-1861,Luglio 1861,1921,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/07-luglio-1861.wav,briganta/07-luglio-1861.wav
+briganta,8,agosto-1861,Agosto 1861,2418,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/08-agosto-1861.wav,briganta/08-agosto-1861.wav
+briganta,9,primavera-1863,Primavera 1863,576,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/09-primavera-1863.wav,briganta/09-primavera-1863.wav
+briganta,10,estate-1883,Estate 1883,130,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/10-estate-1883.wav,briganta/10-estate-1883.wav
+briganta,11,postfazione-la-briganta-e-io,Postfazione. La briganta e io,456,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/briganta/11-postfazione-la-briganta-e-io.wav,briganta/11-postfazione-la-briganta-e-io.wav
+cera-una-volta-la-rete-lilith-e-ce-ancora,1,retelilith,Cos’è stata e quali scelte ha compiuto ed indicato nel mondo femminista la Rete Lilith,1592,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/cera-una-volta-la-rete-lilith-e-ce-ancora/retelilith.wav,cera-una-volta-la-rete-lilith-e-ce-ancora/retelilith.wav
+la-ballata-di-nina-simone,1,intro,Intro,14,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/01intro.wav,la-ballata-di-nina-simone/01intro.wav
+la-ballata-di-nina-simone,2,invocazionione,Invocazione,126,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/02invocazionione.wav,la-ballata-di-nina-simone/02invocazionione.wav
+la-ballata-di-nina-simone,3,cantieunice,Canti di Eunice Waymon,299,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/03cantieunice.wav,la-ballata-di-nina-simone/03cantieunice.wav
+la-ballata-di-nina-simone,4,amicizia,Canto della bambina prodigiosa,212,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/04amicizia.wav,la-ballata-di-nina-simone/04amicizia.wav
+la-ballata-di-nina-simone,5,umiliazione,Canto dell’amicizia,212,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/05umiliazione.wav,la-ballata-di-nina-simone/05umiliazione.wav
+la-ballata-di-nina-simone,6,sogno,Canto dell’umiliazione,165,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/06sogno.wav,la-ballata-di-nina-simone/06sogno.wav
+la-ballata-di-nina-simone,7,primo,Il sogno di Nina,197,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/07primo.wav,la-ballata-di-nina-simone/07primo.wav
+la-ballata-di-nina-simone,8,lontananza,Canto del primo amore,197,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/08lontananza.wav,la-ballata-di-nina-simone/08lontananza.wav
+la-ballata-di-nina-simone,9,zombie,Canto della lontananza,202,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/09zombie.wav,la-ballata-di-nina-simone/09zombie.wav
+la-ballata-di-nina-simone,10,harlem,Canto di Harlem,205,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/10harlem.wav,la-ballata-di-nina-simone/10harlem.wav
 la-ballata-di-nina-simone,11,errore,"Ricetta per un Errore Madornale eseguito a regola d’arte (improvvisazione su sinnerman, Nina Simone)",74,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/11errore.wav,la-ballata-di-nina-simone/11errore.wav
-la-ballata-di-nina-simone,12,sconfitta,"Canto della sconfitta",176,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/12sconfitta.wav,la-ballata-di-nina-simone/12sconfitta.wav
-la-ballata-di-nina-simone,13,forza,"Canto della forza e del sudore",204,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/13forza.wav,la-ballata-di-nina-simone/13forza.wav
+la-ballata-di-nina-simone,12,sconfitta,Canto della sconfitta,176,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/12sconfitta.wav,la-ballata-di-nina-simone/12sconfitta.wav
+la-ballata-di-nina-simone,13,forza,Canto della forza e del sudore,204,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/13forza.wav,la-ballata-di-nina-simone/13forza.wav
 la-ballata-di-nina-simone,14,imprwork,"Improvvisazione su ""Sinnerman"", Nina Simone",42,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/14imprwork.wav,la-ballata-di-nina-simone/14imprwork.wav
-la-ballata-di-nina-simone,15,notte,"Canto della notte",204,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/15notte.wav,la-ballata-di-nina-simone/15notte.wav
-la-ballata-di-nina-simone,16,atlantic,"Canto di Atlantic City",189,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/16atlantic.wav,la-ballata-di-nina-simone/16atlantic.wav
+la-ballata-di-nina-simone,15,notte,Canto della notte,204,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/15notte.wav,la-ballata-di-nina-simone/15notte.wav
+la-ballata-di-nina-simone,16,atlantic,Canto di Atlantic City,189,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/16atlantic.wav,la-ballata-di-nina-simone/16atlantic.wav
 la-ballata-di-nina-simone,17,assoluto,"L’orecchio assoluto Improvvisazione I hear music, Ella Fitzgerald",73,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/17assoluto.wav,la-ballata-di-nina-simone/17assoluto.wav
-la-ballata-di-nina-simone,18,illuminazione,"Canto dell’illuminazione",198,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/18illuminazione.wav,la-ballata-di-nina-simone/18illuminazione.wav
-la-ballata-di-nina-simone,19,nina,"Canto di Nina Simone",203,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/19nina.wav,la-ballata-di-nina-simone/19nina.wav
-la-ballata-di-nina-simone,20,origine,"Canto dell’origine dei soldi",187,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/20origine.wav,la-ballata-di-nina-simone/20origine.wav
-la-ballata-di-nina-simone,21,donross,"Canto di Don Ross",196,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/21donross.wav,la-ballata-di-nina-simone/21donross.wav
-la-ballata-di-nina-simone,22,whykeeponbreaking,"Improvvisazione su Why keep on breaking my heart, Nina Simone",42,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/22whykeeponbreaking.wav,la-ballata-di-nina-simone/22whykeeponbreaking.wav
-la-ballata-di-nina-simone,23,dollari,"Canto dei tremila dollari",199,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/23dollari.wav,la-ballata-di-nina-simone/23dollari.wav
-la-ballata-di-nina-simone,24,beethoven,"Scordatevi Beethoven (improvvisazione su roll over Beethoven, Chuck Berry)",20,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/24beethoven.wav,la-ballata-di-nina-simone/24beethoven.wav
-la-ballata-di-nina-simone,25,littlegirlblue,"Canto di Little girl Blue",203,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/25littlegirlblue.wav,la-ballata-di-nina-simone/25littlegirlblue.wav
-la-ballata-di-nina-simone,26,townhall,"Canto del Town Hall",196,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/26townhall.wav,la-ballata-di-nina-simone/26townhall.wav
-la-ballata-di-nina-simone,27,stroud,"Canto di Andrew Stroud",192,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/27stroud.wav,la-ballata-di-nina-simone/27stroud.wav
-scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici,1,introscrittrici,"Introduzione",19,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/00introscrittrici.wav,scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/00introscrittrici.wav
-scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici,2,premessascrittrici,"Premessa",184,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/02premessascrittrici.wav,scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/02premessascrittrici.wav
-scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici,3,scrittrici,"Breve storia della scrittura delle donne in Italia",7347,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/03scrittrici.wav,scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/03scrittrici.wav
-server-donne-leccami-la-password,1,introsd,"Intro",13,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/00introsd.wav,server-donne-leccami-la-password/00introsd.wav
-server-donne-leccami-la-password,2,serverdonne,"I server femministi sono un sogno ancora lontano",542,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/01serverdonne.wav,server-donne-leccami-la-password/01serverdonne.wav
-server-donne-leccami-la-password,3,serverdonne-unito,"Le infrastrutture digitali pubbliche",408,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/02serverdonne_unito.wav,server-donne-leccami-la-password/02serverdonne_unito.wav
+la-ballata-di-nina-simone,18,illuminazione,Canti di Nina Simone,198,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/18illuminazione.wav,la-ballata-di-nina-simone/18illuminazione.wav
+la-ballata-di-nina-simone,19,nina,Canto dell’illuminazione,203,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/19nina.wav,la-ballata-di-nina-simone/19nina.wav
+la-ballata-di-nina-simone,20,origine,Canto di Nina Simone,187,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/20origine.wav,la-ballata-di-nina-simone/20origine.wav
+la-ballata-di-nina-simone,21,donross,Canto dell’origine dei soldi,196,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/21donross.wav,la-ballata-di-nina-simone/21donross.wav
+la-ballata-di-nina-simone,22,whykeeponbreaking,Canto di Don Ross,42,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/22whykeeponbreaking.wav,la-ballata-di-nina-simone/22whykeeponbreaking.wav
+la-ballata-di-nina-simone,23,dollari,"Improvvisazione su Why keep on breaking my heart, Nina Simone",199,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/23dollari.wav,la-ballata-di-nina-simone/23dollari.wav
+la-ballata-di-nina-simone,24,beethoven,Canto dei tremila dollari,20,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/24beethoven.wav,la-ballata-di-nina-simone/24beethoven.wav
+la-ballata-di-nina-simone,25,littlegirlblue,"Scordatevi Beethoven (improvvisazione su roll over Beethoven, Chuck Berry)",203,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/25littlegirlblue.wav,la-ballata-di-nina-simone/25littlegirlblue.wav
+la-ballata-di-nina-simone,26,townhall,Canto di Little girl Blue,196,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/26townhall.wav,la-ballata-di-nina-simone/26townhall.wav
+la-ballata-di-nina-simone,27,stroud,Canto del Town Hall,192,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/27stroud.wav,la-ballata-di-nina-simone/27stroud.wav
+la-ballata-di-nina-simone,28,improvvisazsinatra,Canto di Andrew Stroud,61,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/28improvvisazsinatra.wav,la-ballata-di-nina-simone/28improvvisazsinatra.wav
+la-ballata-di-nina-simone,29,presunta,"Improvvisazione su Fly Me to the Moon, Frank Sinatra, Count Bassie",202,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/29presunta.wav,la-ballata-di-nina-simone/29presunta.wav
+la-ballata-di-nina-simone,30,improvvisazionespell,Canto della presunta felicità,47,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/30improvvisazionespell.wav,la-ballata-di-nina-simone/30improvvisazionespell.wav
+la-ballata-di-nina-simone,31,sognorotto,"Improvvisazione su I put a spell on you, Nina Simone",181,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/31sognorotto.wav,la-ballata-di-nina-simone/31sognorotto.wav
+la-ballata-di-nina-simone,32,matrimonio,Canto del sogno rotto,161,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/32matrimonio.wav,la-ballata-di-nina-simone/32matrimonio.wav
+la-ballata-di-nina-simone,33,maternita,Canto del matrimonio,196,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/33maternità.wav,la-ballata-di-nina-simone/33maternità.wav
+la-ballata-di-nina-simone,34,lisa,Canto della maternità,176,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/34lisa.wav,la-ballata-di-nina-simone/34lisa.wav
+la-ballata-di-nina-simone,35,altra,Canto di Lisa Celeste,184,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/35altra.wav,la-ballata-di-nina-simone/35altra.wav
+la-ballata-di-nina-simone,36,parks,Canto dell’altra Nina,184,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/36parks.wav,la-ballata-di-nina-simone/36parks.wav
+la-ballata-di-nina-simone,37,goddam,Canto di Rosa Parks e Martin Luther King,186,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/37goddam.wav,la-ballata-di-nina-simone/37goddam.wav
+la-ballata-di-nina-simone,38,affinita,Canto di Mississippi Goddam,179,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/38affinità.wav,la-ballata-di-nina-simone/38affinità.wav
+la-ballata-di-nina-simone,39,matrioska,Canto delle affinità,53,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/39matrioska.wav,la-ballata-di-nina-simone/39matrioska.wav
+la-ballata-di-nina-simone,40,lotta,"Matrioska improvvisazione su Four women, Nina Simone",197,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/40lotta.wav,la-ballata-di-nina-simone/40lotta.wav
+la-ballata-di-nina-simone,41,schiavitu,Canto della lotta,188,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/41schiavitù.wav,la-ballata-di-nina-simone/41schiavitù.wav
+la-ballata-di-nina-simone,42,ascesa,Canto della schiavitù,196,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/42ascesa.wav,la-ballata-di-nina-simone/42ascesa.wav
+la-ballata-di-nina-simone,43,crollo,Canto dell’ascesa,185,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/43crollo.wav,la-ballata-di-nina-simone/43crollo.wav
+la-ballata-di-nina-simone,44,anima,Canto del crollo,79,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/44anima.wav,la-ballata-di-nina-simone/44anima.wav
+la-ballata-di-nina-simone,45,famiglia,Solo un’anima improvvisazione su Don’t Let Me Be Misunderstood Nina Simone,183,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/45famiglia.wav,la-ballata-di-nina-simone/45famiglia.wav
+la-ballata-di-nina-simone,46,black,Canto della famiglia,184,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/46black.wav,la-ballata-di-nina-simone/46black.wav
+la-ballata-di-nina-simone,47,celebrita,Canto del Black Power,198,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/47celebrità.wav,la-ballata-di-nina-simone/47celebrità.wav
+la-ballata-di-nina-simone,48,cantodelcrollo,Canto della celebrità,186,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/48cantodelcrollo.wav,la-ballata-di-nina-simone/48cantodelcrollo.wav
+la-ballata-di-nina-simone,49,dellattesa,Canto del crollo,182,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/49dellattesa.wav,la-ballata-di-nina-simone/49dellattesa.wav
+la-ballata-di-nina-simone,50,furto,Canto dell’attesa,177,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/50furto.wav,la-ballata-di-nina-simone/50furto.wav
+la-ballata-di-nina-simone,51,separazione,Canto del furto,182,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/51separazione.wav,la-ballata-di-nina-simone/51separazione.wav
+la-ballata-di-nina-simone,52,divorzio,Canto della separazione,174,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/52divorzio.wav,la-ballata-di-nina-simone/52divorzio.wav
+la-ballata-di-nina-simone,53,ritorno,Canto del divorzio,179,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/53ritorno.wav,la-ballata-di-nina-simone/53ritorno.wav
+la-ballata-di-nina-simone,54,barbados,Canto del ritorno,187,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/54barbados.wav,la-ballata-di-nina-simone/54barbados.wav
+la-ballata-di-nina-simone,55,errol,Canto delle Barbados,177,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/55errol.wav,la-ballata-di-nina-simone/55errol.wav
+la-ballata-di-nina-simone,56,cantoallontanamento,Canto di Errol Barrow,165,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/56cantoallontanamento.wav,la-ballata-di-nina-simone/56cantoallontanamento.wav
+la-ballata-di-nina-simone,57,emisonetto,Canto dell’allontanamento,42,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/57emisonetto.wav,la-ballata-di-nina-simone/57emisonetto.wav
+la-ballata-di-nina-simone,58,monrovia,Emisonetto in blu minore improvvisazione sul love me or leave me Nina Simone,173,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/58monrovia.wav,la-ballata-di-nina-simone/58monrovia.wav
+la-ballata-di-nina-simone,59,magia,Canto di Monrovia,167,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/59magia.wav,la-ballata-di-nina-simone/59magia.wav
+la-ballata-di-nina-simone,60,nero,Canto della magia,179,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/60nero.wav,la-ballata-di-nina-simone/60nero.wav
+la-ballata-di-nina-simone,61,alpi,Canto dell’uomo nero,186,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/61alpi.wav,la-ballata-di-nina-simone/61alpi.wav
+la-ballata-di-nina-simone,62,madre,Canto di una madre,174,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/62madre.wav,la-ballata-di-nina-simone/62madre.wav
+la-ballata-di-nina-simone,63,collegio,Canto delle Alpi,175,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/63collegio.wav,la-ballata-di-nina-simone/63collegio.wav
+la-ballata-di-nina-simone,64,amore,Canto del collegio,185,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/64amore.wav,la-ballata-di-nina-simone/64amore.wav
+la-ballata-di-nina-simone,65,tribunale,Canto dell’amore immaginario,179,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/65tribunale.wav,la-ballata-di-nina-simone/65tribunale.wav
+la-ballata-di-nina-simone,66,frantumi,Canto del tribunale,159,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/66frantumi.wav,la-ballata-di-nina-simone/66frantumi.wav
+la-ballata-di-nina-simone,67,sparizioni,Canto dei frantumi,176,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/67sparizioni.wav,la-ballata-di-nina-simone/67sparizioni.wav
+la-ballata-di-nina-simone,68,rinascita,Canto delle sparizioni,174,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/68rinascita.wav,la-ballata-di-nina-simone/68rinascita.wav
+la-ballata-di-nina-simone,69,parola,Canto della Rinascita,168,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/69parola.wav,la-ballata-di-nina-simone/69parola.wav
+la-ballata-di-nina-simone,70,testa,Canto della parola trovata,75,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/70testa.wav,la-ballata-di-nina-simone/70testa.wav
+la-ballata-di-nina-simone,71,profumo,"Filastrocca della testa rotta improvvisazione su Trouble in Mind, Nina Simone",173,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/71profumo.wav,la-ballata-di-nina-simone/71profumo.wav
+la-ballata-di-nina-simone,72,disforia,Canto del profumo,175,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/72disforia.wav,la-ballata-di-nina-simone/72disforia.wav
+la-ballata-di-nina-simone,73,cantoisolamento,Canto della disforia,178,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/73cantoisolamento.wav,la-ballata-di-nina-simone/73cantoisolamento.wav
+la-ballata-di-nina-simone,74,mandela,Canto dell’isolamento,198,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/74mandela.wav,la-ballata-di-nina-simone/74mandela.wav
+la-ballata-di-nina-simone,75,poesia,Canto di Nelson Mandela,270,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/75poesia.wav,la-ballata-di-nina-simone/75poesia.wav
+la-ballata-di-nina-simone,76,notaautrice,Poesia della bambina che esce che usciva e che sempre uscirà Nota dell’autrice,66,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/76notaautrice.wav,la-ballata-di-nina-simone/76notaautrice.wav
+scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici,1,introscrittrici,Introduzione,19,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/00introscrittrici.wav,scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/00introscrittrici.wav
+scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici,2,premessascrittrici,Premessa,184,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/02premessascrittrici.wav,scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/02premessascrittrici.wav
+scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici,3,scrittrici,Breve storia della scrittura delle donne in Italia,7347,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/03scrittrici.wav,scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici/03scrittrici.wav
+server-donne-leccami-la-password,1,introsd,Intro,13,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/00introsd.wav,server-donne-leccami-la-password/00introsd.wav
+server-donne-leccami-la-password,2,serverdonne,I server femministi sono un sogno ancora lontano,542,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/01serverdonne.wav,server-donne-leccami-la-password/01serverdonne.wav
+server-donne-leccami-la-password,3,serverdonne-unito,Le infrastrutture digitali pubbliche,408,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/02serverdonne_unito.wav,server-donne-leccami-la-password/02serverdonne_unito.wav
 server-donne-leccami-la-password,4,serverdonne-2,"Tempo tecnologico, crossmedialità e assemblaggi cognitivi",776,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/03serverdonne.wav,server-donne-leccami-la-password/03serverdonne.wav
-server-donne-leccami-la-password,5,sd-unito-3,"Coinvolgimento personale e l’amicizia con le macchine",634,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/04sd_unito_3.wav,server-donne-leccami-la-password/04sd_unito_3.wav
-server-donne-leccami-la-password,6,severdonne,"Scrivere e legare tutto dentro a un artefatto tecnico",276,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/05severdonne.wav,server-donne-leccami-la-password/05severdonne.wav
-server-donne-leccami-la-password,7,serverdonne-3,"2 Server Donne: una macchina femminista",201,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/06serverdonne.wav,server-donne-leccami-la-password/06serverdonne.wav
-server-donne-leccami-la-password,8,serverdonne-4,"Prima fase: dal 1996 al 2010",266,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/07serverdonne.wav,server-donne-leccami-la-password/07serverdonne.wav
-server-donne-leccami-la-password,9,serverdonne-5,"La scena politica e culturale",487,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/08serverdonne.wav,server-donne-leccami-la-password/08serverdonne.wav
-server-donne-leccami-la-password,10,serverdonne-6,"Nella scena dei femminismi",542,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/09serverdonne.wav,server-donne-leccami-la-password/09serverdonne.wav
-server-donne-leccami-la-password,11,serverdonne-7,"A cavallo del nuovo millennio",425,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/10serverdonne.wav,server-donne-leccami-la-password/10serverdonne.wav
-server-donne-leccami-la-password,12,s,"La società neoliberista",151,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/11s.wav,server-donne-leccami-la-password/11s.wav
-server-donne-leccami-la-password,13,sd,"Il paradigma del riconoscimento",323,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/12sd.wav,server-donne-leccami-la-password/12sd.wav
-server-donne-leccami-la-password,14,sd-2,"Seconda fase: dal 2011 al 2016",208,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/13sd.wav,server-donne-leccami-la-password/13sd.wav
-server-donne-leccami-la-password,15,sd-3,"Populismo e sovranismo",244,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/14sd.wav,server-donne-leccami-la-password/14sd.wav
-server-donne-leccami-la-password,16,sd-4,"Femmismo moralista?",548,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/15sd.wav,server-donne-leccami-la-password/15sd.wav
-server-donne-leccami-la-password,17,nuovosd,"Tra mediatizzazione e capitalismo delle piattaforme",240,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/16nuovosd.wav,server-donne-leccami-la-password/16nuovosd.wav
-server-donne-leccami-la-password,18,sd-5,"La colonizzazione attraverso le piattaforme",436,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/17sd.wav,server-donne-leccami-la-password/17sd.wav
-server-donne-leccami-la-password,19,sd-6,"L’intermediazione",628,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/18sd.wav,server-donne-leccami-la-password/18sd.wav
-server-donne-leccami-la-password,20,sd-7,"IV ondata",790,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/19sd.wav,server-donne-leccami-la-password/19sd.wav
-server-donne-leccami-la-password,21,sd-8,"Cyberfemminismo",412,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/20sd.wav,server-donne-leccami-la-password/20sd.wav
-server-donne-leccami-la-password,22,sd-9,"VNS matrix",315,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/21sd.wav,server-donne-leccami-la-password/21sd.wav
-server-donne-leccami-la-password,23,sd-10,"L’amicizia con le macchine e il postumano",648,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/22sd.wav,server-donne-leccami-la-password/22sd.wav
-server-donne-leccami-la-password,24,sd-11,"3 I molti inizi",1109,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/23sd.wav,server-donne-leccami-la-password/23sd.wav
-server-donne-leccami-la-password,25,sd-unito,"Gli inizi del Server Donne",1367,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/24sd_unito.wav,server-donne-leccami-la-password/24sd_unito.wav
-server-donne-leccami-la-password,26,sd-unito-2,"All’origine della macchina server donne",440,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/25sd_unito.wav,server-donne-leccami-la-password/25sd_unito.wav
-server-donne-leccami-la-password,27,sd-12,"Abitare la rete",625,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/26sd.wav,server-donne-leccami-la-password/26sd.wav
-server-donne-leccami-la-password,28,sd-13,"Essere un internet server provider",595,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/27sd.wav,server-donne-leccami-la-password/27sd.wav
-server-donne-leccami-la-password,29,sd-14,"Il server all’epoca dei social",993,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/28sd.wav,server-donne-leccami-la-password/28sd.wav
-server-donne-leccami-la-password,30,29,"Il networking fai da te",299,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/29.wav,server-donne-leccami-la-password/29.wav
-server-donne-leccami-la-password,31,sd-15,"La sistemista inesistente",690,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/30sd.wav,server-donne-leccami-la-password/30sd.wav
-server-donne-leccami-la-password,32,sd-16,"Agilulfo...",649,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/31sd.wav,server-donne-leccami-la-password/31sd.wav
-server-donne-leccami-la-password,33,sd-17,"L’autonoma gestione di un server",502,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/32sd.wav,server-donne-leccami-la-password/32sd.wav
-server-donne-leccami-la-password,34,sd-18,"I luoghi fisici del progetto SD...",738,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/33sd.wav,server-donne-leccami-la-password/33sd.wav
-server-donne-leccami-la-password,35,sd-19,"CRM...",712,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/34sd.wav,server-donne-leccami-la-password/34sd.wav
-server-donne-leccami-la-password,36,sd-20,"R@W-Recycle@women",339,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/35sd.wav,server-donne-leccami-la-password/35sd.wav
-server-donne-leccami-la-password,37,sd-21,"Il movimento degli hackerspace femministi...",897,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/36sd.wav,server-donne-leccami-la-password/36sd.wav
-server-donne-leccami-la-password,38,sd-22,"Altri inizi Cataloghi-biblioteche-sistemi informativi...",1088,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/37sd.wav,server-donne-leccami-la-password/37sd.wav
-server-donne-leccami-la-password,39,sd-23,"Nel colto linguaggio femminista di allora...",1429,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/38sd.wav,server-donne-leccami-la-password/38sd.wav
-server-donne-leccami-la-password,40,sd-24,"L’ironia della memoria perduta",218,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/39sd.wav,server-donne-leccami-la-password/39sd.wav
-server-donne-leccami-la-password,41,sd-25,"5 Dalla cultura dei siti alla conversazione dei social...",1057,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/40sd.wav,server-donne-leccami-la-password/40sd.wav
-server-donne-leccami-la-password,42,sd-26,"Leccami la password...",906,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/41sd.wav,server-donne-leccami-la-password/41sd.wav
-server-donne-leccami-la-password,43,sd-27,"Women.it con Archivarix...",1039,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/42sd.wav,server-donne-leccami-la-password/42sd.wav
-server-donne-leccami-la-password,44,sd-28,"La posta elettronica prima dei social e degli smartphone",712,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/43sd.wav,server-donne-leccami-la-password/43sd.wav
-server-donne-leccami-la-password,45,sd-29,"Crossmedialità",955,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/44sd.wav,server-donne-leccami-la-password/44sd.wav
-server-donne-leccami-la-password,46,sd-30,"6 Cercatrice di Rete...",1512,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/45sd.wav,server-donne-leccami-la-password/45sd.wav
+server-donne-leccami-la-password,5,sd-unito-3,Coinvolgimento personale e l’amicizia con le macchine,634,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/04sd_unito_3.wav,server-donne-leccami-la-password/04sd_unito_3.wav
+server-donne-leccami-la-password,6,severdonne,Scrivere e legare tutto dentro a un artefatto tecnico,276,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/05severdonne.wav,server-donne-leccami-la-password/05severdonne.wav
+server-donne-leccami-la-password,7,serverdonne-3,2 Server Donne: una macchina femminista,201,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/06serverdonne.wav,server-donne-leccami-la-password/06serverdonne.wav
+server-donne-leccami-la-password,8,serverdonne-4,Prima fase: dal 1996 al 2010,266,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/07serverdonne.wav,server-donne-leccami-la-password/07serverdonne.wav
+server-donne-leccami-la-password,9,serverdonne-5,La scena politica e culturale,487,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/08serverdonne.wav,server-donne-leccami-la-password/08serverdonne.wav
+server-donne-leccami-la-password,10,serverdonne-6,Nella scena dei femminismi,542,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/09serverdonne.wav,server-donne-leccami-la-password/09serverdonne.wav
+server-donne-leccami-la-password,11,serverdonne-7,A cavallo del nuovo millennio,425,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/10serverdonne.wav,server-donne-leccami-la-password/10serverdonne.wav
+server-donne-leccami-la-password,12,s,La società neoliberista,151,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/11s.wav,server-donne-leccami-la-password/11s.wav
+server-donne-leccami-la-password,13,sd,Il paradigma del riconoscimento,323,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/12sd.wav,server-donne-leccami-la-password/12sd.wav
+server-donne-leccami-la-password,14,sd-2,Seconda fase: dal 2011 al 2016,208,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/13sd.wav,server-donne-leccami-la-password/13sd.wav
+server-donne-leccami-la-password,15,sd-3,Populismo e sovranismo,244,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/14sd.wav,server-donne-leccami-la-password/14sd.wav
+server-donne-leccami-la-password,16,sd-4,Femmismo moralista?,548,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/15sd.wav,server-donne-leccami-la-password/15sd.wav
+server-donne-leccami-la-password,17,nuovosd,Tra mediatizzazione e capitalismo delle piattaforme,240,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/16nuovosd.wav,server-donne-leccami-la-password/16nuovosd.wav
+server-donne-leccami-la-password,18,sd-5,La colonizzazione attraverso le piattaforme,436,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/17sd.wav,server-donne-leccami-la-password/17sd.wav
+server-donne-leccami-la-password,19,sd-6,L’intermediazione,628,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/18sd.wav,server-donne-leccami-la-password/18sd.wav
+server-donne-leccami-la-password,20,sd-7,IV ondata,790,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/19sd.wav,server-donne-leccami-la-password/19sd.wav
+server-donne-leccami-la-password,21,sd-8,Cyberfemminismo,412,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/20sd.wav,server-donne-leccami-la-password/20sd.wav
+server-donne-leccami-la-password,22,sd-9,VNS matrix,315,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/21sd.wav,server-donne-leccami-la-password/21sd.wav
+server-donne-leccami-la-password,23,sd-10,L’amicizia con le macchine e il postumano,648,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/22sd.wav,server-donne-leccami-la-password/22sd.wav
+server-donne-leccami-la-password,24,sd-11,3 I molti inizi,1109,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/23sd.wav,server-donne-leccami-la-password/23sd.wav
+server-donne-leccami-la-password,25,sd-unito,Gli inizi del Server Donne,1367,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/24sd_unito.wav,server-donne-leccami-la-password/24sd_unito.wav
+server-donne-leccami-la-password,26,sd-unito-2,All’origine della macchina server donne,440,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/25sd_unito.wav,server-donne-leccami-la-password/25sd_unito.wav
+server-donne-leccami-la-password,27,sd-12,Abitare la rete,625,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/26sd.wav,server-donne-leccami-la-password/26sd.wav
+server-donne-leccami-la-password,28,sd-13,Essere un internet server provider,595,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/27sd.wav,server-donne-leccami-la-password/27sd.wav
+server-donne-leccami-la-password,29,sd-14,Il server all’epoca dei social,993,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/28sd.wav,server-donne-leccami-la-password/28sd.wav
+server-donne-leccami-la-password,30,29,Il networking fai da te,299,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/29.wav,server-donne-leccami-la-password/29.wav
+server-donne-leccami-la-password,31,sd-15,La sistemista inesistente,690,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/30sd.wav,server-donne-leccami-la-password/30sd.wav
+server-donne-leccami-la-password,32,sd-16,Agilulfo...,649,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/31sd.wav,server-donne-leccami-la-password/31sd.wav
+server-donne-leccami-la-password,33,sd-17,L’autonoma gestione di un server,502,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/32sd.wav,server-donne-leccami-la-password/32sd.wav
+server-donne-leccami-la-password,34,sd-18,I luoghi fisici del progetto SD...,738,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/33sd.wav,server-donne-leccami-la-password/33sd.wav
+server-donne-leccami-la-password,35,sd-19,CRM...,712,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/34sd.wav,server-donne-leccami-la-password/34sd.wav
+server-donne-leccami-la-password,36,sd-20,R@W-Recycle@women,339,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/35sd.wav,server-donne-leccami-la-password/35sd.wav
+server-donne-leccami-la-password,37,sd-21,Il movimento degli hackerspace femministi...,897,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/36sd.wav,server-donne-leccami-la-password/36sd.wav
+server-donne-leccami-la-password,38,sd-22,Altri inizi Cataloghi-biblioteche-sistemi informativi...,1088,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/37sd.wav,server-donne-leccami-la-password/37sd.wav
+server-donne-leccami-la-password,39,sd-23,Nel colto linguaggio femminista di allora...,1429,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/38sd.wav,server-donne-leccami-la-password/38sd.wav
+server-donne-leccami-la-password,40,sd-24,L’ironia della memoria perduta,218,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/39sd.wav,server-donne-leccami-la-password/39sd.wav
+server-donne-leccami-la-password,41,sd-25,5 Dalla cultura dei siti alla conversazione dei social...,1057,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/40sd.wav,server-donne-leccami-la-password/40sd.wav
+server-donne-leccami-la-password,42,sd-26,Leccami la password...,906,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/41sd.wav,server-donne-leccami-la-password/41sd.wav
+server-donne-leccami-la-password,43,sd-27,Women.it con Archivarix...,1039,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/42sd.wav,server-donne-leccami-la-password/42sd.wav
+server-donne-leccami-la-password,44,sd-28,La posta elettronica prima dei social e degli smartphone,712,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/43sd.wav,server-donne-leccami-la-password/43sd.wav
+server-donne-leccami-la-password,45,sd-29,Crossmedialità,955,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/44sd.wav,server-donne-leccami-la-password/44sd.wav
+server-donne-leccami-la-password,46,sd-30,6 Cercatrice di Rete...,1512,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/45sd.wav,server-donne-leccami-la-password/45sd.wav
 server-donne-leccami-la-password,47,sd-31,"La costruzione dell’artefatto, la realizzazione di un motore di ricerca gender oriented...",976,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/46sd.wav,server-donne-leccami-la-password/46sd.wav
-server-donne-leccami-la-password,48,sd-32,"Cercatrice per la Regione Emilia-Romagna e la proposta di un ricco ingaggio...",1696,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/47sd.wav,server-donne-leccami-la-password/47sd.wav
-server-donne-leccami-la-password,49,sd-33,"7 Separazione non voluta...",1636,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/48sd.wav,server-donne-leccami-la-password/48sd.wav
-server-donne-leccami-la-password,50,sd-34,"Il ricatto degli spettri...",3773,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/49sd.wav,server-donne-leccami-la-password/49sd.wav
-server-donne-leccami-la-password,51,finalesd,"Post scriptum",35,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/50finalesd.wav,server-donne-leccami-la-password/50finalesd.wav
-un-americana-a-parigi,1,am,"Un’americana a Parigi",755,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/01am.wav,unamericana-a-parigi/01am.wav
-un-americana-a-parigi,2,am-2,"§",219,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/02am.wav,unamericana-a-parigi/02am.wav
-un-americana-a-parigi,3,am-3,"§",555,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/03am.wav,unamericana-a-parigi/03am.wav
-un-americana-a-parigi,4,am-4,"§",830,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/04am.wav,unamericana-a-parigi/04am.wav
-un-americana-a-parigi,5,amnel,"§",842,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/05amnel.wav,unamericana-a-parigi/05amnel.wav
-un-americana-a-parigi,6,amnel-2,"§",1103,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/06amnel.wav,unamericana-a-parigi/06amnel.wav
-un-americana-a-parigi,7,amflorence,"§",978,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/07amflorence.wav,unamericana-a-parigi/07amflorence.wav
-un-americana-a-parigi,8,amflorence-2,"§",747,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/08amflorence.wav,unamericana-a-parigi/08amflorence.wav
-un-americana-a-parigi,9,am-5,"§",1336,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/09am.wav,unamericana-a-parigi/09am.wav
-un-americana-a-parigi,10,am-6,"§",1110,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/10am.wav,unamericana-a-parigi/10am.wav
-un-americana-a-parigi,11,am-7,"§",367,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/11am.wav,unamericana-a-parigi/11am.wav
-un-americana-a-parigi,12,am-8,"§",834,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/12am.wav,unamericana-a-parigi/12am.wav
-un-americana-a-parigi,13,am-9,"§",811,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/13am.wav,unamericana-a-parigi/13am.wav
-un-americana-a-parigi,14,am-10,"§",322,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/14am.wav,unamericana-a-parigi/14am.wav
-un-americana-a-parigi,15,am-11,"§",537,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/15am.wav,unamericana-a-parigi/15am.wav
-un-americana-a-parigi,16,am-12,"§",635,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/16am.wav,unamericana-a-parigi/16am.wav
-un-americana-a-parigi,17,am-13,"§",643,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/17am.wav,unamericana-a-parigi/17am.wav
-un-americana-a-parigi,18,am-14,"§",1327,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/18am.wav,unamericana-a-parigi/18am.wav
-un-americana-a-parigi,19,am-15,"§",437,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/19am.wav,unamericana-a-parigi/19am.wav
-un-americana-a-parigi,20,am-16,"§",887,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/20am.wav,unamericana-a-parigi/20am.wav
-un-americana-a-parigi,21,am-17,"§",303,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/21am.wav,unamericana-a-parigi/21am.wav
-un-americana-a-parigi,22,amlabirint,"Il labirinto",868,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/22amlabirint.wav,unamericana-a-parigi/22amlabirint.wav
-un-americana-a-parigi,23,amlabirint-2,"§",714,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/23amlabirint.wav,unamericana-a-parigi/23amlabirint.wav
-un-americana-a-parigi,24,labir,"§",997,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/24labir.wav,unamericana-a-parigi/24labir.wav
-un-americana-a-parigi,25,labir-2,"§",524,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/25labir.wav,unamericana-a-parigi/25labir.wav
-un-americana-a-parigi,26,labir-3,"§",501,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/26labir.wav,unamericana-a-parigi/26labir.wav
-un-americana-a-parigi,27,labir-4,"§",274,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/27labir.wav,unamericana-a-parigi/27labir.wav
-un-americana-a-parigi,28,sestastrada,"Sesta Strada",630,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/28sestastrada.wav,unamericana-a-parigi/28sestastrada.wav
-un-americana-a-parigi,29,sestastrada-2,"§",230,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/29sestastrada.wav,unamericana-a-parigi/29sestastrada.wav
-un-americana-a-parigi,30,sestastrada-3,"§",614,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/30sestastrada.wav,unamericana-a-parigi/30sestastrada.wav
-un-americana-a-parigi,31,sesta,"§",592,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/31sesta.wav,unamericana-a-parigi/31sesta.wav
-un-americana-a-parigi,32,sesta-2,"§",430,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/32sesta.wav,unamericana-a-parigi/32sesta.wav
-un-americana-a-parigi,33,am-18,"§",461,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/33am.wav,unamericana-a-parigi/33am.wav
-un-americana-a-parigi,34,am-19,"§",641,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/34am.wav,unamericana-a-parigi/34am.wav
-un-americana-a-parigi,35,am-20,"§",358,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/35am.wav,unamericana-a-parigi/35am.wav
-un-americana-a-parigi,36,am-21,"§",936,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/36am.wav,unamericana-a-parigi/36am.wav
-un-americana-a-parigi,37,am-22,"§",412,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/37am.wav,unamericana-a-parigi/37am.wav
-un-americana-a-parigi,38,am-23,"§",1203,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/38am.wav,unamericana-a-parigi/38am.wav
-un-americana-a-parigi,39,am-24,"§",317,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/39am.wav,unamericana-a-parigi/39am.wav
-un-americana-a-parigi,40,am-25,"§",316,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/40am.wav,unamericana-a-parigi/40am.wav
-un-americana-a-parigi,41,am-26,"§",498,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/41am.wav,unamericana-a-parigi/41am.wav
-un-americana-a-parigi,42,amladies,"Ladies don’t",939,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/42amladies.wav,unamericana-a-parigi/42amladies.wav
-un-americana-a-parigi,43,am-27,"Piccole donne uccidono",1243,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/43am.wav,unamericana-a-parigi/43am.wav
-un-americana-a-parigi,44,ampost,"Postfazione",1179,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/44ampost.wav,unamericana-a-parigi/44ampost.wav
+server-donne-leccami-la-password,48,sd-32,Cercatrice per la Regione Emilia-Romagna e la proposta di un ricco ingaggio...,1696,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/47sd.wav,server-donne-leccami-la-password/47sd.wav
+server-donne-leccami-la-password,49,sd-33,7 Separazione non voluta...,1636,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/48sd.wav,server-donne-leccami-la-password/48sd.wav
+server-donne-leccami-la-password,50,sd-34,Il ricatto degli spettri...,3773,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/49sd.wav,server-donne-leccami-la-password/49sd.wav
+server-donne-leccami-la-password,51,finalesd,Post scriptum,35,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/server-donne-leccami-la-password/50finalesd.wav,server-donne-leccami-la-password/50finalesd.wav
+un-americana-a-parigi,1,am,Un’americana a Parigi,755,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/01am.wav,unamericana-a-parigi/01am.wav
+un-americana-a-parigi,2,am-2,§,219,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/02am.wav,unamericana-a-parigi/02am.wav
+un-americana-a-parigi,3,am-3,§,555,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/03am.wav,unamericana-a-parigi/03am.wav
+un-americana-a-parigi,4,am-4,§,830,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/04am.wav,unamericana-a-parigi/04am.wav
+un-americana-a-parigi,5,amnel,§,842,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/05amnel.wav,unamericana-a-parigi/05amnel.wav
+un-americana-a-parigi,6,amnel-2,§,1103,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/06amnel.wav,unamericana-a-parigi/06amnel.wav
+un-americana-a-parigi,7,amflorence,§,978,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/07amflorence.wav,unamericana-a-parigi/07amflorence.wav
+un-americana-a-parigi,8,amflorence-2,§,747,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/08amflorence.wav,unamericana-a-parigi/08amflorence.wav
+un-americana-a-parigi,9,am-5,§,1336,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/09am.wav,unamericana-a-parigi/09am.wav
+un-americana-a-parigi,10,am-6,§,1110,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/10am.wav,unamericana-a-parigi/10am.wav
+un-americana-a-parigi,11,am-7,§,367,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/11am.wav,unamericana-a-parigi/11am.wav
+un-americana-a-parigi,12,am-8,§,834,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/12am.wav,unamericana-a-parigi/12am.wav
+un-americana-a-parigi,13,am-9,§,811,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/13am.wav,unamericana-a-parigi/13am.wav
+un-americana-a-parigi,14,am-10,§,322,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/14am.wav,unamericana-a-parigi/14am.wav
+un-americana-a-parigi,15,am-11,§,537,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/15am.wav,unamericana-a-parigi/15am.wav
+un-americana-a-parigi,16,am-12,§,635,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/16am.wav,unamericana-a-parigi/16am.wav
+un-americana-a-parigi,17,am-13,§,643,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/17am.wav,unamericana-a-parigi/17am.wav
+un-americana-a-parigi,18,am-14,§,1327,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/18am.wav,unamericana-a-parigi/18am.wav
+un-americana-a-parigi,19,am-15,§,437,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/19am.wav,unamericana-a-parigi/19am.wav
+un-americana-a-parigi,20,am-16,§,887,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/20am.wav,unamericana-a-parigi/20am.wav
+un-americana-a-parigi,21,am-17,§,303,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/21am.wav,unamericana-a-parigi/21am.wav
+un-americana-a-parigi,22,amlabirint,Il labirinto,868,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/22amlabirint.wav,unamericana-a-parigi/22amlabirint.wav
+un-americana-a-parigi,23,amlabirint-2,§,714,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/23amlabirint.wav,unamericana-a-parigi/23amlabirint.wav
+un-americana-a-parigi,24,labir,§,997,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/24labir.wav,unamericana-a-parigi/24labir.wav
+un-americana-a-parigi,25,labir-2,§,524,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/25labir.wav,unamericana-a-parigi/25labir.wav
+un-americana-a-parigi,26,labir-3,§,501,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/26labir.wav,unamericana-a-parigi/26labir.wav
+un-americana-a-parigi,27,labir-4,§,274,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/27labir.wav,unamericana-a-parigi/27labir.wav
+un-americana-a-parigi,28,sestastrada,Sesta Strada,630,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/28sestastrada.wav,unamericana-a-parigi/28sestastrada.wav
+un-americana-a-parigi,29,sestastrada-2,§,230,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/29sestastrada.wav,unamericana-a-parigi/29sestastrada.wav
+un-americana-a-parigi,30,sestastrada-3,§,614,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/30sestastrada.wav,unamericana-a-parigi/30sestastrada.wav
+un-americana-a-parigi,31,sesta,§,592,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/31sesta.wav,unamericana-a-parigi/31sesta.wav
+un-americana-a-parigi,32,sesta-2,§,430,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/32sesta.wav,unamericana-a-parigi/32sesta.wav
+un-americana-a-parigi,33,am-18,§,461,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/33am.wav,unamericana-a-parigi/33am.wav
+un-americana-a-parigi,34,am-19,§,641,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/34am.wav,unamericana-a-parigi/34am.wav
+un-americana-a-parigi,35,am-20,§,358,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/35am.wav,unamericana-a-parigi/35am.wav
+un-americana-a-parigi,36,am-21,§,936,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/36am.wav,unamericana-a-parigi/36am.wav
+un-americana-a-parigi,37,am-22,§,412,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/37am.wav,unamericana-a-parigi/37am.wav
+un-americana-a-parigi,38,am-23,§,1203,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/38am.wav,unamericana-a-parigi/38am.wav
+un-americana-a-parigi,39,am-24,§,317,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/39am.wav,unamericana-a-parigi/39am.wav
+un-americana-a-parigi,40,am-25,§,316,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/40am.wav,unamericana-a-parigi/40am.wav
+un-americana-a-parigi,41,am-26,§,498,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/41am.wav,unamericana-a-parigi/41am.wav
+un-americana-a-parigi,42,amladies,Ladies don’t,939,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/42amladies.wav,unamericana-a-parigi/42amladies.wav
+un-americana-a-parigi,43,am-27,Piccole donne uccidono,1243,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/43am.wav,unamericana-a-parigi/43am.wav
+un-americana-a-parigi,44,ampost,Postfazione,1179,https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/44ampost.wav,unamericana-a-parigi/44ampost.wav

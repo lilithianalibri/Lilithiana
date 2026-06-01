@@ -9,6 +9,10 @@ import { MainNav } from "../../components/main-nav";
 import { getCatalogBookBySlug } from "../../lib/catalog";
 import { getEditorialTrack } from "../../lib/editorial-track";
 
+const copyrightNoticeSlugs = new Set(["briganta", "un-americana-a-parigi"]);
+const audiobookCopyrightNotice =
+  "Il presente audiolibro e tutti i suoi contenuti sono protetti dal diritto d'autore. È vietata qualsiasi riproduzione, copia o distribuzione non autorizzata.";
+
 type BookPageProps = {
   params: Promise<{ slug: string }>;
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
@@ -151,6 +155,12 @@ export default async function BookPage({ params, searchParams }: BookPageProps) 
             </div>
             <AuthCard compact />
           </section>
+
+          {copyrightNoticeSlugs.has(book.slug) ? (
+            <p className="mx-auto max-w-4xl text-center text-xs leading-5 text-muted">
+              {audiobookCopyrightNotice}
+            </p>
+          ) : null}
         </main>
       </div>
     </div>

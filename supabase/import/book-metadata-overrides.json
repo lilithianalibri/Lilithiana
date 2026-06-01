@@ -11,6 +11,7 @@
   "un-americana-a-parigi": {
     "title": "Un’americana a Parigi",
     "author": "Margherita Giacobino (Elinor Rigby)",
+    "narrator": "Paola Giglio",
     "category": "Narrativa",
     "description": "Quattro racconti ambientati nella Parigi degli anni Venti, pubblicati con lo pseudonimo Elinor Rigby.",
     "vibe": "Racconti, Parigi anni Venti, scrittura lesbica",
@@ -21,6 +22,7 @@
   "server-donne-leccami-la-password": {
     "title": "Server Donne. Leccami la password",
     "author": "Marzia Vaccari",
+    "narrator": "Paola Giglio",
     "category": "Saggistica",
     "description": "Ricostruzione biografica, storica e archivistica dell’esperienza Server Donne, nata nel 1996 come infrastruttura digitale femminista.",
     "publication_year": 2025,
@@ -32,6 +34,7 @@
   "cera-una-volta-la-rete-lilith-e-ce-ancora": {
     "title": "C’era una volta la rete Lilith. E c’è ancora",
     "author": "Simonetta De Fazi",
+    "narrator": "Letizia Bravi",
     "category": "Saggistica",
     "description": "Racconto e memoria politica della Rete Lilith, rete informativa dei centri di documentazione, archivi e biblioteche delle donne.",
     "vibe": "Archivi femministi, memoria, reti delle donne",
@@ -42,6 +45,7 @@
   "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici": {
     "title": "Scrittrici italiane: dal XIII al XXI secolo: profili biobibliografici",
     "author": "Luciana Tufani",
+    "narrator": "Letizia Bravi",
     "category": "Saggistica",
     "vibe": "Profili biobibliografici, storia letteraria, scrittrici italiane",
     "cover_from": "#221433",
@@ -51,8 +55,9 @@
   "la-ballata-di-nina-simone": {
     "title": "La ballata di Nina Simone",
     "author": "Francesca Genti",
+    "narrator": "Paola Giglio",
     "category": "Narrativa",
-    "description": "Romanzo in versi dedicato alla vita, alla musica e alla presa di coscienza politica di Nina Simone.",
+    "description": "Romanzo in versi, quasi un poema ispirato dalla vita e dalla musica di Nina Simone.",
     "publication_year": 2021,
     "vibe": "Romanzo in versi, musica, biografia poetica",
     "cover_from": "#1a1838",

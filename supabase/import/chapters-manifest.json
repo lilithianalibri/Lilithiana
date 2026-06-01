@@ -138,7 +138,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 4,
     "chapter_slug": "amicizia",
-    "chapter_title": "Canto dell’amicizia",
+    "chapter_title": "Canto della bambina prodigiosa",
     "duration_seconds": 212,
     "r2_key": "la-ballata-di-nina-simone/04amicizia.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/04amicizia.wav"
@@ -147,7 +147,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 5,
     "chapter_slug": "umiliazione",
-    "chapter_title": "Canto dell’umiliazione",
+    "chapter_title": "Canto dell’amicizia",
     "duration_seconds": 212,
     "r2_key": "la-ballata-di-nina-simone/05umiliazione.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/05umiliazione.wav"
@@ -156,7 +156,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 6,
     "chapter_slug": "sogno",
-    "chapter_title": "Il sogno di Nina",
+    "chapter_title": "Canto dell’umiliazione",
     "duration_seconds": 165,
     "r2_key": "la-ballata-di-nina-simone/06sogno.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/06sogno.wav"
@@ -165,7 +165,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 7,
     "chapter_slug": "primo",
-    "chapter_title": "Canto del primo amore",
+    "chapter_title": "Il sogno di Nina",
     "duration_seconds": 197,
     "r2_key": "la-ballata-di-nina-simone/07primo.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/07primo.wav"
@@ -174,7 +174,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 8,
     "chapter_slug": "lontananza",
-    "chapter_title": "Canto della lontananza",
+    "chapter_title": "Canto del primo amore",
     "duration_seconds": 197,
     "r2_key": "la-ballata-di-nina-simone/08lontananza.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/08lontananza.wav"
@@ -183,7 +183,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 9,
     "chapter_slug": "zombie",
-    "chapter_title": "zombie",
+    "chapter_title": "Canto della lontananza",
     "duration_seconds": 202,
     "r2_key": "la-ballata-di-nina-simone/09zombie.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/09zombie.wav"
@@ -264,7 +264,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 18,
     "chapter_slug": "illuminazione",
-    "chapter_title": "Canto dell’illuminazione",
+    "chapter_title": "Canti di Nina Simone",
     "duration_seconds": 198,
     "r2_key": "la-ballata-di-nina-simone/18illuminazione.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/18illuminazione.wav"
@@ -273,7 +273,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 19,
     "chapter_slug": "nina",
-    "chapter_title": "Canto di Nina Simone",
+    "chapter_title": "Canto dell’illuminazione",
     "duration_seconds": 203,
     "r2_key": "la-ballata-di-nina-simone/19nina.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/19nina.wav"
@@ -282,7 +282,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 20,
     "chapter_slug": "origine",
-    "chapter_title": "Canto dell’origine dei soldi",
+    "chapter_title": "Canto di Nina Simone",
     "duration_seconds": 187,
     "r2_key": "la-ballata-di-nina-simone/20origine.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/20origine.wav"
@@ -291,7 +291,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 21,
     "chapter_slug": "donross",
-    "chapter_title": "Canto di Don Ross",
+    "chapter_title": "Canto dell’origine dei soldi",
     "duration_seconds": 196,
     "r2_key": "la-ballata-di-nina-simone/21donross.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/21donross.wav"
@@ -300,7 +300,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 22,
     "chapter_slug": "whykeeponbreaking",
-    "chapter_title": "Improvvisazione su Why keep on breaking my heart, Nina Simone",
+    "chapter_title": "Canto di Don Ross",
     "duration_seconds": 42,
     "r2_key": "la-ballata-di-nina-simone/22whykeeponbreaking.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/22whykeeponbreaking.wav"
@@ -309,7 +309,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 23,
     "chapter_slug": "dollari",
-    "chapter_title": "Canto dei tremila dollari",
+    "chapter_title": "Improvvisazione su Why keep on breaking my heart, Nina Simone",
     "duration_seconds": 199,
     "r2_key": "la-ballata-di-nina-simone/23dollari.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/23dollari.wav"
@@ -318,7 +318,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 24,
     "chapter_slug": "beethoven",
-    "chapter_title": "Scordatevi Beethoven (improvvisazione su roll over Beethoven, Chuck Berry)",
+    "chapter_title": "Canto dei tremila dollari",
     "duration_seconds": 20,
     "r2_key": "la-ballata-di-nina-simone/24beethoven.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/24beethoven.wav"
@@ -327,7 +327,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 25,
     "chapter_slug": "littlegirlblue",
-    "chapter_title": "Canto di Little girl Blue",
+    "chapter_title": "Scordatevi Beethoven (improvvisazione su roll over Beethoven, Chuck Berry)",
     "duration_seconds": 203,
     "r2_key": "la-ballata-di-nina-simone/25littlegirlblue.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/25littlegirlblue.wav"
@@ -336,7 +336,7 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 26,
     "chapter_slug": "townhall",
-    "chapter_title": "Canto del Town Hall",
+    "chapter_title": "Canto di Little girl Blue",
     "duration_seconds": 196,
     "r2_key": "la-ballata-di-nina-simone/26townhall.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/26townhall.wav"
@@ -345,10 +345,451 @@
     "book_slug": "la-ballata-di-nina-simone",
     "chapter_index": 27,
     "chapter_slug": "stroud",
-    "chapter_title": "Canto di Andrew Stroud",
+    "chapter_title": "Canto del Town Hall",
     "duration_seconds": 192,
     "r2_key": "la-ballata-di-nina-simone/27stroud.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/27stroud.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 28,
+    "chapter_slug": "improvvisazsinatra",
+    "chapter_title": "Canto di Andrew Stroud",
+    "duration_seconds": 61,
+    "r2_key": "la-ballata-di-nina-simone/28improvvisazsinatra.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/28improvvisazsinatra.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 29,
+    "chapter_slug": "presunta",
+    "chapter_title": "Improvvisazione su Fly Me to the Moon, Frank Sinatra, Count Bassie",
+    "duration_seconds": 202,
+    "r2_key": "la-ballata-di-nina-simone/29presunta.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/29presunta.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 30,
+    "chapter_slug": "improvvisazionespell",
+    "chapter_title": "Canto della presunta felicità",
+    "duration_seconds": 47,
+    "r2_key": "la-ballata-di-nina-simone/30improvvisazionespell.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/30improvvisazionespell.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 31,
+    "chapter_slug": "sognorotto",
+    "chapter_title": "Improvvisazione su I put a spell on you, Nina Simone",
+    "duration_seconds": 181,
+    "r2_key": "la-ballata-di-nina-simone/31sognorotto.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/31sognorotto.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 32,
+    "chapter_slug": "matrimonio",
+    "chapter_title": "Canto del sogno rotto",
+    "duration_seconds": 161,
+    "r2_key": "la-ballata-di-nina-simone/32matrimonio.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/32matrimonio.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 33,
+    "chapter_slug": "maternita",
+    "chapter_title": "Canto del matrimonio",
+    "duration_seconds": 196,
+    "r2_key": "la-ballata-di-nina-simone/33maternità.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/33maternità.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 34,
+    "chapter_slug": "lisa",
+    "chapter_title": "Canto della maternità",
+    "duration_seconds": 176,
+    "r2_key": "la-ballata-di-nina-simone/34lisa.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/34lisa.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 35,
+    "chapter_slug": "altra",
+    "chapter_title": "Canto di Lisa Celeste",
+    "duration_seconds": 184,
+    "r2_key": "la-ballata-di-nina-simone/35altra.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/35altra.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 36,
+    "chapter_slug": "parks",
+    "chapter_title": "Canto dell’altra Nina",
+    "duration_seconds": 184,
+    "r2_key": "la-ballata-di-nina-simone/36parks.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/36parks.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 37,
+    "chapter_slug": "goddam",
+    "chapter_title": "Canto di Rosa Parks e Martin Luther King",
+    "duration_seconds": 186,
+    "r2_key": "la-ballata-di-nina-simone/37goddam.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/37goddam.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 38,
+    "chapter_slug": "affinita",
+    "chapter_title": "Canto di Mississippi Goddam",
+    "duration_seconds": 179,
+    "r2_key": "la-ballata-di-nina-simone/38affinità.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/38affinità.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 39,
+    "chapter_slug": "matrioska",
+    "chapter_title": "Canto delle affinità",
+    "duration_seconds": 53,
+    "r2_key": "la-ballata-di-nina-simone/39matrioska.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/39matrioska.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 40,
+    "chapter_slug": "lotta",
+    "chapter_title": "Matrioska improvvisazione su Four women, Nina Simone",
+    "duration_seconds": 197,
+    "r2_key": "la-ballata-di-nina-simone/40lotta.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/40lotta.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 41,
+    "chapter_slug": "schiavitu",
+    "chapter_title": "Canto della lotta",
+    "duration_seconds": 188,
+    "r2_key": "la-ballata-di-nina-simone/41schiavitù.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/41schiavitù.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 42,
+    "chapter_slug": "ascesa",
+    "chapter_title": "Canto della schiavitù",
+    "duration_seconds": 196,
+    "r2_key": "la-ballata-di-nina-simone/42ascesa.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/42ascesa.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 43,
+    "chapter_slug": "crollo",
+    "chapter_title": "Canto dell’ascesa",
+    "duration_seconds": 185,
+    "r2_key": "la-ballata-di-nina-simone/43crollo.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/43crollo.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 44,
+    "chapter_slug": "anima",
+    "chapter_title": "Canto del crollo",
+    "duration_seconds": 79,
+    "r2_key": "la-ballata-di-nina-simone/44anima.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/44anima.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 45,
+    "chapter_slug": "famiglia",
+    "chapter_title": "Solo un’anima improvvisazione su Don’t Let Me Be Misunderstood Nina Simone",
+    "duration_seconds": 183,
+    "r2_key": "la-ballata-di-nina-simone/45famiglia.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/45famiglia.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 46,
+    "chapter_slug": "black",
+    "chapter_title": "Canto della famiglia",
+    "duration_seconds": 184,
+    "r2_key": "la-ballata-di-nina-simone/46black.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/46black.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 47,
+    "chapter_slug": "celebrita",
+    "chapter_title": "Canto del Black Power",
+    "duration_seconds": 198,
+    "r2_key": "la-ballata-di-nina-simone/47celebrità.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/47celebrità.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 48,
+    "chapter_slug": "cantodelcrollo",
+    "chapter_title": "Canto della celebrità",
+    "duration_seconds": 186,
+    "r2_key": "la-ballata-di-nina-simone/48cantodelcrollo.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/48cantodelcrollo.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 49,
+    "chapter_slug": "dellattesa",
+    "chapter_title": "Canto del crollo",
+    "duration_seconds": 182,
+    "r2_key": "la-ballata-di-nina-simone/49dellattesa.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/49dellattesa.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 50,
+    "chapter_slug": "furto",
+    "chapter_title": "Canto dell’attesa",
+    "duration_seconds": 177,
+    "r2_key": "la-ballata-di-nina-simone/50furto.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/50furto.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 51,
+    "chapter_slug": "separazione",
+    "chapter_title": "Canto del furto",
+    "duration_seconds": 182,
+    "r2_key": "la-ballata-di-nina-simone/51separazione.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/51separazione.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 52,
+    "chapter_slug": "divorzio",
+    "chapter_title": "Canto della separazione",
+    "duration_seconds": 174,
+    "r2_key": "la-ballata-di-nina-simone/52divorzio.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/52divorzio.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 53,
+    "chapter_slug": "ritorno",
+    "chapter_title": "Canto del divorzio",
+    "duration_seconds": 179,
+    "r2_key": "la-ballata-di-nina-simone/53ritorno.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/53ritorno.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 54,
+    "chapter_slug": "barbados",
+    "chapter_title": "Canto del ritorno",
+    "duration_seconds": 187,
+    "r2_key": "la-ballata-di-nina-simone/54barbados.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/54barbados.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 55,
+    "chapter_slug": "errol",
+    "chapter_title": "Canto delle Barbados",
+    "duration_seconds": 177,
+    "r2_key": "la-ballata-di-nina-simone/55errol.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/55errol.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 56,
+    "chapter_slug": "cantoallontanamento",
+    "chapter_title": "Canto di Errol Barrow",
+    "duration_seconds": 165,
+    "r2_key": "la-ballata-di-nina-simone/56cantoallontanamento.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/56cantoallontanamento.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 57,
+    "chapter_slug": "emisonetto",
+    "chapter_title": "Canto dell’allontanamento",
+    "duration_seconds": 42,
+    "r2_key": "la-ballata-di-nina-simone/57emisonetto.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/57emisonetto.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 58,
+    "chapter_slug": "monrovia",
+    "chapter_title": "Emisonetto in blu minore improvvisazione sul love me or leave me Nina Simone",
+    "duration_seconds": 173,
+    "r2_key": "la-ballata-di-nina-simone/58monrovia.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/58monrovia.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 59,
+    "chapter_slug": "magia",
+    "chapter_title": "Canto di Monrovia",
+    "duration_seconds": 167,
+    "r2_key": "la-ballata-di-nina-simone/59magia.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/59magia.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 60,
+    "chapter_slug": "nero",
+    "chapter_title": "Canto della magia",
+    "duration_seconds": 179,
+    "r2_key": "la-ballata-di-nina-simone/60nero.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/60nero.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 61,
+    "chapter_slug": "alpi",
+    "chapter_title": "Canto dell’uomo nero",
+    "duration_seconds": 186,
+    "r2_key": "la-ballata-di-nina-simone/61alpi.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/61alpi.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 62,
+    "chapter_slug": "madre",
+    "chapter_title": "Canto di una madre",
+    "duration_seconds": 174,
+    "r2_key": "la-ballata-di-nina-simone/62madre.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/62madre.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 63,
+    "chapter_slug": "collegio",
+    "chapter_title": "Canto delle Alpi",
+    "duration_seconds": 175,
+    "r2_key": "la-ballata-di-nina-simone/63collegio.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/63collegio.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 64,
+    "chapter_slug": "amore",
+    "chapter_title": "Canto del collegio",
+    "duration_seconds": 185,
+    "r2_key": "la-ballata-di-nina-simone/64amore.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/64amore.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 65,
+    "chapter_slug": "tribunale",
+    "chapter_title": "Canto dell’amore immaginario",
+    "duration_seconds": 179,
+    "r2_key": "la-ballata-di-nina-simone/65tribunale.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/65tribunale.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 66,
+    "chapter_slug": "frantumi",
+    "chapter_title": "Canto del tribunale",
+    "duration_seconds": 159,
+    "r2_key": "la-ballata-di-nina-simone/66frantumi.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/66frantumi.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 67,
+    "chapter_slug": "sparizioni",
+    "chapter_title": "Canto dei frantumi",
+    "duration_seconds": 176,
+    "r2_key": "la-ballata-di-nina-simone/67sparizioni.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/67sparizioni.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 68,
+    "chapter_slug": "rinascita",
+    "chapter_title": "Canto delle sparizioni",
+    "duration_seconds": 174,
+    "r2_key": "la-ballata-di-nina-simone/68rinascita.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/68rinascita.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 69,
+    "chapter_slug": "parola",
+    "chapter_title": "Canto della Rinascita",
+    "duration_seconds": 168,
+    "r2_key": "la-ballata-di-nina-simone/69parola.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/69parola.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 70,
+    "chapter_slug": "testa",
+    "chapter_title": "Canto della parola trovata",
+    "duration_seconds": 75,
+    "r2_key": "la-ballata-di-nina-simone/70testa.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/70testa.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 71,
+    "chapter_slug": "profumo",
+    "chapter_title": "Filastrocca della testa rotta improvvisazione su Trouble in Mind, Nina Simone",
+    "duration_seconds": 173,
+    "r2_key": "la-ballata-di-nina-simone/71profumo.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/71profumo.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 72,
+    "chapter_slug": "disforia",
+    "chapter_title": "Canto del profumo",
+    "duration_seconds": 175,
+    "r2_key": "la-ballata-di-nina-simone/72disforia.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/72disforia.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 73,
+    "chapter_slug": "cantoisolamento",
+    "chapter_title": "Canto della disforia",
+    "duration_seconds": 178,
+    "r2_key": "la-ballata-di-nina-simone/73cantoisolamento.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/73cantoisolamento.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 74,
+    "chapter_slug": "mandela",
+    "chapter_title": "Canto dell’isolamento",
+    "duration_seconds": 198,
+    "r2_key": "la-ballata-di-nina-simone/74mandela.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/74mandela.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 75,
+    "chapter_slug": "poesia",
+    "chapter_title": "Canto di Nelson Mandela",
+    "duration_seconds": 270,
+    "r2_key": "la-ballata-di-nina-simone/75poesia.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/75poesia.wav"
+  },
+  {
+    "book_slug": "la-ballata-di-nina-simone",
+    "chapter_index": 76,
+    "chapter_slug": "notaautrice",
+    "chapter_title": "Poesia della bambina che esce che usciva e che sempre uscirà Nota dell’autrice",
+    "duration_seconds": 66,
+    "r2_key": "la-ballata-di-nina-simone/76notaautrice.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/76notaautrice.wav"
   },
   {
     "book_slug": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici",
