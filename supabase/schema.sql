@@ -5,9 +5,11 @@ create table if not exists public.audiobooks (
   slug text not null unique,
   title text not null,
   author text not null,
+  translator text,
   narrator text not null,
   category text not null,
   description text not null,
+  copyright_notice text,
   total_duration_seconds integer not null default 0 check (total_duration_seconds >= 0),
   cover_from text not null,
   cover_via text not null,
@@ -26,6 +28,7 @@ create table if not exists public.chapters (
   title text not null,
   duration_seconds integer not null check (duration_seconds >= 0),
   audio_url text not null,
+  audio_storage_key text,
   created_at timestamptz not null default timezone('utc', now()),
   unique (book_id, slug),
   unique (book_id, chapter_index)
@@ -70,6 +73,15 @@ execute function public.set_updated_at();
 create index if not exists idx_chapters_book on public.chapters(book_id, chapter_index);
 create index if not exists idx_progress_book on public.listening_progress(book_id);
 create index if not exists idx_bookmarks_user on public.chapter_bookmarks(user_id, created_at desc);
+
+alter table public.audiobooks
+  add column if not exists translator text;
+
+alter table public.audiobooks
+  add column if not exists copyright_notice text;
+
+alter table public.chapters
+  add column if not exists audio_storage_key text;
 
 alter table public.audiobooks enable row level security;
 alter table public.chapters enable row level security;
@@ -139,4 +151,3 @@ on public.chapter_bookmarks
 for delete
 to authenticated
 using ((select auth.uid()) = user_id);
-

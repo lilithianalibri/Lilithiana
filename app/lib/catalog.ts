@@ -15,9 +15,11 @@ type DbBook = {
   slug: string;
   title: string;
   author: string;
+  translator?: string | null;
   narrator: string;
   category: string;
   description: string;
+  copyright_notice?: string | null;
   total_duration_seconds: number;
   cover_from: string;
   cover_via: string;
@@ -116,18 +118,19 @@ function joinBooksFromDatabase(books: DbBook[], chapters: DbChapter[]): AudioBoo
     return {
       id: book.id,
       slug: book.slug,
-      title: metadata.title ?? resolveBookTitle(book.slug, book.title),
-      author: credits.author ?? book.author,
-      translator: credits.translator,
-      narrator: credits.narrator ?? book.narrator,
-      category: metadata.category ?? book.category,
-      description: metadata.description ?? book.description,
+      title: resolveBookTitle(book.slug, book.title || metadata.title || book.slug),
+      author: book.author || credits.author || "Autrice da aggiornare",
+      translator: book.translator ?? credits.translator,
+      narrator: book.narrator || credits.narrator || "Voce da aggiornare",
+      category: book.category || metadata.category || "Narrativa",
+      description: book.description || metadata.description || "",
+      copyrightNotice: book.copyright_notice ?? undefined,
       totalDuration: formatDurationLabel(effectiveDurationSeconds),
       totalDurationSeconds: effectiveDurationSeconds,
       coverFrom: book.cover_from,
       coverVia: book.cover_via,
       coverTo: book.cover_to,
-      vibe: metadata.vibe ?? book.vibe,
+      vibe: book.vibe || metadata.vibe || "Audiolibro LILITHIANA",
       chapters: bookChapters,
       resumeChapterId: bookChapters[0]?.id ?? "",
       resumeAt: "00:00",
@@ -142,21 +145,30 @@ export async function getCatalogBooks() {
     return normalizeMockBooks();
   }
 
-  const [booksQuery, chaptersQuery] = await Promise.all([
-    supabase
+  const booksQueryWithEditorFields = await supabase
+    .from("audiobooks")
+    .select(
+      "id, slug, title, author, translator, narrator, category, description, copyright_notice, total_duration_seconds, cover_from, cover_via, cover_to, vibe",
+    )
+    .eq("is_published", true)
+    .order("title", { ascending: true });
+
+  const booksQuery = booksQueryWithEditorFields.error
+    ? await supabase
       .from("audiobooks")
       .select(
         "id, slug, title, author, narrator, category, description, total_duration_seconds, cover_from, cover_via, cover_to, vibe",
       )
       .eq("is_published", true)
-      .order("title", { ascending: true }),
-    supabase
-      .from("chapters")
-      .select(
-        "id, book_id, slug, chapter_index, title, duration_seconds, audio_url",
-      )
-      .order("chapter_index", { ascending: true }),
-  ]);
+      .order("title", { ascending: true })
+    : booksQueryWithEditorFields;
+
+  const chaptersQuery = await supabase
+    .from("chapters")
+    .select(
+      "id, book_id, slug, chapter_index, title, duration_seconds, audio_url",
+    )
+    .order("chapter_index", { ascending: true });
 
   if (booksQuery.error || chaptersQuery.error || !booksQuery.data) {
     return normalizeMockBooks();

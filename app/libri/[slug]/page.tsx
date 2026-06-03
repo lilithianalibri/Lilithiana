@@ -62,6 +62,11 @@ export default async function BookPage({ params, searchParams }: BookPageProps) 
   }
 
   const chapterCount = book.chapters.length;
+  const fallbackCopyrightNotice = copyrightNoticeSlugs.has(book.slug)
+    ? audiobookCopyrightNotice
+    : null;
+  const copyrightNotice =
+    book.copyrightNotice?.trim() || fallbackCopyrightNotice;
 
   return (
     <div className="min-h-screen px-6 pb-16 pt-6 sm:px-10 lg:px-16">
@@ -166,9 +171,9 @@ export default async function BookPage({ params, searchParams }: BookPageProps) 
             <AuthCard compact />
           </section>
 
-          {copyrightNoticeSlugs.has(book.slug) ? (
+          {copyrightNotice ? (
             <p className="mx-auto max-w-4xl text-center text-xs leading-5 text-muted">
-              {audiobookCopyrightNotice}
+              {copyrightNotice}
             </p>
           ) : null}
         </main>

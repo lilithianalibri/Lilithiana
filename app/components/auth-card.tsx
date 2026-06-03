@@ -3,6 +3,8 @@
 import { Turnstile } from "@marsidev/react-turnstile";
 import {
   ArrowRight,
+  Eye,
+  EyeOff,
   KeyRound,
   Loader2,
   LogOut,
@@ -98,6 +100,8 @@ export function AuthCard({
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const [showPasswordConfirm, setShowPasswordConfirm] = useState(false);
   const [displayName, setDisplayName] = useState("");
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
   const [captchaNonce, setCaptchaNonce] = useState(0);
@@ -115,6 +119,8 @@ export function AuthCard({
     setMode(nextMode);
     setPassword("");
     setPasswordConfirm("");
+    setShowPassword(false);
+    setShowPasswordConfirm(false);
     setMessage(null);
     setCaptchaToken(null);
     setCaptchaNonce((current) => current + 1);
@@ -390,6 +396,8 @@ export function AuthCard({
 
   const inputClass =
     "w-full rounded-xl border border-accent/24 bg-white px-4 py-3 text-sm text-foreground outline-none ring-accent/25 transition placeholder:text-muted/70 focus:border-accent/55 focus:ring-2";
+  const passwordInputClass =
+    "w-full rounded-xl border border-accent/24 bg-white py-3 pl-4 pr-12 text-sm text-foreground outline-none ring-accent/25 transition placeholder:text-muted/70 focus:border-accent/55 focus:ring-2";
   const labelClass = "text-xs font-semibold uppercase tracking-[0.12em] text-muted";
   const tabClass = (active: boolean) =>
     `inline-flex min-h-11 items-center justify-center rounded-xl px-3 py-2 text-sm font-semibold transition ${
@@ -514,18 +522,29 @@ export function AuthCard({
             <label className={labelClass} htmlFor={`${formId}-password`}>
               {mode === "reset" ? "Nuova password" : "Password"}
             </label>
-            <input
-              id={`${formId}-password`}
-              name="password"
-              type="password"
-              autoComplete={mode === "signin" ? "current-password" : "new-password"}
-              placeholder={mode === "signin" ? "Password" : "Almeno 8 caratteri"}
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              className={inputClass}
-              minLength={mode === "signin" ? undefined : 8}
-              required
-            />
+            <div className="relative">
+              <input
+                id={`${formId}-password`}
+                name="password"
+                type={showPassword ? "text" : "password"}
+                autoComplete={mode === "signin" ? "current-password" : "new-password"}
+                placeholder={mode === "signin" ? "Password" : "Almeno 8 caratteri"}
+                value={password}
+                onChange={(event) => setPassword(event.target.value)}
+                className={passwordInputClass}
+                minLength={mode === "signin" ? undefined : 8}
+                required
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword((current) => !current)}
+                className="absolute right-2 top-1/2 inline-flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full text-accent transition hover:bg-accent/10"
+                aria-label={showPassword ? "Nascondi password" : "Mostra password"}
+                aria-pressed={showPassword}
+              >
+                {showPassword ? <EyeOff size={17} /> : <Eye size={17} />}
+              </button>
+            </div>
           </div>
         ) : null}
 
@@ -534,18 +553,33 @@ export function AuthCard({
             <label className={labelClass} htmlFor={`${formId}-password-confirm`}>
               Conferma password
             </label>
-            <input
-              id={`${formId}-password-confirm`}
-              name="password-confirm"
-              type="password"
-              autoComplete="new-password"
-              placeholder="Ripeti la nuova password"
-              value={passwordConfirm}
-              onChange={(event) => setPasswordConfirm(event.target.value)}
-              className={inputClass}
-              minLength={8}
-              required
-            />
+            <div className="relative">
+              <input
+                id={`${formId}-password-confirm`}
+                name="password-confirm"
+                type={showPasswordConfirm ? "text" : "password"}
+                autoComplete="new-password"
+                placeholder="Ripeti la nuova password"
+                value={passwordConfirm}
+                onChange={(event) => setPasswordConfirm(event.target.value)}
+                className={passwordInputClass}
+                minLength={8}
+                required
+              />
+              <button
+                type="button"
+                onClick={() => setShowPasswordConfirm((current) => !current)}
+                className="absolute right-2 top-1/2 inline-flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full text-accent transition hover:bg-accent/10"
+                aria-label={
+                  showPasswordConfirm
+                    ? "Nascondi conferma password"
+                    : "Mostra conferma password"
+                }
+                aria-pressed={showPasswordConfirm}
+              >
+                {showPasswordConfirm ? <EyeOff size={17} /> : <Eye size={17} />}
+              </button>
+            </div>
           </div>
         ) : null}
 

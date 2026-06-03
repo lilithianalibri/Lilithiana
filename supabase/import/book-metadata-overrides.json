@@ -64,5 +64,17 @@
     "cover_from": "#1a1838",
     "cover_via": "#4a2f76",
     "cover_to": "#080711"
+  },
+  "nascita-e-morte-della-massaia": {
+    "title": "Nascita e morte della massaia",
+    "author": "Paola Masino",
+    "narrator": "Attrici di Amleta",
+    "category": "Narrativa",
+    "description": "Racconto surreale, onirico e disorientante di una donna alle prese con tutti gli stereotipi della massaia e del mondo cosiddetto benpensante. Si alternano bellissimi monologhi, scene teatrali, operistiche e immaginifiche e trovano spazio anche riferimenti critici al periodo del Fascismo e della guerra e ai meccanismi che alimenta.",
+    "publication_year": 1945,
+    "vibe": "Romanzo surreale, critica domestica, immaginario antifascista",
+    "cover_from": "#4b1f2f",
+    "cover_via": "#a45a68",
+    "cover_to": "#160b12"
   }
 }

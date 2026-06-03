@@ -20,6 +20,7 @@ export type AudioBook = {
   narrator: string;
   category: string;
   description: string;
+  copyrightNotice?: string;
   totalDuration: string;
   totalDurationSeconds?: number;
   coverFrom: string;
@@ -47,6 +48,7 @@ type BookMetadataOverride = {
   narrator?: string;
   category?: string;
   description?: string;
+  copyright_notice?: string;
   publication_year?: number;
   vibe?: string;
   cover_from?: string;
@@ -88,6 +90,7 @@ export function getBookMetadataOverride(slug: string) {
       description && Number.isFinite(publicationYear)
         ? `${description} Prima pubblicazione: ${publicationYear}.`
         : description,
+    copyrightNotice: cleanOptional(metadata.copyright_notice),
     title: cleanOptional(metadata.title),
     vibe: cleanOptional(metadata.vibe),
   };
@@ -164,6 +167,7 @@ function buildImportedAudiobooks(): AudioBook[] {
           metadata.publication_year && Number.isFinite(metadata.publication_year)
             ? `${description} Prima pubblicazione: ${metadata.publication_year}.`
             : description,
+        copyrightNotice: metadata.copyright_notice?.trim() || undefined,
         totalDuration: formatDurationLabel(totalDurationSeconds),
         totalDurationSeconds,
         coverFrom: cover.from,

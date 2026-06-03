@@ -15,9 +15,11 @@ export type Database = {
           slug: string;
           title: string;
           author: string;
+          translator: string | null;
           narrator: string;
           category: string;
           description: string;
+          copyright_notice: string | null;
           total_duration_seconds: number;
           cover_from: string;
           cover_via: string;
@@ -32,9 +34,11 @@ export type Database = {
           slug: string;
           title: string;
           author: string;
+          translator?: string | null;
           narrator: string;
           category: string;
           description: string;
+          copyright_notice?: string | null;
           total_duration_seconds?: number;
           cover_from: string;
           cover_via: string;
@@ -49,9 +53,11 @@ export type Database = {
           slug?: string;
           title?: string;
           author?: string;
+          translator?: string | null;
           narrator?: string;
           category?: string;
           description?: string;
+          copyright_notice?: string | null;
           total_duration_seconds?: number;
           cover_from?: string;
           cover_via?: string;
@@ -72,6 +78,7 @@ export type Database = {
           title: string;
           duration_seconds: number;
           audio_url: string;
+          audio_storage_key: string | null;
           created_at: string;
         };
         Insert: {
@@ -82,6 +89,7 @@ export type Database = {
           title: string;
           duration_seconds: number;
           audio_url: string;
+          audio_storage_key?: string | null;
           created_at?: string;
         };
         Update: {
@@ -92,6 +100,7 @@ export type Database = {
           title?: string;
           duration_seconds?: number;
           audio_url?: string;
+          audio_storage_key?: string | null;
           created_at?: string;
         };
         Relationships: [
@@ -199,4 +208,3 @@ export type Database = {
     };
   };
 };
-

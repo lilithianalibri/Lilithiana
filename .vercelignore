@@ -1,0 +1,13 @@
+audio-import/
+.next/
+node_modules/
+.git/
+.env*
+*.log
+.dev-server*.log
+dev-server*.log
+gcm-diagnose.log
+rename.png
+coverage/
+out/
+build/

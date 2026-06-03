@@ -14,6 +14,7 @@ const DEFAULT_CATEGORY = process.env.DEFAULT_BOOK_CATEGORY || "Narrativa";
 const DEFAULT_AUTHOR = process.env.DEFAULT_BOOK_AUTHOR || "Autore da aggiornare";
 const DEFAULT_NARRATOR = process.env.DEFAULT_BOOK_NARRATOR || "Voce da aggiornare";
 const DEFAULT_VIBE = process.env.DEFAULT_BOOK_VIBE || "Nuovo audiolibro";
+const TEMP_CHAPTER_INDEX_START = 1_000_000;
 
 const COVER_PALETTE = [
   { from: "#6e1f3b", via: "#bc6f79", to: "#26131d" },
@@ -174,6 +175,46 @@ for (const [bookSlug, chapters] of grouped.entries()) {
       duration_seconds: Number(chapter.duration_seconds) || 0,
       audio_url: chapter.audio_url || "",
     }));
+
+  const incomingSlugs = new Set(chapterRows.map((chapter) => chapter.slug));
+  const { data: existingChapters, error: existingChaptersError } = await supabase
+    .from("chapters")
+    .select("id, slug")
+    .eq("book_id", book.id);
+
+  if (existingChaptersError) {
+    fail(`Errore lettura capitoli esistenti ${bookSlug}: ${existingChaptersError.message}`);
+  }
+
+  const obsoleteChapterIds = (existingChapters ?? [])
+    .filter((chapter) => !incomingSlugs.has(chapter.slug))
+    .map((chapter) => chapter.id);
+
+  if (obsoleteChapterIds.length > 0) {
+    const { error: obsoleteDeleteError } = await supabase
+      .from("chapters")
+      .delete()
+      .in("id", obsoleteChapterIds);
+
+    if (obsoleteDeleteError) {
+      fail(`Errore rimozione capitoli obsoleti ${bookSlug}: ${obsoleteDeleteError.message}`);
+    }
+  }
+
+  const chaptersToShift = (existingChapters ?? []).filter((chapter) =>
+    incomingSlugs.has(chapter.slug),
+  );
+  for (let index = 0; index < chaptersToShift.length; index += 1) {
+    const chapter = chaptersToShift[index];
+    const { error: shiftError } = await supabase
+      .from("chapters")
+      .update({ chapter_index: TEMP_CHAPTER_INDEX_START + index })
+      .eq("id", chapter.id);
+
+    if (shiftError) {
+      fail(`Errore riallineamento capitoli ${bookSlug}: ${shiftError.message}`);
+    }
+  }
 
   const { error: chapterError } = await supabase
     .from("chapters")

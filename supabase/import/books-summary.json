@@ -15,6 +15,11 @@
     "total_duration_seconds": 12528
   },
   {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapters": 11,
+    "total_duration_seconds": 32153
+  },
+  {
     "book_slug": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici",
     "chapters": 3,
     "total_duration_seconds": 7550
@@ -26,7 +31,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapters": 44,
-    "total_duration_seconds": 30455
+    "chapters": 45,
+    "total_duration_seconds": 30471
   }
 ]

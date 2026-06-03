@@ -104,6 +104,21 @@
       "76": "Poesia della bambina che esce che usciva e che sempre uscirà Nota dell’autrice"
     }
   },
+  "nascita-e-morte-della-massaia": {
+    "by_index": {
+      "1": "Intro",
+      "2": "I",
+      "3": "II",
+      "4": "III",
+      "5": "IV",
+      "6": "V",
+      "7": "VI",
+      "8": "VII",
+      "9": "VIII",
+      "10": "IX",
+      "11": "Epilogo"
+    }
+  },
   "server-donne-leccami-la-password": {
     "by_index": {
       "1": "Intro",

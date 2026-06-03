@@ -792,6 +792,105 @@
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/76notaautrice.wav"
   },
   {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 1,
+    "chapter_slug": "ntromassaia",
+    "chapter_title": "Intro",
+    "duration_seconds": 12,
+    "r2_key": "nascita-e-morte-della-massaia/01ntromassaia.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/01ntromassaia.wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 2,
+    "chapter_slug": "massaia-2",
+    "chapter_title": "I",
+    "duration_seconds": 868,
+    "r2_key": "nascita-e-morte-della-massaia/02massaia (2).wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/02massaia (2).wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 3,
+    "chapter_slug": "massaia-2-2",
+    "chapter_title": "II",
+    "duration_seconds": 1052,
+    "r2_key": "nascita-e-morte-della-massaia/03massaia (2).wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/03massaia (2).wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 4,
+    "chapter_slug": "massaia-2-3",
+    "chapter_title": "III",
+    "duration_seconds": 2930,
+    "r2_key": "nascita-e-morte-della-massaia/04massaia (2).wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/04massaia (2).wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 5,
+    "chapter_slug": "massaia",
+    "chapter_title": "IV",
+    "duration_seconds": 4690,
+    "r2_key": "nascita-e-morte-della-massaia/05massaia.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/05massaia.wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 6,
+    "chapter_slug": "massaiacap5",
+    "chapter_title": "V",
+    "duration_seconds": 3270,
+    "r2_key": "nascita-e-morte-della-massaia/06massaiacap5.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/06massaiacap5.wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 7,
+    "chapter_slug": "massaia6",
+    "chapter_title": "VI",
+    "duration_seconds": 6540,
+    "r2_key": "nascita-e-morte-della-massaia/07massaia6.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/07massaia6.wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 8,
+    "chapter_slug": "massaia7",
+    "chapter_title": "VII",
+    "duration_seconds": 3070,
+    "r2_key": "nascita-e-morte-della-massaia/08massaia7.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/08massaia7.wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 9,
+    "chapter_slug": "massaia8",
+    "chapter_title": "VIII",
+    "duration_seconds": 5230,
+    "r2_key": "nascita-e-morte-della-massaia/09massaia8.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/09massaia8.wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 10,
+    "chapter_slug": "massaia9",
+    "chapter_title": "IX",
+    "duration_seconds": 3982,
+    "r2_key": "nascita-e-morte-della-massaia/10massaia9.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/10massaia9.wav"
+  },
+  {
+    "book_slug": "nascita-e-morte-della-massaia",
+    "chapter_index": 11,
+    "chapter_slug": "epilogomass",
+    "chapter_title": "Epilogo",
+    "duration_seconds": 509,
+    "r2_key": "nascita-e-morte-della-massaia/11epilogomass.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/nascita-e-morte-della-massaia/11epilogomass.wav"
+  },
+  {
     "book_slug": "scrittrici-italiane-dal-xiii-al-xxi-secolo-profili-biobibliografici",
     "chapter_index": 1,
     "chapter_slug": "introscrittrici",
@@ -1280,15 +1379,24 @@
   {
     "book_slug": "un-americana-a-parigi",
     "chapter_index": 1,
-    "chapter_slug": "am",
+    "chapter_slug": "introamericana",
     "chapter_title": "Un’americana a Parigi",
+    "duration_seconds": 16,
+    "r2_key": "unamericana-a-parigi/00introamericana.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/00introamericana.wav"
+  },
+  {
+    "book_slug": "un-americana-a-parigi",
+    "chapter_index": 2,
+    "chapter_slug": "am",
+    "chapter_title": "§",
     "duration_seconds": 755,
     "r2_key": "unamericana-a-parigi/01am.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/01am.wav"
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 2,
+    "chapter_index": 3,
     "chapter_slug": "am-2",
     "chapter_title": "§",
     "duration_seconds": 219,
@@ -1297,7 +1405,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 3,
+    "chapter_index": 4,
     "chapter_slug": "am-3",
     "chapter_title": "§",
     "duration_seconds": 555,
@@ -1306,7 +1414,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 4,
+    "chapter_index": 5,
     "chapter_slug": "am-4",
     "chapter_title": "§",
     "duration_seconds": 830,
@@ -1315,7 +1423,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 5,
+    "chapter_index": 6,
     "chapter_slug": "amnel",
     "chapter_title": "§",
     "duration_seconds": 842,
@@ -1324,7 +1432,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 6,
+    "chapter_index": 7,
     "chapter_slug": "amnel-2",
     "chapter_title": "§",
     "duration_seconds": 1103,
@@ -1333,7 +1441,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 7,
+    "chapter_index": 8,
     "chapter_slug": "amflorence",
     "chapter_title": "§",
     "duration_seconds": 978,
@@ -1342,7 +1450,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 8,
+    "chapter_index": 9,
     "chapter_slug": "amflorence-2",
     "chapter_title": "§",
     "duration_seconds": 747,
@@ -1351,7 +1459,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 9,
+    "chapter_index": 10,
     "chapter_slug": "am-5",
     "chapter_title": "§",
     "duration_seconds": 1336,
@@ -1360,7 +1468,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 10,
+    "chapter_index": 11,
     "chapter_slug": "am-6",
     "chapter_title": "§",
     "duration_seconds": 1110,
@@ -1369,7 +1477,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 11,
+    "chapter_index": 12,
     "chapter_slug": "am-7",
     "chapter_title": "§",
     "duration_seconds": 367,
@@ -1378,7 +1486,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 12,
+    "chapter_index": 13,
     "chapter_slug": "am-8",
     "chapter_title": "§",
     "duration_seconds": 834,
@@ -1387,7 +1495,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 13,
+    "chapter_index": 14,
     "chapter_slug": "am-9",
     "chapter_title": "§",
     "duration_seconds": 811,
@@ -1396,7 +1504,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 14,
+    "chapter_index": 15,
     "chapter_slug": "am-10",
     "chapter_title": "§",
     "duration_seconds": 322,
@@ -1405,7 +1513,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 15,
+    "chapter_index": 16,
     "chapter_slug": "am-11",
     "chapter_title": "§",
     "duration_seconds": 537,
@@ -1414,7 +1522,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 16,
+    "chapter_index": 17,
     "chapter_slug": "am-12",
     "chapter_title": "§",
     "duration_seconds": 635,
@@ -1423,7 +1531,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 17,
+    "chapter_index": 18,
     "chapter_slug": "am-13",
     "chapter_title": "§",
     "duration_seconds": 643,
@@ -1432,7 +1540,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 18,
+    "chapter_index": 19,
     "chapter_slug": "am-14",
     "chapter_title": "§",
     "duration_seconds": 1327,
@@ -1441,7 +1549,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 19,
+    "chapter_index": 20,
     "chapter_slug": "am-15",
     "chapter_title": "§",
     "duration_seconds": 437,
@@ -1450,7 +1558,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 20,
+    "chapter_index": 21,
     "chapter_slug": "am-16",
     "chapter_title": "§",
     "duration_seconds": 887,
@@ -1459,25 +1567,25 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 21,
+    "chapter_index": 22,
     "chapter_slug": "am-17",
-    "chapter_title": "§",
+    "chapter_title": "Il labirinto",
     "duration_seconds": 303,
     "r2_key": "unamericana-a-parigi/21am.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/21am.wav"
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 22,
+    "chapter_index": 23,
     "chapter_slug": "amlabirint",
-    "chapter_title": "Il labirinto",
+    "chapter_title": "§",
     "duration_seconds": 868,
     "r2_key": "unamericana-a-parigi/22amlabirint.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/22amlabirint.wav"
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 23,
+    "chapter_index": 24,
     "chapter_slug": "amlabirint-2",
     "chapter_title": "§",
     "duration_seconds": 714,
@@ -1486,7 +1594,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 24,
+    "chapter_index": 25,
     "chapter_slug": "labir",
     "chapter_title": "§",
     "duration_seconds": 997,
@@ -1495,7 +1603,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 25,
+    "chapter_index": 26,
     "chapter_slug": "labir-2",
     "chapter_title": "§",
     "duration_seconds": 524,
@@ -1504,7 +1612,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 26,
+    "chapter_index": 27,
     "chapter_slug": "labir-3",
     "chapter_title": "§",
     "duration_seconds": 501,
@@ -1513,25 +1621,25 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 27,
+    "chapter_index": 28,
     "chapter_slug": "labir-4",
-    "chapter_title": "§",
+    "chapter_title": "Sesta Strada",
     "duration_seconds": 274,
     "r2_key": "unamericana-a-parigi/27labir.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/27labir.wav"
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 28,
+    "chapter_index": 29,
     "chapter_slug": "sestastrada",
-    "chapter_title": "Sesta Strada",
+    "chapter_title": "§",
     "duration_seconds": 630,
     "r2_key": "unamericana-a-parigi/28sestastrada.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/28sestastrada.wav"
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 29,
+    "chapter_index": 30,
     "chapter_slug": "sestastrada-2",
     "chapter_title": "§",
     "duration_seconds": 230,
@@ -1540,7 +1648,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 30,
+    "chapter_index": 31,
     "chapter_slug": "sestastrada-3",
     "chapter_title": "§",
     "duration_seconds": 614,
@@ -1549,7 +1657,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 31,
+    "chapter_index": 32,
     "chapter_slug": "sesta",
     "chapter_title": "§",
     "duration_seconds": 592,
@@ -1558,7 +1666,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 32,
+    "chapter_index": 33,
     "chapter_slug": "sesta-2",
     "chapter_title": "§",
     "duration_seconds": 430,
@@ -1567,7 +1675,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 33,
+    "chapter_index": 34,
     "chapter_slug": "am-18",
     "chapter_title": "§",
     "duration_seconds": 461,
@@ -1576,7 +1684,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 34,
+    "chapter_index": 35,
     "chapter_slug": "am-19",
     "chapter_title": "§",
     "duration_seconds": 641,
@@ -1585,7 +1693,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 35,
+    "chapter_index": 36,
     "chapter_slug": "am-20",
     "chapter_title": "§",
     "duration_seconds": 358,
@@ -1594,7 +1702,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 36,
+    "chapter_index": 37,
     "chapter_slug": "am-21",
     "chapter_title": "§",
     "duration_seconds": 936,
@@ -1603,7 +1711,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 37,
+    "chapter_index": 38,
     "chapter_slug": "am-22",
     "chapter_title": "§",
     "duration_seconds": 412,
@@ -1612,7 +1720,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 38,
+    "chapter_index": 39,
     "chapter_slug": "am-23",
     "chapter_title": "§",
     "duration_seconds": 1203,
@@ -1621,7 +1729,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 39,
+    "chapter_index": 40,
     "chapter_slug": "am-24",
     "chapter_title": "§",
     "duration_seconds": 317,
@@ -1630,7 +1738,7 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 40,
+    "chapter_index": 41,
     "chapter_slug": "am-25",
     "chapter_title": "§",
     "duration_seconds": 316,
@@ -1639,36 +1747,36 @@
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 41,
+    "chapter_index": 42,
     "chapter_slug": "am-26",
-    "chapter_title": "§",
+    "chapter_title": "Ladies don’t",
     "duration_seconds": 498,
     "r2_key": "unamericana-a-parigi/41am.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/41am.wav"
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 42,
+    "chapter_index": 43,
     "chapter_slug": "amladies",
-    "chapter_title": "Ladies don’t",
+    "chapter_title": "Piccole donne uccidono",
     "duration_seconds": 939,
     "r2_key": "unamericana-a-parigi/42amladies.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/42amladies.wav"
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 43,
+    "chapter_index": 44,
     "chapter_slug": "am-27",
-    "chapter_title": "Piccole donne uccidono",
+    "chapter_title": "Postfazione",
     "duration_seconds": 1243,
     "r2_key": "unamericana-a-parigi/43am.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/43am.wav"
   },
   {
     "book_slug": "un-americana-a-parigi",
-    "chapter_index": 44,
+    "chapter_index": 45,
     "chapter_slug": "ampost",
-    "chapter_title": "Postfazione",
+    "chapter_title": "ampost",
     "duration_seconds": 1179,
     "r2_key": "unamericana-a-parigi/44ampost.wav",
     "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/unamericana-a-parigi/44ampost.wav"

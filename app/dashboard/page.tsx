@@ -3,13 +3,17 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import {
   BookmarkPlus,
+  BookAudio,
   BookOpenCheck,
   Clock3,
   Headphones,
   LibraryBig,
+  ShieldCheck,
   Sparkles,
+  UsersRound,
 } from "lucide-react";
 import { MainNav } from "../components/main-nav";
+import { canManageBooks, canManageUsers } from "../lib/admin-users";
 import { getSupabaseServerClient } from "../lib/supabase/server";
 import { getUserDashboardData } from "../lib/user-dashboard";
 
@@ -61,6 +65,8 @@ export default async function DashboardPage() {
     userEmail,
     userData.user?.user_metadata,
   );
+  const canOpenUsersPanel = canManageUsers(userData.user);
+  const canOpenBooksPanel = canManageBooks(userData.user);
 
   return (
     <div className="relative min-h-screen px-6 pb-16 pt-6 sm:px-10 lg:px-16">
@@ -119,6 +125,62 @@ export default async function DashboardPage() {
               </p>
             </article>
           </section>
+
+          {canOpenBooksPanel || canOpenUsersPanel ? (
+            <section className="grid gap-4 lg:grid-cols-2">
+              {canOpenBooksPanel ? (
+                <article className="panel rounded-3xl p-6 sm:p-8">
+                  <div className="flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                      <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-muted">
+                        <BookAudio size={14} className="text-accent" />
+                        Area editoriale
+                      </p>
+                      <h2 className="mt-2 font-display text-3xl">
+                        Gestione libri
+                      </h2>
+                      <p className="mt-2 max-w-2xl text-sm text-muted">
+                        Crea e modifica schede libro, capitoli e file audio.
+                      </p>
+                    </div>
+                    <Link
+                      href="/dashboard/libri"
+                      className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+                    >
+                      <BookAudio size={15} />
+                      Apri libri
+                    </Link>
+                  </div>
+                </article>
+              ) : null}
+
+              {canOpenUsersPanel ? (
+                <article className="panel rounded-3xl p-6 sm:p-8">
+                  <div className="flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                      <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-muted">
+                        <ShieldCheck size={14} className="text-accent" />
+                        Area admin
+                      </p>
+                      <h2 className="mt-2 font-display text-3xl">
+                        Gestione utenti
+                      </h2>
+                      <p className="mt-2 max-w-2xl text-sm text-muted">
+                        Visualizza account registrati, ruoli e ultimi accessi.
+                      </p>
+                    </div>
+                    <Link
+                      href="/dashboard/utenti"
+                      className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-semibold text-white transition hover:brightness-110"
+                    >
+                      <UsersRound size={15} />
+                      Apri utenti
+                    </Link>
+                  </div>
+                </article>
+              ) : null}
+            </section>
+          ) : null}
 
           <section className="panel rounded-3xl p-6 sm:p-8">
             <div className="mb-5 flex items-center justify-between gap-4">
