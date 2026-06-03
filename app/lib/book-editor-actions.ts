@@ -37,6 +37,12 @@ type ExistingChapterRow = {
   audio_storage_key: string | null;
 };
 
+type EditorSchemaCapabilities = {
+  hasTranslator: boolean;
+  hasCopyrightNotice: boolean;
+  hasAudioStorageKey: boolean;
+};
+
 function cleanRequired(value: string, fieldLabel: string, maxLength = 500) {
   const cleaned = value.trim();
 
@@ -117,6 +123,51 @@ function normalizeChapters(chapters: EditorChapter[], existing: ExistingChapterR
   });
 }
 
+function isMissingColumnError(error: { message?: string; code?: string } | null) {
+  return (
+    error?.code === "42703" ||
+    error?.message?.toLowerCase().includes("column") ||
+    false
+  );
+}
+
+async function hasColumn(table: "audiobooks" | "chapters", column: string) {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) {
+    throw new Error("Configurazione Supabase service role incompleta.");
+  }
+
+  const { error } = await supabase
+    .from(table)
+    .select(`id, ${column}`)
+    .limit(1);
+
+  if (!error) {
+    return true;
+  }
+
+  if (isMissingColumnError(error)) {
+    return false;
+  }
+
+  throw new Error(error.message);
+}
+
+async function getEditorSchemaCapabilities(): Promise<EditorSchemaCapabilities> {
+  const [hasTranslator, hasCopyrightNotice, hasAudioStorageKey] =
+    await Promise.all([
+      hasColumn("audiobooks", "translator"),
+      hasColumn("audiobooks", "copyright_notice"),
+      hasColumn("chapters", "audio_storage_key"),
+    ]);
+
+  return {
+    hasTranslator,
+    hasCopyrightNotice,
+    hasAudioStorageKey,
+  };
+}
+
 async function getExistingBook(bookId: string | undefined) {
   if (!bookId) {
     return null;
@@ -175,16 +226,33 @@ async function fetchExistingChapters(bookId: string | undefined) {
     throw new Error("Configurazione Supabase service role incompleta.");
   }
 
-  const { data, error } = await supabase
+  const query = await supabase
     .from("chapters")
     .select("id, slug, chapter_index, audio_url, audio_storage_key")
     .eq("book_id", bookId);
 
-  if (error) {
-    throw new Error(error.message);
+  if (!query.error) {
+    return (query.data ?? []) as ExistingChapterRow[];
   }
 
-  return (data ?? []) as ExistingChapterRow[];
+  if (!isMissingColumnError(query.error)) {
+    throw new Error(query.error.message);
+  }
+
+  const legacyQuery = await supabase
+    .from("chapters")
+    .select("id, slug, chapter_index, audio_url")
+    .eq("book_id", bookId);
+
+  if (legacyQuery.error) {
+    throw new Error(legacyQuery.error.message);
+  }
+
+  return ((legacyQuery.data ?? []) as Array<Omit<ExistingChapterRow, "audio_storage_key">>)
+    .map((chapter) => ({
+      ...chapter,
+      audio_storage_key: null,
+    }));
 }
 
 async function verifyUploadedAudio(chapters: ReturnType<typeof normalizeChapters>) {
@@ -279,6 +347,7 @@ export async function saveBookForEditor(
     }
 
     const existingChapters = await fetchExistingChapters(input.bookId);
+    const schema = await getEditorSchemaCapabilities();
     const chapters = normalizeChapters(input.chapters, existingChapters);
     await verifyUploadedAudio(chapters);
 
@@ -291,28 +360,38 @@ export async function saveBookForEditor(
       slug,
       title,
       author,
-      translator: cleanOptional(input.book.translator, 220),
       narrator,
       category,
       description,
-      copyright_notice: cleanOptional(input.book.copyrightNotice, 1000),
       total_duration_seconds: totalDuration,
       cover_from: normalizeHexColor(input.book.coverFrom, DEFAULT_BOOK_COLORS.from),
       cover_via: normalizeHexColor(input.book.coverVia, DEFAULT_BOOK_COLORS.via),
       cover_to: normalizeHexColor(input.book.coverTo, DEFAULT_BOOK_COLORS.to),
       vibe,
       is_published: shouldPublish,
+      ...(schema.hasTranslator
+        ? { translator: cleanOptional(input.book.translator, 220) }
+        : {}),
+      ...(schema.hasCopyrightNotice
+        ? { copyright_notice: cleanOptional(input.book.copyrightNotice, 1000) }
+        : {}),
     };
 
-    const savedBook =
-      existingBook ??
-      (
-        await supabase
-          .from("audiobooks")
-          .insert({ ...bookRow, is_published: false })
-          .select("id, slug, is_published")
-          .single()
-      ).data;
+    let savedBook = existingBook;
+
+    if (!savedBook) {
+      const { data, error } = await supabase
+        .from("audiobooks")
+        .insert({ ...bookRow, is_published: false })
+        .select("id, slug, is_published")
+        .single();
+
+      if (error) {
+        throw new Error(error.message);
+      }
+
+      savedBook = data;
+    }
 
     if (!savedBook) {
       throw new Error("Impossibile creare il libro.");
@@ -356,7 +435,9 @@ export async function saveBookForEditor(
             title: chapter.title,
             duration_seconds: chapter.duration_seconds,
             audio_url: chapter.audio_url,
-            audio_storage_key: chapter.audio_storage_key,
+            ...(schema.hasAudioStorageKey
+              ? { audio_storage_key: chapter.audio_storage_key }
+              : {}),
           })
           .eq("id", chapter.id);
 
@@ -371,7 +452,9 @@ export async function saveBookForEditor(
           title: chapter.title,
           duration_seconds: chapter.duration_seconds,
           audio_url: chapter.audio_url,
-          audio_storage_key: chapter.audio_storage_key,
+          ...(schema.hasAudioStorageKey
+            ? { audio_storage_key: chapter.audio_storage_key }
+            : {}),
         });
 
         if (error) {

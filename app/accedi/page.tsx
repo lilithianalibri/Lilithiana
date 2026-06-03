@@ -38,10 +38,16 @@ function resolveAuthMode(value: string | string[] | undefined): AuthMode {
   return "signin";
 }
 
+function resolveFlag(value: string | string[] | undefined) {
+  const candidate = Array.isArray(value) ? value[0] : value;
+  return candidate === "1" || candidate === "true";
+}
+
 export default async function LoginPage({ searchParams }: LoginPageProps) {
   const query = await searchParams;
   const next = resolveNextPath(query.next);
-  const initialMode = resolveAuthMode(query.mode);
+  const isAccountConfirmed = resolveFlag(query.confirmed);
+  const initialMode = isAccountConfirmed ? "signin" : resolveAuthMode(query.mode);
   const hasCallbackError = query.error === "callback";
 
   return (
@@ -91,11 +97,27 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
               </li>
             </ul>
 
-            {hasCallbackError ? (
-              <p className="mt-4 rounded-2xl border border-accent/18 bg-white/70 px-4 py-3 text-sm text-muted">
-                Non sono riuscita a completare la conferma account. Riprova dal link
-                ricevuto via email o effettua direttamente il login.
-              </p>
+            {isAccountConfirmed ? (
+              <div className="mt-4 rounded-2xl border border-accent/18 bg-white/78 px-4 py-3 text-sm text-muted">
+                <p className="inline-flex items-center gap-2 font-semibold text-foreground">
+                  <MailCheck size={16} className="text-accent" />
+                  Account confermato
+                </p>
+                <p className="mt-2">
+                  Ora puoi accedere con la stessa email e la password che hai scelto
+                  durante la registrazione.
+                </p>
+              </div>
+            ) : hasCallbackError ? (
+              <div className="mt-4 rounded-2xl border border-accent/18 bg-white/70 px-4 py-3 text-sm text-muted">
+                <p className="font-semibold text-foreground">
+                  Conferma account ricevuta.
+                </p>
+                <p className="mt-2">
+                  Se hai appena aperto il link della mail, prova ad accedere con le
+                  credenziali che hai scelto durante la registrazione.
+                </p>
+              </div>
             ) : null}
           </section>
 

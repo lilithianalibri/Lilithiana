@@ -159,7 +159,7 @@ insert into public.audiobooks (
   is_published
 ) values (
   'cera-una-volta-la-rete-lilith-e-ce-ancora',
-  'C’era una volta la rete Lilith. E c’è ancora',
+  'C’era una volta la rete Lilith. E c’è ancora...',
   'Simonetta De Fazi',
   'Letizia Bravi',
   'Saggistica',
@@ -1559,7 +1559,7 @@ insert into public.audiobooks (
   'Elinor Rigby',
   'Paola Giglio',
   'Narrativa',
-  'Quattro racconti ambientati nella Parigi degli anni Venti.',
+  'Raccolta di cinque racconti divertenti e dissacranti sul mondo delle donne. Margherita Giacobino, che avrebbe tradotto questo libro da un''autrice americana, ribalta lo stereotipo per cui i libri con lesbiche avevano un andamento tragico, soprattutto alla metà del secolo scorso.',
   30471,
   '#123642',
   '#1f5a63',

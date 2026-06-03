@@ -117,6 +117,77 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
   const hasPendingFiles = chapters.some((chapter) => chapter.file);
   const missingAudioCount = chapters.filter((chapter) => !chapter.audioUrl).length;
 
+  function getBookDetailsError() {
+    if (!book.title.trim()) {
+      return "Inserisci il titolo del libro.";
+    }
+
+    if (!book.author.trim()) {
+      return "Inserisci l'autrice.";
+    }
+
+    if (!book.narrator.trim()) {
+      return "Inserisci la voce narrante.";
+    }
+
+    if (!book.description.trim()) {
+      return "Inserisci la descrizione.";
+    }
+
+    if (!book.vibe.trim()) {
+      return "Inserisci la vibe del libro.";
+    }
+
+    return null;
+  }
+
+  function getReviewChaptersError(chaptersToCheck = chapters) {
+    if (chaptersToCheck.length === 0) {
+      return "Aggiungi almeno un capitolo audio.";
+    }
+
+    if (chaptersToCheck.some((chapter) => chapter.file)) {
+      return "Carica i file audio prima di passare alla revisione.";
+    }
+
+    if (chaptersToCheck.some((chapter) => !chapter.audioUrl)) {
+      return "Ogni capitolo deve avere un audio caricato.";
+    }
+
+    return null;
+  }
+
+  function validateBeforeStep(targetIndex: number) {
+    if (targetIndex > 0) {
+      const bookError = getBookDetailsError();
+
+      if (bookError) {
+        setMessage(bookError);
+        setStepIndex(0);
+        return false;
+      }
+    }
+
+    if (targetIndex > 1) {
+      const chaptersError = getReviewChaptersError();
+
+      if (chaptersError) {
+        setMessage(chaptersError);
+        setStepIndex(1);
+        return false;
+      }
+    }
+
+    setMessage(null);
+    return true;
+  }
+
+  function goToStep(targetIndex: number) {
+    if (targetIndex <= stepIndex || validateBeforeStep(targetIndex)) {
+      setStepIndex(targetIndex);
+    }
+  }
+
   function updateBookField<Key extends keyof EditableBook>(
     key: Key,
     value: EditableBook[Key],
@@ -349,6 +420,14 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
     }
 
     setMessage(null);
+
+    const bookError = getBookDetailsError();
+    if (bookError) {
+      setMessage(bookError);
+      setStepIndex(0);
+      return;
+    }
+
     setSaving(true);
 
     let chaptersToSave = chapters;
@@ -365,6 +444,14 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
       }
 
       chaptersToSave = uploadedChapters;
+    }
+
+    const chaptersError = getReviewChaptersError(chaptersToSave);
+    if (chaptersError) {
+      setSaving(false);
+      setMessage(chaptersError);
+      setStepIndex(1);
+      return;
     }
 
     const chaptersMissingAudio = chaptersToSave.filter(
@@ -428,7 +515,7 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
           <button
             key={step}
             type="button"
-            onClick={() => setStepIndex(index)}
+            onClick={() => goToStep(index)}
             className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition ${
               stepIndex === index
                 ? "border-accent bg-accent text-white"
@@ -815,7 +902,7 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
       <div className="flex items-center justify-between gap-3">
         <button
           type="button"
-          onClick={() => setStepIndex((current) => Math.max(0, current - 1))}
+          onClick={() => goToStep(Math.max(0, stepIndex - 1))}
           disabled={stepIndex === 0}
           className="inline-flex items-center gap-2 rounded-full border border-accent/18 bg-white/78 px-4 py-2 text-sm font-semibold text-accent transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-45"
         >
@@ -824,7 +911,7 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
         </button>
         <button
           type="button"
-          onClick={() => setStepIndex((current) => Math.min(steps.length - 1, current + 1))}
+          onClick={() => goToStep(Math.min(steps.length - 1, stepIndex + 1))}
           disabled={stepIndex === steps.length - 1}
           className="inline-flex items-center gap-2 rounded-full bg-accent px-4 py-2 text-sm font-semibold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-45"
         >

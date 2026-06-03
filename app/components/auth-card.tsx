@@ -46,7 +46,8 @@ const authCopy: Record<
   signup: {
     eyebrow: "Registrazione",
     title: "Crea il tuo account",
-    description: "Dopo l’invio riceverai una mail: basta confermarla e puoi entrare.",
+    description:
+      "Dopo l'invio riceverai una mail: confermala, poi accedi con email e password scelte qui.",
     submit: "Registrati",
   },
   forgot: {
@@ -242,7 +243,9 @@ export function AuthCard({
 
     const emailRedirectTo =
       typeof window !== "undefined"
-        ? `${window.location.origin}/auth/callback?next=${encodeURIComponent(authRedirect)}`
+        ? `${window.location.origin}/auth/callback?next=${encodeURIComponent(
+            "/accedi?mode=signin&confirmed=1",
+          )}`
         : undefined;
 
     const { error } = await supabase.auth.signUp({
@@ -263,7 +266,9 @@ export function AuthCard({
       return;
     }
 
-    setMessage("Registrazione inviata. Controlla la mail e conferma l’account.");
+    setMessage(
+      "Registrazione inviata. Controlla la mail: dopo la conferma potrai accedere con email e password scelte qui.",
+    );
   }
 
   async function handlePasswordResetRequest() {
