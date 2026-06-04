@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { Mail, Sparkles } from "lucide-react";
 import { MainNav } from "../components/main-nav";
@@ -50,28 +49,9 @@ export default function ContactsPage() {
             </article>
 
             <article className="panel rounded-3xl p-6 sm:p-8">
-              <div className="rounded-2xl border border-accent/14 bg-white/62 px-4 py-4">
-                <div className="flex flex-wrap items-center gap-3">
-                  <Image
-                    src="/partners/amleta-logo.png"
-                    alt="Amleta"
-                    width={564}
-                    height={140}
-                    className="h-8 w-auto"
-                  />
-                  <Image
-                    src="/lilith.png"
-                    alt="Lilith"
-                    width={118}
-                    height={73}
-                    className="h-8 w-auto"
-                  />
-                </div>
-              </div>
-
               <Link
                 href="/"
-                className="mt-5 inline-flex rounded-full border border-accent/18 bg-white px-5 py-2.5 text-sm font-semibold text-accent transition hover:bg-white"
+                className="inline-flex rounded-full border border-accent/18 bg-white px-5 py-2.5 text-sm font-semibold text-accent transition hover:bg-white"
               >
                 Torna alla home
               </Link>
