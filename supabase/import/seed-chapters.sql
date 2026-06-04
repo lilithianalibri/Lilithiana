@@ -885,9 +885,9 @@ insert into public.audiobooks (
   'Narrativa',
   'Racconto surreale, onirico e disorientante di una donna alle prese con tutti gli stereotipi della massaia e del mondo cosiddetto benpensante. Si alternano bellissimi monologhi, scene teatrali, operistiche e immaginifiche e trovano spazio anche riferimenti critici al periodo del Fascismo e della guerra e ai meccanismi che alimenta. Prima pubblicazione: 1945.',
   32153,
-  '#4b1f2f',
-  '#a45a68',
-  '#160b12',
+  '#1f2a68',
+  '#f0a43a',
+  '#5a102f',
   'Romanzo surreale, critica domestica, immaginario antifascista',
   true
 )
