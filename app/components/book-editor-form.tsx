@@ -149,10 +149,6 @@ export function BookEditorForm({
       return "Inserisci la descrizione.";
     }
 
-    if (!book.vibe.trim()) {
-      return "Inserisci la vibe del libro.";
-    }
-
     return null;
   }
 
@@ -506,7 +502,7 @@ export function BookEditorForm({
         coverFrom: book.coverFrom,
         coverVia: book.coverVia,
         coverTo: book.coverTo,
-        vibe: book.vibe,
+        vibe: book.vibe.trim() || "Audiolibro LILITHIANA",
       },
       chapters: serializableChapters,
     });
@@ -643,14 +639,6 @@ export function BookEditorForm({
                   />
                 </label>
               ) : null}
-              <label className="space-y-2 text-sm font-semibold sm:col-span-2">
-                <span>Vibe</span>
-                <input
-                  className={fieldClass}
-                  value={book.vibe}
-                  onChange={(event) => updateBookField("vibe", event.target.value)}
-                />
-              </label>
             </div>
           </div>
 

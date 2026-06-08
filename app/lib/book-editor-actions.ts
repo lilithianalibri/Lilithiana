@@ -333,7 +333,7 @@ export async function saveBookForEditor(
     const narrator = cleanRequired(input.book.narrator, "Voce narrante", 220);
     const category = cleanRequired(input.book.category, "Categoria", 120);
     const description = cleanRequired(input.book.description, "Descrizione", 5000);
-    const vibe = cleanRequired(input.book.vibe, "Vibe", 500);
+    const vibe = cleanOptional(input.book.vibe, 500) ?? "Audiolibro LILITHIANA";
     const requestedSlug = toSlug(input.book.slug || title);
     const slug =
       existingBook?.is_published && existingBook.slug !== requestedSlug
