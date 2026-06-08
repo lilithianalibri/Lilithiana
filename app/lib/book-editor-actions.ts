@@ -10,6 +10,11 @@ import type {
 } from "./book-editor-types";
 import { requireBookManagerAction } from "./book-editor-auth";
 import {
+  formatBookEditorDatabaseError,
+  getBookEditorClientUnavailableMessage,
+  getBookEditorSupabaseClient,
+} from "./book-editor-client";
+import {
   assertValidAudioFile,
   createR2UploadTarget,
   getPublicR2Url,
@@ -21,7 +26,6 @@ import {
   normalizeHexColor,
   toSlug,
 } from "./book-editor-utils";
-import { getSupabaseAdminClient } from "./supabase/admin";
 
 type ExistingBookRow = {
   id: string;
@@ -132,9 +136,9 @@ function isMissingColumnError(error: { message?: string; code?: string } | null)
 }
 
 async function hasColumn(table: "audiobooks" | "chapters", column: string) {
-  const supabase = getSupabaseAdminClient();
+  const supabase = await getBookEditorSupabaseClient();
   if (!supabase) {
-    throw new Error("Configurazione Supabase service role incompleta.");
+    throw new Error(getBookEditorClientUnavailableMessage());
   }
 
   const { error } = await supabase
@@ -173,9 +177,9 @@ async function getExistingBook(bookId: string | undefined) {
     return null;
   }
 
-  const supabase = getSupabaseAdminClient();
+  const supabase = await getBookEditorSupabaseClient();
   if (!supabase) {
-    throw new Error("Configurazione Supabase service role incompleta.");
+    throw new Error(getBookEditorClientUnavailableMessage());
   }
 
   const { data, error } = await supabase
@@ -196,9 +200,9 @@ async function getExistingBook(bookId: string | undefined) {
 }
 
 async function assertUniqueBookSlug(slug: string, currentBookId: string | undefined) {
-  const supabase = getSupabaseAdminClient();
+  const supabase = await getBookEditorSupabaseClient();
   if (!supabase) {
-    throw new Error("Configurazione Supabase service role incompleta.");
+    throw new Error(getBookEditorClientUnavailableMessage());
   }
 
   const { data, error } = await supabase
@@ -221,9 +225,9 @@ async function fetchExistingChapters(bookId: string | undefined) {
     return [];
   }
 
-  const supabase = getSupabaseAdminClient();
+  const supabase = await getBookEditorSupabaseClient();
   if (!supabase) {
-    throw new Error("Configurazione Supabase service role incompleta.");
+    throw new Error(getBookEditorClientUnavailableMessage());
   }
 
   const query = await supabase
@@ -318,9 +322,9 @@ export async function saveBookForEditor(
   try {
     await requireBookManagerAction();
 
-    const supabase = getSupabaseAdminClient();
+    const supabase = await getBookEditorSupabaseClient();
     if (!supabase) {
-      throw new Error("Configurazione Supabase service role incompleta.");
+      throw new Error(getBookEditorClientUnavailableMessage());
     }
 
     const existingBook = await getExistingBook(input.bookId);
@@ -500,7 +504,7 @@ export async function saveBookForEditor(
       ok: false,
       message:
         error instanceof Error
-          ? error.message
+          ? formatBookEditorDatabaseError(error.message)
           : "Impossibile salvare il libro.",
     };
   }

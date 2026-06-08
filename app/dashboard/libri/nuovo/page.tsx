@@ -4,6 +4,10 @@ import { ArrowLeft, BookPlus } from "lucide-react";
 import { BookEditorForm } from "../../../components/book-editor-form";
 import { MainNav } from "../../../components/main-nav";
 import { requireBookManagerPage } from "../../../lib/book-editor-auth";
+import {
+  getBookEditorSchemaCapabilities,
+  getBookEditorSchemaWarning,
+} from "../../../lib/book-editor-data";
 
 export const dynamic = "force-dynamic";
 
@@ -14,6 +18,8 @@ export const metadata: Metadata = {
 
 export default async function NewBookPage() {
   await requireBookManagerPage("/dashboard/libri/nuovo");
+  const schemaCapabilities = await getBookEditorSchemaCapabilities();
+  const schemaWarning = getBookEditorSchemaWarning(schemaCapabilities);
 
   return (
     <div className="relative min-h-screen px-6 pb-16 pt-6 sm:px-10 lg:px-16">
@@ -40,7 +46,10 @@ export default async function NewBookPage() {
             </h1>
           </section>
 
-          <BookEditorForm />
+          <BookEditorForm
+            schemaCapabilities={schemaCapabilities}
+            schemaWarning={schemaWarning}
+          />
         </main>
       </div>
     </div>

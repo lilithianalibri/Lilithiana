@@ -1,12 +1,17 @@
 import "server-only";
 
 import type {
+  BookEditorSchemaCapabilities,
   BookEditorListItem,
   EditableBook,
   EditorChapter,
 } from "./book-editor-types";
+import {
+  formatBookEditorDatabaseError,
+  getBookEditorClientUnavailableMessage,
+  getBookEditorSupabaseClient,
+} from "./book-editor-client";
 import { DEFAULT_BOOK_COLORS } from "./book-editor-utils";
-import { getSupabaseAdminClient } from "./supabase/admin";
 
 type BookRow = {
   id: string;
@@ -52,16 +57,69 @@ function formatDateTime(value: string) {
   }).format(date);
 }
 
+function isMissingColumnError(error: { message?: string; code?: string } | null) {
+  return (
+    error?.code === "42703" ||
+    error?.message?.toLowerCase().includes("column") ||
+    false
+  );
+}
+
+async function hasColumn(table: "audiobooks" | "chapters", column: string) {
+  const supabase = await getBookEditorSupabaseClient();
+
+  if (!supabase) {
+    return false;
+  }
+
+  const { error } = await supabase
+    .from(table)
+    .select(`id, ${column}`)
+    .limit(1);
+
+  if (!error) {
+    return true;
+  }
+
+  if (isMissingColumnError(error)) {
+    return false;
+  }
+
+  throw new Error(error.message);
+}
+
+export async function getBookEditorSchemaCapabilities(): Promise<BookEditorSchemaCapabilities> {
+  const [hasTranslator, hasCopyrightNotice, hasAudioStorageKey] = await Promise.all([
+    hasColumn("audiobooks", "translator"),
+    hasColumn("audiobooks", "copyright_notice"),
+    hasColumn("chapters", "audio_storage_key"),
+  ]);
+
+  return {
+    hasTranslator,
+    hasCopyrightNotice,
+    hasAudioStorageKey,
+  };
+}
+
+export function getBookEditorSchemaWarning(schema: BookEditorSchemaCapabilities) {
+  if (schema.hasTranslator && schema.hasCopyrightNotice && schema.hasAudioStorageKey) {
+    return null;
+  }
+
+  return "Migrazione editor incompleta sul database: alcuni campi facoltativi sono disattivati finche' non viene applicata la migrazione Supabase del pannello libri.";
+}
+
 export async function getEditableBooks(): Promise<{
   books: BookEditorListItem[];
   error: string | null;
 }> {
-  const supabase = getSupabaseAdminClient();
+  const supabase = await getBookEditorSupabaseClient();
 
   if (!supabase) {
     return {
       books: [],
-      error: "Configurazione Supabase service role incompleta.",
+      error: getBookEditorClientUnavailableMessage(),
     };
   }
 
@@ -78,10 +136,11 @@ export async function getEditableBooks(): Promise<{
   if (booksQuery.error || chaptersQuery.error || !booksQuery.data) {
     return {
       books: [],
-      error:
+      error: formatBookEditorDatabaseError(
         booksQuery.error?.message ??
-        chaptersQuery.error?.message ??
-        "Impossibile leggere i libri.",
+          chaptersQuery.error?.message ??
+          "Impossibile leggere i libri.",
+      ),
     };
   }
 
@@ -110,10 +169,10 @@ export async function getEditableBooks(): Promise<{
 }
 
 async function fetchBookWithOptionalEditorColumns(bookId: string) {
-  const supabase = getSupabaseAdminClient();
+  const supabase = await getBookEditorSupabaseClient();
 
   if (!supabase) {
-    return { book: null, error: "Configurazione Supabase service role incompleta." };
+    return { book: null, error: getBookEditorClientUnavailableMessage() };
   }
 
   const query = await supabase
@@ -138,17 +197,19 @@ async function fetchBookWithOptionalEditorColumns(bookId: string) {
 
   return {
     book: legacyQuery.data as BookRow | null,
-    error: legacyQuery.error?.message ?? null,
+    error: legacyQuery.error
+      ? formatBookEditorDatabaseError(legacyQuery.error.message)
+      : null,
   };
 }
 
 async function fetchChaptersWithOptionalStorageKey(bookId: string) {
-  const supabase = getSupabaseAdminClient();
+  const supabase = await getBookEditorSupabaseClient();
 
   if (!supabase) {
     return {
       chapters: [],
-      error: "Configurazione Supabase service role incompleta.",
+      error: getBookEditorClientUnavailableMessage(),
     };
   }
 
@@ -172,7 +233,9 @@ async function fetchChaptersWithOptionalStorageKey(bookId: string) {
 
   return {
     chapters: (legacyQuery.data as ChapterRow[]) ?? [],
-    error: legacyQuery.error?.message ?? null,
+    error: legacyQuery.error
+      ? formatBookEditorDatabaseError(legacyQuery.error.message)
+      : null,
   };
 }
 
@@ -180,15 +243,6 @@ export async function getEditableBook(bookId: string): Promise<{
   book: EditableBook | null;
   error: string | null;
 }> {
-  const supabase = getSupabaseAdminClient();
-
-  if (!supabase) {
-    return {
-      book: null,
-      error: "Configurazione Supabase service role incompleta.",
-    };
-  }
-
   const [{ book, error }, chaptersQuery] = await Promise.all([
     fetchBookWithOptionalEditorColumns(bookId),
     fetchChaptersWithOptionalStorageKey(bookId),

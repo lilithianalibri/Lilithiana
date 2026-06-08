@@ -27,6 +27,12 @@ export type EditableBook = {
   chapters: EditorChapter[];
 };
 
+export type BookEditorSchemaCapabilities = {
+  hasTranslator: boolean;
+  hasCopyrightNotice: boolean;
+  hasAudioStorageKey: boolean;
+};
+
 export type BookEditorListItem = {
   id: string;
   slug: string;

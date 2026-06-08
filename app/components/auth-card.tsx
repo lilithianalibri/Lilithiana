@@ -27,6 +27,9 @@ type AuthCardProps = {
 export type AuthMode = "signin" | "signup" | "forgot" | "reset";
 
 const defaultTurnstileSiteKey = "0x4AAAAAADbeDWAmRJrx24Lm";
+const confirmationEmailCooldownMs = 15 * 60 * 1000;
+const confirmationEmailCooldownStorageKey =
+  "lilithiana:auth-confirmation-email-cooldowns";
 
 const authCopy: Record<
   AuthMode,
@@ -52,7 +55,7 @@ const authCopy: Record<
   },
   forgot: {
     eyebrow: "Recupero password",
-    title: "Recupera l’accesso",
+    title: "Recupera l'accesso",
     description: "Inserisci la tua email e ti arriva il link per scegliere una nuova password.",
     submit: "Invia link",
   },
@@ -89,6 +92,244 @@ function formatDate(isoDate?: string | null) {
   }).format(date);
 }
 
+function normalizeEmailAddress(value: string) {
+  return value.trim().toLowerCase();
+}
+
+function readConfirmationCooldowns() {
+  if (typeof window === "undefined") {
+    return {};
+  }
+
+  try {
+    const rawValue = window.localStorage.getItem(confirmationEmailCooldownStorageKey);
+    const parsedValue = rawValue ? JSON.parse(rawValue) : {};
+
+    if (!parsedValue || typeof parsedValue !== "object") {
+      return {};
+    }
+
+    return parsedValue as Record<string, number>;
+  } catch {
+    return {};
+  }
+}
+
+function writeConfirmationCooldowns(cooldowns: Record<string, number>) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.localStorage.setItem(
+    confirmationEmailCooldownStorageKey,
+    JSON.stringify(cooldowns),
+  );
+}
+
+function getConfirmationCooldownUntil(email: string) {
+  const normalizedEmail = normalizeEmailAddress(email);
+
+  if (!normalizedEmail || typeof window === "undefined") {
+    return null;
+  }
+
+  const cooldowns = readConfirmationCooldowns();
+  const cooldownUntil = cooldowns[normalizedEmail];
+
+  if (!Number.isFinite(cooldownUntil)) {
+    return null;
+  }
+
+  if (cooldownUntil <= Date.now()) {
+    delete cooldowns[normalizedEmail];
+    writeConfirmationCooldowns(cooldowns);
+    return null;
+  }
+
+  return cooldownUntil;
+}
+
+function recordConfirmationCooldown(email: string) {
+  const normalizedEmail = normalizeEmailAddress(email);
+
+  if (!normalizedEmail || typeof window === "undefined") {
+    return null;
+  }
+
+  const cooldownUntil = Date.now() + confirmationEmailCooldownMs;
+  writeConfirmationCooldowns({
+    ...readConfirmationCooldowns(),
+    [normalizedEmail]: cooldownUntil,
+  });
+
+  return cooldownUntil;
+}
+
+function formatCooldownRemaining(cooldownUntil: number) {
+  const remainingSeconds = Math.max(1, Math.ceil((cooldownUntil - Date.now()) / 1000));
+
+  if (remainingSeconds < 60) {
+    return "meno di un minuto";
+  }
+
+  const remainingMinutes = Math.ceil(remainingSeconds / 60);
+  return `${remainingMinutes} minuti`;
+}
+
+function getConfirmationCooldownMessage(cooldownUntil: number) {
+  return `Abbiamo già inviato una mail di conferma. Riprova tra ${formatCooldownRemaining(
+    cooldownUntil,
+  )}.`;
+}
+
+type AuthErrorDetails = {
+  code?: string;
+  message?: string;
+  status?: number;
+};
+
+type EmailCheckResult = {
+  ok: boolean;
+  message?: string;
+};
+
+function getAuthErrorDetails(error: unknown): AuthErrorDetails {
+  if (!error || typeof error !== "object") {
+    return {};
+  }
+
+  const details = error as AuthErrorDetails;
+  return {
+    code: typeof details.code === "string" ? details.code : undefined,
+    message: typeof details.message === "string" ? details.message : undefined,
+    status: typeof details.status === "number" ? details.status : undefined,
+  };
+}
+
+function formatAuthError(error: unknown) {
+  const { code, message = "", status } = getAuthErrorDetails(error);
+  const normalizedCode = code?.toLowerCase();
+  const normalizedMessage = message.toLowerCase();
+
+  if (
+    normalizedCode === "over_email_send_rate_limit" ||
+    normalizedMessage.includes("email rate limit")
+  ) {
+    return {
+      message:
+        "Abbiamo già inviato una mail da poco. Aspetta qualche minuto e controlla anche Spam o Posta indesiderata prima di riprovare.",
+      canResendConfirmation: false,
+    };
+  }
+
+  if (
+    normalizedCode === "over_request_rate_limit" ||
+    status === 429 ||
+    normalizedMessage.includes("rate limit") ||
+    normalizedMessage.includes("too many")
+  ) {
+    return {
+      message: "Troppi tentativi ravvicinati. Aspetta qualche minuto e riprova.",
+      canResendConfirmation: false,
+    };
+  }
+
+  if (
+    normalizedCode === "email_address_invalid" ||
+    normalizedMessage.includes("email address is invalid") ||
+    normalizedMessage.includes("invalid email")
+  ) {
+    return {
+      message:
+        "Controlla l'indirizzo email: deve essere completo e senza spazi prima o dopo.",
+      canResendConfirmation: false,
+    };
+  }
+
+  if (
+    normalizedCode === "email_not_confirmed" ||
+    normalizedMessage.includes("email not confirmed")
+  ) {
+    return {
+      message:
+        "L'account non è ancora confermato. Controlla la mail di conferma, anche in Spam o Posta indesiderata.",
+      canResendConfirmation: true,
+    };
+  }
+
+  if (
+    normalizedCode === "email_exists" ||
+    normalizedCode === "user_already_exists" ||
+    normalizedMessage.includes("already registered") ||
+    normalizedMessage.includes("already exists")
+  ) {
+    return {
+      message:
+        "Questo indirizzo risulta già registrato. Se non hai confermato la mail, puoi chiedere un nuovo link di conferma.",
+      canResendConfirmation: true,
+    };
+  }
+
+  if (normalizedCode === "captcha_failed" || normalizedMessage.includes("captcha")) {
+    return {
+      message: "Controllo anti-bot non valido. Riprova.",
+      canResendConfirmation: false,
+    };
+  }
+
+  if (normalizedCode === "weak_password") {
+    return {
+      message: "Scegli una password più robusta, con almeno 8 caratteri.",
+      canResendConfirmation: false,
+    };
+  }
+
+  if (normalizedCode === "invalid_credentials") {
+    return {
+      message:
+        "Email o password non corretti. Se hai appena creato l'account, conferma prima la mail ricevuta.",
+      canResendConfirmation: false,
+    };
+  }
+
+  return {
+    message:
+      message ||
+      "Non siamo riuscite a completare l'operazione. Riprova tra poco o scrivici se il problema continua.",
+    canResendConfirmation: false,
+  };
+}
+
+async function checkEmailDeliverability(email: string): Promise<EmailCheckResult> {
+  try {
+    const response = await fetch("/api/auth/email-check", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email }),
+    });
+    const result = (await response.json()) as EmailCheckResult;
+
+    if (response.ok && result.ok) {
+      return { ok: true };
+    }
+
+    return {
+      ok: false,
+      message:
+        result.message ??
+        "Controlla l'indirizzo email: non sembra poter ricevere la conferma.",
+    };
+  } catch {
+    return {
+      ok: false,
+      message:
+        "Non siamo riuscite a controllare l'email. Riprova tra poco prima di inviare la conferma.",
+    };
+  }
+}
+
 export function AuthCard({
   compact = false,
   redirectTo = "/dashboard",
@@ -109,6 +350,10 @@ export function AuthCard({
   const [userEmail, setUserEmail] = useState<string | null>(null);
   const [userCreatedAt, setUserCreatedAt] = useState<string | null>(null);
   const [message, setMessage] = useState<string | null>(null);
+  const [confirmationHelpEmail, setConfirmationHelpEmail] = useState<string | null>(null);
+  const [confirmationCooldownUntil, setConfirmationCooldownUntil] = useState<number | null>(null);
+  const [isConfirmationEmailCoolingDown, setIsConfirmationEmailCoolingDown] =
+    useState(false);
   const [loading, setLoading] = useState(false);
 
   const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || defaultTurnstileSiteKey;
@@ -123,6 +368,9 @@ export function AuthCard({
     setShowPassword(false);
     setShowPasswordConfirm(false);
     setMessage(null);
+    setConfirmationHelpEmail(null);
+    setConfirmationCooldownUntil(null);
+    setIsConfirmationEmailCoolingDown(false);
     setCaptchaToken(null);
     setCaptchaNonce((current) => current + 1);
   }
@@ -134,6 +382,7 @@ export function AuthCard({
 
   function handleCaptchaError(errorCode?: string) {
     setCaptchaToken(null);
+    setConfirmationHelpEmail(null);
 
     if (errorCode === "110200") {
       setMessage(
@@ -143,6 +392,27 @@ export function AuthCard({
     }
 
     setMessage("Controllo anti-bot non valido. Riprova.");
+  }
+
+  function buildConfirmationRedirectTo() {
+    if (typeof window === "undefined") {
+      return undefined;
+    }
+
+    return `${window.location.origin}/auth/callback?next=${encodeURIComponent(
+      "/accedi?mode=signin&confirmed=1",
+    )}`;
+  }
+
+  function applyConfirmationCooldown(cooldownUntil: number | null) {
+    setConfirmationCooldownUntil(cooldownUntil);
+    setIsConfirmationEmailCoolingDown(Boolean(cooldownUntil));
+  }
+
+  function syncConfirmationCooldownForEmail(targetEmail: string) {
+    const cooldownUntil = getConfirmationCooldownUntil(targetEmail);
+    applyConfirmationCooldown(cooldownUntil);
+    return cooldownUntil;
   }
 
   useEffect(() => {
@@ -171,6 +441,23 @@ export function AuthCard({
     };
   }, [supabase]);
 
+  useEffect(() => {
+    if (!confirmationCooldownUntil) {
+      return;
+    }
+
+    const remainingMs = Math.max(0, confirmationCooldownUntil - Date.now());
+
+    const timeoutId = window.setTimeout(() => {
+      setConfirmationCooldownUntil(null);
+      setIsConfirmationEmailCoolingDown(false);
+    }, remainingMs);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+    };
+  }, [confirmationCooldownUntil]);
+
   if (!supabase) {
     return (
       <div className="rounded-2xl border border-accent/18 bg-white/68 p-4 text-sm text-muted">
@@ -184,7 +471,9 @@ export function AuthCard({
       return;
     }
 
-    if (!email || !password) {
+    const normalizedEmail = normalizeEmailAddress(email);
+
+    if (!normalizedEmail || !password) {
       setMessage("Inserisci email e password.");
       return;
     }
@@ -196,9 +485,11 @@ export function AuthCard({
 
     setLoading(true);
     setMessage(null);
+    setConfirmationHelpEmail(null);
+    setEmail(normalizedEmail);
 
     const { error } = await supabase.auth.signInWithPassword({
-      email,
+      email: normalizedEmail,
       password,
       options: {
         captchaToken: captchaToken ?? undefined,
@@ -209,7 +500,14 @@ export function AuthCard({
     resetCaptcha();
 
     if (error) {
-      setMessage(error.message);
+      const authError = formatAuthError(error);
+      setMessage(authError.message);
+      if (authError.canResendConfirmation) {
+        setConfirmationHelpEmail(normalizedEmail);
+        syncConfirmationCooldownForEmail(normalizedEmail);
+      } else {
+        setConfirmationHelpEmail(null);
+      }
       return;
     }
 
@@ -223,13 +521,24 @@ export function AuthCard({
       return;
     }
 
-    if (!email || !password) {
+    const normalizedEmail = normalizeEmailAddress(email);
+    const normalizedDisplayName = displayName.trim();
+
+    if (!normalizedEmail || !password) {
       setMessage("Inserisci email e password.");
       return;
     }
 
     if (password.length < 8) {
       setMessage("La password deve avere almeno 8 caratteri.");
+      return;
+    }
+
+    const existingCooldownUntil = getConfirmationCooldownUntil(normalizedEmail);
+    if (existingCooldownUntil) {
+      setEmail(normalizedEmail);
+      applyConfirmationCooldown(existingCooldownUntil);
+      setMessage(getConfirmationCooldownMessage(existingCooldownUntil));
       return;
     }
 
@@ -240,21 +549,26 @@ export function AuthCard({
 
     setLoading(true);
     setMessage(null);
+    setConfirmationHelpEmail(null);
+    setEmail(normalizedEmail);
 
-    const emailRedirectTo =
-      typeof window !== "undefined"
-        ? `${window.location.origin}/auth/callback?next=${encodeURIComponent(
-            "/accedi?mode=signin&confirmed=1",
-          )}`
-        : undefined;
+    const emailCheck = await checkEmailDeliverability(normalizedEmail);
+
+    if (!emailCheck.ok) {
+      setLoading(false);
+      setMessage(emailCheck.message ?? "Controlla l'indirizzo email e riprova.");
+      return;
+    }
+
+    const emailRedirectTo = buildConfirmationRedirectTo();
 
     const { error } = await supabase.auth.signUp({
-      email,
+      email: normalizedEmail,
       password,
       options: {
         emailRedirectTo,
         captchaToken: captchaToken ?? undefined,
-        data: displayName ? { display_name: displayName } : undefined,
+        data: normalizedDisplayName ? { display_name: normalizedDisplayName } : undefined,
       },
     });
 
@@ -262,12 +576,21 @@ export function AuthCard({
     resetCaptcha();
 
     if (error) {
-      setMessage(error.message);
+      const authError = formatAuthError(error);
+      setMessage(authError.message);
+      if (authError.canResendConfirmation) {
+        setConfirmationHelpEmail(normalizedEmail);
+        syncConfirmationCooldownForEmail(normalizedEmail);
+      } else {
+        setConfirmationHelpEmail(null);
+      }
       return;
     }
 
+    const cooldownUntil = recordConfirmationCooldown(normalizedEmail);
+    applyConfirmationCooldown(cooldownUntil);
     setMessage(
-      "Registrazione inviata. Controlla la mail: dopo la conferma potrai accedere con email e password scelte qui.",
+      "Registrazione inviata. Controlla la mail, anche in Spam o Posta indesiderata. Potrai richiedere un'altra conferma tra 15 minuti.",
     );
   }
 
@@ -276,8 +599,10 @@ export function AuthCard({
       return;
     }
 
-    if (!email) {
-      setMessage("Inserisci l’email del tuo account.");
+    const normalizedEmail = normalizeEmailAddress(email);
+
+    if (!normalizedEmail) {
+      setMessage("Inserisci l'email del tuo account.");
       return;
     }
 
@@ -288,13 +613,23 @@ export function AuthCard({
 
     setLoading(true);
     setMessage(null);
+    setConfirmationHelpEmail(null);
+    setEmail(normalizedEmail);
+
+    const emailCheck = await checkEmailDeliverability(normalizedEmail);
+
+    if (!emailCheck.ok) {
+      setLoading(false);
+      setMessage(emailCheck.message ?? "Controlla l'indirizzo email e riprova.");
+      return;
+    }
 
     const resetRedirect =
       typeof window !== "undefined"
         ? `${window.location.origin}/auth/callback?next=${encodeURIComponent("/accedi?mode=reset")}`
         : undefined;
 
-    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+    const { error } = await supabase.auth.resetPasswordForEmail(normalizedEmail, {
       redirectTo: resetRedirect,
       captchaToken: captchaToken ?? undefined,
     });
@@ -303,7 +638,8 @@ export function AuthCard({
     resetCaptcha();
 
     if (error) {
-      setMessage(error.message);
+      const authError = formatAuthError(error);
+      setMessage(authError.message);
       return;
     }
 
@@ -332,6 +668,7 @@ export function AuthCard({
 
     setLoading(true);
     setMessage(null);
+    setConfirmationHelpEmail(null);
 
     const { error } = await supabase.auth.updateUser({
       password,
@@ -340,7 +677,8 @@ export function AuthCard({
     setLoading(false);
 
     if (error) {
-      setMessage(error.message);
+      const authError = formatAuthError(error);
+      setMessage(authError.message);
       return;
     }
 
@@ -358,16 +696,87 @@ export function AuthCard({
 
     setLoading(true);
     setMessage(null);
+    setConfirmationHelpEmail(null);
     const { error } = await supabase.auth.signOut();
     setLoading(false);
 
     if (error) {
-      setMessage(error.message);
+      const authError = formatAuthError(error);
+      setMessage(authError.message);
       return;
     }
 
     setMessage("Sessione chiusa.");
     router.refresh();
+  }
+
+  async function handleResendConfirmation() {
+    if (!supabase) {
+      return;
+    }
+
+    const normalizedEmail = normalizeEmailAddress(confirmationHelpEmail ?? email);
+
+    if (!normalizedEmail) {
+      setMessage("Inserisci l'email del tuo account.");
+      return;
+    }
+
+    const existingCooldownUntil = getConfirmationCooldownUntil(normalizedEmail);
+    if (existingCooldownUntil) {
+      setEmail(normalizedEmail);
+      applyConfirmationCooldown(existingCooldownUntil);
+      setMessage(getConfirmationCooldownMessage(existingCooldownUntil));
+      return;
+    }
+
+    if (authActionRequiresCaptcha && !captchaToken) {
+      setMessage("Completa il controllo anti-bot per reinviare la conferma.");
+      return;
+    }
+
+    setLoading(true);
+    setMessage(null);
+    setEmail(normalizedEmail);
+
+    const emailCheck = await checkEmailDeliverability(normalizedEmail);
+
+    if (!emailCheck.ok) {
+      setLoading(false);
+      setMessage(emailCheck.message ?? "Controlla l'indirizzo email e riprova.");
+      return;
+    }
+
+    const { error } = await supabase.auth.resend({
+      type: "signup",
+      email: normalizedEmail,
+      options: {
+        emailRedirectTo: buildConfirmationRedirectTo(),
+        captchaToken: captchaToken ?? undefined,
+      },
+    });
+
+    setLoading(false);
+    resetCaptcha();
+
+    if (error) {
+      const authError = formatAuthError(error);
+      setMessage(authError.message);
+      if (authError.canResendConfirmation) {
+        setConfirmationHelpEmail(normalizedEmail);
+        syncConfirmationCooldownForEmail(normalizedEmail);
+      } else {
+        setConfirmationHelpEmail(null);
+      }
+      return;
+    }
+
+    setConfirmationHelpEmail(null);
+    const cooldownUntil = recordConfirmationCooldown(normalizedEmail);
+    applyConfirmationCooldown(cooldownUntil);
+    setMessage(
+      "Ti abbiamo inviato di nuovo la mail di conferma. Controlla anche Spam o Posta indesiderata. Potrai richiederne un'altra tra 15 minuti.",
+    );
   }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -515,7 +924,11 @@ export function AuthCard({
               autoComplete="email"
               placeholder="nome@email.it"
               value={email}
-              onChange={(event) => setEmail(event.target.value)}
+              onChange={(event) => {
+                const nextEmail = event.target.value;
+                setEmail(nextEmail);
+                syncConfirmationCooldownForEmail(nextEmail);
+              }}
               className={inputClass}
               required
             />
@@ -606,14 +1019,33 @@ export function AuthCard({
         ) : null}
 
         {message ? (
-          <p className="rounded-xl border border-accent/16 bg-white/70 px-4 py-3 text-sm text-muted">
+          <p
+            className="rounded-xl border border-accent/16 bg-white/70 px-4 py-3 text-sm text-muted"
+            aria-live="polite"
+          >
             {message}
           </p>
         ) : null}
 
+        {confirmationHelpEmail ? (
+          <button
+            type="button"
+            onClick={handleResendConfirmation}
+            disabled={loading || isConfirmationEmailCoolingDown}
+            className="inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-accent/25 bg-white px-4 py-2 text-sm font-semibold text-accent transition hover:bg-accent/10 disabled:cursor-not-allowed disabled:opacity-70"
+          >
+            <MailCheck size={15} />
+            Reinvia mail di conferma
+          </button>
+        ) : null}
+
         <button
           type="submit"
-          disabled={loading || (mode === "reset" && !userEmail)}
+          disabled={
+            loading ||
+            (mode === "reset" && !userEmail) ||
+            (mode === "signup" && isConfirmationEmailCoolingDown)
+          }
           className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-xl bg-accent px-4 py-3 text-sm font-semibold text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-70"
         >
           {loading ? <Loader2 size={16} className="animate-spin" /> : null}

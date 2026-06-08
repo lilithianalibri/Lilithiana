@@ -16,7 +16,11 @@ import {
   UploadCloud,
 } from "lucide-react";
 import { createChapterUploadTargets, saveBookForEditor } from "../lib/book-editor-actions";
-import type { EditableBook, EditorChapter } from "../lib/book-editor-types";
+import type {
+  BookEditorSchemaCapabilities,
+  EditableBook,
+  EditorChapter,
+} from "../lib/book-editor-types";
 import {
   BOOK_CATEGORIES,
   DEFAULT_BOOK_COLORS,
@@ -34,6 +38,8 @@ type LocalChapter = EditorChapter & {
 
 type BookEditorFormProps = {
   initialBook?: EditableBook | null;
+  schemaCapabilities?: BookEditorSchemaCapabilities;
+  schemaWarning?: string | null;
 };
 
 const emptyBook: EditableBook = {
@@ -54,6 +60,11 @@ const emptyBook: EditableBook = {
 };
 
 const steps = ["Scheda libro", "Capitoli audio", "Revisione"] as const;
+const fullSchemaCapabilities: BookEditorSchemaCapabilities = {
+  hasTranslator: true,
+  hasCopyrightNotice: true,
+  hasAudioStorageKey: true,
+};
 const fieldClass =
   "w-full rounded-2xl border border-accent/18 bg-white/78 px-4 py-3 text-sm text-foreground outline-none transition focus:border-accent";
 const smallButtonClass =
@@ -93,7 +104,11 @@ function normalizeChapterOrder(chapters: LocalChapter[]) {
   }));
 }
 
-export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
+export function BookEditorForm({
+  initialBook = null,
+  schemaCapabilities = fullSchemaCapabilities,
+  schemaWarning = null,
+}: BookEditorFormProps) {
   const router = useRouter();
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [book, setBook] = useState<EditableBook>(initialBook ?? emptyBook);
@@ -534,6 +549,12 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
         </div>
       ) : null}
 
+      {schemaWarning ? (
+        <div className="rounded-2xl border border-accent/18 bg-white/76 px-4 py-3 text-sm text-muted">
+          {schemaWarning}
+        </div>
+      ) : null}
+
       {stepIndex === 0 ? (
         <section className="grid gap-6 lg:grid-cols-[1fr_300px]">
           <div className="panel rounded-3xl p-5 sm:p-6">
@@ -568,14 +589,16 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
                   required
                 />
               </label>
-              <label className="space-y-2 text-sm font-semibold">
-                <span>Traduttrice</span>
-                <input
-                  className={fieldClass}
-                  value={book.translator}
-                  onChange={(event) => updateBookField("translator", event.target.value)}
-                />
-              </label>
+              {schemaCapabilities.hasTranslator ? (
+                <label className="space-y-2 text-sm font-semibold">
+                  <span>Traduttrice</span>
+                  <input
+                    className={fieldClass}
+                    value={book.translator}
+                    onChange={(event) => updateBookField("translator", event.target.value)}
+                  />
+                </label>
+              ) : null}
               <label className="space-y-2 text-sm font-semibold">
                 <span>Voce narrante</span>
                 <input
@@ -608,16 +631,18 @@ export function BookEditorForm({ initialBook = null }: BookEditorFormProps) {
                   required
                 />
               </label>
-              <label className="space-y-2 text-sm font-semibold sm:col-span-2">
-                <span>Nota copyright</span>
-                <textarea
-                  className={`${fieldClass} min-h-24 resize-y`}
-                  value={book.copyrightNotice}
-                  onChange={(event) =>
-                    updateBookField("copyrightNotice", event.target.value)
-                  }
-                />
-              </label>
+              {schemaCapabilities.hasCopyrightNotice ? (
+                <label className="space-y-2 text-sm font-semibold sm:col-span-2">
+                  <span>Nota copyright</span>
+                  <textarea
+                    className={`${fieldClass} min-h-24 resize-y`}
+                    value={book.copyrightNotice}
+                    onChange={(event) =>
+                      updateBookField("copyrightNotice", event.target.value)
+                    }
+                  />
+                </label>
+              ) : null}
               <label className="space-y-2 text-sm font-semibold sm:col-span-2">
                 <span>Vibe</span>
                 <input

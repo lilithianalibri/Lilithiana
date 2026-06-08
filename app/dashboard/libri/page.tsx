@@ -11,7 +11,11 @@ import {
 } from "lucide-react";
 import { MainNav } from "../../components/main-nav";
 import { requireBookManagerPage } from "../../lib/book-editor-auth";
-import { getEditableBooks } from "../../lib/book-editor-data";
+import {
+  getBookEditorSchemaCapabilities,
+  getBookEditorSchemaWarning,
+  getEditableBooks,
+} from "../../lib/book-editor-data";
 import { formatDurationLabel } from "../../lib/time";
 
 export const dynamic = "force-dynamic";
@@ -23,7 +27,11 @@ export const metadata: Metadata = {
 
 export default async function DashboardBooksPage() {
   await requireBookManagerPage("/dashboard/libri");
-  const { books, error } = await getEditableBooks();
+  const [{ books, error }, schemaCapabilities] = await Promise.all([
+    getEditableBooks(),
+    getBookEditorSchemaCapabilities(),
+  ]);
+  const schemaWarning = getBookEditorSchemaWarning(schemaCapabilities);
 
   return (
     <div className="relative min-h-screen px-6 pb-16 pt-6 sm:px-10 lg:px-16">
@@ -60,6 +68,12 @@ export default async function DashboardBooksPage() {
               file audio.
             </p>
           </section>
+
+          {schemaWarning ? (
+            <section className="panel rounded-3xl p-6 text-sm text-muted">
+              {schemaWarning}
+            </section>
+          ) : null}
 
           {error ? (
             <section className="panel rounded-3xl p-6 text-sm text-muted">

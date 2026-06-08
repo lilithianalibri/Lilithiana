@@ -5,7 +5,11 @@ import { AlertTriangle, ArrowLeft, Edit3 } from "lucide-react";
 import { BookEditorForm } from "../../../../components/book-editor-form";
 import { MainNav } from "../../../../components/main-nav";
 import { requireBookManagerPage } from "../../../../lib/book-editor-auth";
-import { getEditableBook } from "../../../../lib/book-editor-data";
+import {
+  getBookEditorSchemaCapabilities,
+  getBookEditorSchemaWarning,
+  getEditableBook,
+} from "../../../../lib/book-editor-data";
 
 type EditBookPageProps = {
   params: Promise<{ bookId: string }>;
@@ -21,7 +25,11 @@ export const metadata: Metadata = {
 export default async function EditBookPage({ params }: EditBookPageProps) {
   const { bookId } = await params;
   await requireBookManagerPage(`/dashboard/libri/${bookId}/modifica`);
-  const { book, error } = await getEditableBook(bookId);
+  const [{ book, error }, schemaCapabilities] = await Promise.all([
+    getEditableBook(bookId),
+    getBookEditorSchemaCapabilities(),
+  ]);
+  const schemaWarning = getBookEditorSchemaWarning(schemaCapabilities);
 
   if (!book && !error) {
     notFound();
@@ -61,7 +69,11 @@ export default async function EditBookPage({ params }: EditBookPageProps) {
               <p className="mt-2">{error ?? "Libro non disponibile."}</p>
             </section>
           ) : (
-            <BookEditorForm initialBook={book} />
+            <BookEditorForm
+              initialBook={book}
+              schemaCapabilities={schemaCapabilities}
+              schemaWarning={schemaWarning}
+            />
           )}
         </main>
       </div>
