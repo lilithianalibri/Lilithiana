@@ -283,7 +283,7 @@ on conflict (book_id, slug) do update set
   audio_url = excluded.audio_url;
 
 insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)
-select book.id, 'cantieunice', 3, 'Canti di Eunice Waymon', 299, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/03cantieunice.wav'
+select book.id, 'cantieunice', 3, 'Canti di E. Waymon / Canto della ballata prodigiosa', 299, 'https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/la-ballata-di-nina-simone/03cantieunice.wav'
 from public.audiobooks book
 where book.slug = 'la-ballata-di-nina-simone'
 on conflict (book_id, slug) do update set
