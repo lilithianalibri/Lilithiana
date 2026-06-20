@@ -1,4 +1,4 @@
-export const COOKIE_CONSENT_VERSION = "2026-05-20";
+export const COOKIE_CONSENT_VERSION = "2026-06-20";
 export const COOKIE_CONSENT_STORAGE_KEY = "lilithiana_cookie_consent_v1";
 export const COOKIE_CONSENT_COOKIE_NAME = "lilithiana_cookie_consent";
 export const COOKIE_CONSENT_MAX_AGE_SECONDS = 60 * 60 * 24 * 180;

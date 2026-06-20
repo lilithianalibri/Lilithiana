@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Mail, Sparkles } from "lucide-react";
+import { ArrowLeft, Mail, Sparkles } from "lucide-react";
 import { MainNav } from "../components/main-nav";
+import { SocialLinks } from "../components/social-links";
 
 export const metadata: Metadata = {
   title: "Contatti | LILITHIANA",
@@ -49,14 +50,27 @@ export default function ContactsPage() {
             </article>
 
             <article className="panel rounded-3xl p-6 sm:p-8">
-              <Link
-                href="/"
-                className="inline-flex rounded-full border border-accent/18 bg-white px-5 py-2.5 text-sm font-semibold text-accent transition hover:bg-white"
-              >
-                Torna alla home
-              </Link>
+              <p className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.16em] text-accent">
+                <Sparkles size={14} />
+                Social
+              </p>
+              <h2 className="mt-3 font-display text-2xl">Seguici online</h2>
+              <p className="mt-2 text-sm leading-6 text-muted">
+                Aggiornamenti, nuove uscite e tracce del progetto passano anche da qui.
+              </p>
+              <div className="mt-5">
+                <SocialLinks variant="contact" />
+              </div>
             </article>
           </section>
+
+          <Link
+            href="/"
+            className="inline-flex items-center gap-2 rounded-full border border-accent/18 bg-white px-5 py-2.5 text-sm font-semibold text-accent transition hover:bg-white"
+          >
+            <ArrowLeft size={14} />
+            Torna alla home
+          </Link>
         </main>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SocialLinks } from "./social-links";
 
 const footerLinks = [
   { label: "Home", href: "/" },
@@ -35,17 +36,20 @@ export function SiteFooter() {
               />
             </div>
 
-            <nav className="flex flex-wrap items-center gap-2 text-sm">
-              {footerLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="rounded-full border border-accent/14 bg-white/62 px-3.5 py-1.5 font-medium transition hover:bg-white"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
+            <div className="flex flex-col gap-3 sm:items-end">
+              <SocialLinks />
+              <nav className="flex flex-wrap items-center gap-2 text-sm sm:justify-end">
+                {footerLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="rounded-full border border-accent/14 bg-white/62 px-3.5 py-1.5 font-medium transition hover:bg-white"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
           </div>
 
           <div className="gold-line mt-4 h-px w-full" />

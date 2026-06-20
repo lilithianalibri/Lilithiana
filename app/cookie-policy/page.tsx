@@ -25,7 +25,7 @@ export default function CookiePolicyPage() {
             <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
               Informativa cookie e strumenti di tracciamento
             </h1>
-            <p className="mt-4 text-sm text-muted">Ultimo aggiornamento: 20 maggio 2026</p>
+            <p className="mt-4 text-sm text-muted">Ultimo aggiornamento: 20 giugno 2026</p>
           </section>
 
           <section className="panel rounded-3xl p-6 sm:p-8">
@@ -100,6 +100,20 @@ export default function CookiePolicyPage() {
                   al servizio (ad esempio autenticazione, sicurezza anti-bot, infrastruttura). I
                   relativi trattamenti avvengono secondo i loro ruoli contrattuali e le rispettive
                   misure di protezione dati.
+                </p>
+                <p className="mt-2">
+                  I link a Facebook e Instagram sono semplici collegamenti esterni e non installano
+                  cookie Meta su LILITHIANA. Aprendo tali piattaforme, eventuali cookie o strumenti
+                  di tracciamento sono gestiti da Meta secondo la sua{" "}
+                  <a
+                    className="font-semibold text-accent"
+                    href="https://www.facebook.com/policies/cookies/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Cookie Policy
+                  </a>
+                  .
                 </p>
               </section>
 
