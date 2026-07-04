@@ -1,7 +1,7 @@
 const socialAccounts = [
   {
     label: "Facebook",
-    href: "https://www.facebook.com/lilithianalibri/",
+    href: "https://www.facebook.com/profile.php?id=100091694086260&locale=it_IT",
     Icon: FacebookMark,
   },
   {
