@@ -10,7 +10,6 @@ import {
   ListMusic,
   RotateCcw,
   SlidersHorizontal,
-  Sparkles,
 } from "lucide-react";
 import { BookCover } from "./book-cover";
 import { MainNav } from "./main-nav";
@@ -99,10 +98,18 @@ export function HomePageClient({ books, featuredBook }: HomePageClientProps) {
         <main className="space-y-10">
           <section>
             <div className="space-y-8">
-              <span className="panel inline-flex items-center gap-2 rounded-full px-4 py-2 text-xs uppercase tracking-[0.2em] text-accent">
-                <Sparkles size={14} />
-                Edizione LILITHIANA
-              </span>
+              <div className="panel flex w-full justify-center rounded-3xl px-5 py-2 sm:px-7 sm:py-3">
+                <Image
+                  src="/partners/luna-silvia-dragonieri-logo-horizontal.png"
+                  alt="Luna Silvia Dragonieri, in arte Tuasorellaminore"
+                  width={2172}
+                  height={724}
+                  sizes="(max-width: 639px) calc(100vw - 88px), 360px"
+                  loading="eager"
+                  unoptimized
+                  className="h-auto w-full max-w-[360px] object-contain"
+                />
+              </div>
 
               <h1 className="title-glow font-display text-3xl leading-tight sm:text-4xl lg:text-5xl">
                 <span className="font-bold text-accent">Ascolta gratis</span> e senza alcuna
