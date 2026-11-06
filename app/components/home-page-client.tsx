@@ -98,7 +98,10 @@ export function HomePageClient({ books, featuredBook }: HomePageClientProps) {
         <main className="space-y-10">
           <section>
             <div className="space-y-8">
-              <div className="panel flex w-full justify-center rounded-3xl px-5 py-2 sm:px-7 sm:py-3">
+              <div className="panel flex w-full flex-col items-center justify-center gap-1 rounded-3xl px-5 py-3 sm:px-7 sm:py-4">
+                <p className="text-center text-sm font-semibold text-accent sm:text-base">
+                  Introduzione vocale della producer
+                </p>
                 <Image
                   src="/partners/luna-silvia-dragonieri-logo-horizontal.png"
                   alt="Luna Silvia Dragonieri, in arte Tuasorellaminore"
