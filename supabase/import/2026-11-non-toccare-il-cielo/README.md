@@ -2,7 +2,7 @@
 
 Imported from the user's `wetransfer_racconto-di-una-donna-palestinese_2026-11-09_2151.zip` archive on 2026-11-09.
 
-- Title: **Non toccare il cielo**
+- Display title: **Racconto di una donna palestinese — Non toccare il cielo**
 - Author: **Sondos Sabra**
 - Narrator: **Antonella Civale**
 - Category: **Narrativa**
@@ -10,6 +10,8 @@ Imported from the user's `wetransfer_racconto-di-una-donna-palestinese_2026-11-0
 - Cover: sky blue, using the existing gradient cover component
 - Tracks: **1** complete recording
 - Duration: **13:40** (820 seconds, rounded from 820.097 seconds)
+
+On 2026-11-10 the client requested the wording “Racconto di una donna palestinese” before the Italian title. `update-display-title.sql` applies this wording consistently to the catalog, book page and generated cover while retaining Sondos Sabra as the author. The book URL and recorded chapter title remain unchanged.
 
 The original filename is `Racconto di una donna palestinese/Non toccare il cielo di Sondos Sabra.wav`. The recording already includes “Lilithiana presenta Non toccare il cielo, di Sondos Sabra, legge Antonella Civale”. The introduction is preserved inside the track. The description follows the supplied title and the recording's opening; no publication year, edition or translator is assumed.
 
