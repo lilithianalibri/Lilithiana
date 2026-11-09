@@ -334,15 +334,16 @@ export function HomePageClient({ books, featuredBook }: HomePageClientProps) {
               </p>
               <h2
                 id="why-lilithiana"
-                className="mt-3 flex flex-wrap items-start justify-center gap-3 text-center font-display text-3xl sm:text-4xl"
+                className="mt-3 flex flex-wrap items-center justify-center gap-3 text-center font-display text-3xl sm:text-4xl"
               >
                 <span>Come funziona</span>
                 <Image
-                  src="/lilithiana-logo-transparent.png"
+                  src="/lilithiana-logo-audio-transparent.png"
                   alt="Lilithiana"
-                  width={1572}
-                  height={715}
-                  className="-mt-6 h-[3.45rem] w-auto sm:-mt-7 sm:h-[4.1rem]"
+                  width={1217}
+                  height={638}
+                  sizes="(min-width: 1024px) 214px, (min-width: 640px) 153px, 123px"
+                  className="h-16 w-auto sm:h-20 lg:h-28"
                 />
               </h2>
               <p className="mx-auto mt-3 max-w-2xl text-center text-sm text-muted sm:text-base">

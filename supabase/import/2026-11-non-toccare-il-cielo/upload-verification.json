@@ -1,0 +1,12 @@
+[
+  {
+    "r2_key": "non-toccare-il-cielo/01-lettura-integrale.wav",
+    "bytes": 157466214,
+    "sha256": "b32c82b94121b4871b89e38ce0db89245350dcb5d965abb53a64c3350c6b319b",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "5241dfb51016b2a46c05274c2db0f715-31"
+  }
+]

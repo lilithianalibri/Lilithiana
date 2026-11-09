@@ -1,0 +1,142 @@
+[
+  {
+    "r2_key": "novelle/00-la-volpe.wav",
+    "bytes": 347377346,
+    "sha256": "89b8d029f08125031c694e3d5e2c9fe6fec3c37896b1bfd5a50807562db0d151",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "c1f3fa5461ee4b21557a17a5ce1f416a-67"
+  },
+  {
+    "r2_key": "novelle/01-chiaroscuro.wav",
+    "bytes": 218600416,
+    "sha256": "15bfb98576583c41ce02e2ba961ad5153fb7c686468a3646f39b79f50aad7cac",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "0e4cb5f55087c6ecbb861e33a24c6352-42"
+  },
+  {
+    "r2_key": "novelle/02-le-tredici-uova.wav",
+    "bytes": 229127456,
+    "sha256": "2ba5a32b9c4692c21cf0fb08bb987c63edf6ec2a54ef492a4ac58cfd923c8d42",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "37a395a0d29d34bc4a614ffa74efdf94-44"
+  },
+  {
+    "r2_key": "novelle/03-la-porta-aperta.wav",
+    "bytes": 259372168,
+    "sha256": "e22d0ecc328f365988d8f90fc49f68dc4b104226ad263ad150792a3a5ac47e9e",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "c03d44a0ec063df5a6039e2610865655-50"
+  },
+  {
+    "r2_key": "novelle/04-la-porta-chiusa.wav",
+    "bytes": 223526388,
+    "sha256": "0e6b93e30003e30ddadc8700272d475b3809eb40f6e39a26605fc4087455eea4",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "9770646c71de927ed3a95eab1c8dd44c-43"
+  },
+  {
+    "r2_key": "novelle/05-il-natale-del-consigliere.wav",
+    "bytes": 303723114,
+    "sha256": "712d7245b390a9817f5fd75ec9746d37f7c6807000df2b17ae2b6b75c3537d98",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "d7cae90fc287a4ae9e2d7fa64633be72-58"
+  },
+  {
+    "r2_key": "novelle/06-al-servizio-del-re.wav",
+    "bytes": 166735658,
+    "sha256": "1ae49ccded9b64f6f9dcd23301fb55991027ee7bcef2d4648cda3e1eca2ce5bc",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "3e378d642c71bace4ddebf3222f1b1bd-32"
+  },
+  {
+    "r2_key": "novelle/07-padrona-e-servi.wav",
+    "bytes": 275592252,
+    "sha256": "19e7785c38945c37ac8e5a4947d9868e8f5ddd0374c936bab99a5184110691ed",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "f20aabbeebd7a5846af42349a355f003-53"
+  },
+  {
+    "r2_key": "novelle/08-la-scomunica.wav",
+    "bytes": 244680770,
+    "sha256": "61140eb4592f7a2ab05f5f75f925939afe22521b58cbd33ddacd7b91059b29c1",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "37224a3b54fe681fb94c2fd94ca36b4b-47"
+  },
+  {
+    "r2_key": "novelle/09-l-uomo-nuovo.wav",
+    "bytes": 251842784,
+    "sha256": "922576bd3ae1e27bf9b970d42abd23da1c07cc661d3da746e35ae599021745e6",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "b5db94e1221c34ed4918ff242920e542-49"
+  },
+  {
+    "r2_key": "novelle/10-la-cerbiatta.wav",
+    "bytes": 173399750,
+    "sha256": "0a483ebf40d1376d0683479653bab8b0b6a93239141dc4ed6451f39de8a79965",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "b0f2e2bb5f456218bb3e1ac2a5808217-34"
+  },
+  {
+    "r2_key": "novelle/11-la-festa-del-cristo.wav",
+    "bytes": 339007122,
+    "sha256": "f8b4f744a1539ddfc51c34edea3854e23c87cfb49364fb42f004be26f007f4ab",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "4790fa05737d1aa0e025440d3de0e384-65"
+  },
+  {
+    "r2_key": "novelle/12-un-po-a-tutti.wav",
+    "bytes": 211223306,
+    "sha256": "8468aa36841c3a800e6cc1806aeb731942c419743cc9b366106eab437924ce1b",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "0ad55e716d7bdf7ca14aeeefee4a1369-41"
+  },
+  {
+    "r2_key": "novelle/13-l-ultima.wav",
+    "bytes": 188935220,
+    "sha256": "24686bd03f1f00a115b15bf67f5f1de6c0085e443c5d4fcf7652c4f40b018b35",
+    "full_decode": true,
+    "content_type": "audio/wav",
+    "http_range_verified": true,
+    "full_upload_checksum_verified": true,
+    "etag": "ca7a4de0ac0aaea130f8b3558dd40cc7-37"
+  }
+]

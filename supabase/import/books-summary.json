@@ -43,5 +43,15 @@
     "book_slug": "il-voto-alle-donne-e-donne-della-costituente",
     "chapters": 1,
     "total_duration_seconds": 1122
+  },
+  {
+    "book_slug": "novelle",
+    "chapters": 14,
+    "total_duration_seconds": 17879
+  },
+  {
+    "book_slug": "non-toccare-il-cielo",
+    "chapters": 1,
+    "total_duration_seconds": 820
   }
 ]

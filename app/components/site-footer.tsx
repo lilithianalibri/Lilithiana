@@ -27,11 +27,12 @@ export function SiteFooter() {
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <Image
-                src="/lilithiana-logo-transparent.png"
+                src="/lilithiana-logo-audio-transparent.png"
                 alt="Lilithiana"
-                width={1572}
-                height={715}
-                className="h-9 w-auto sm:h-10"
+                width={1217}
+                height={638}
+                sizes="(min-width: 1024px) 184px, (min-width: 640px) 153px, 123px"
+                className="h-16 w-auto sm:h-20 lg:h-24"
               />
             </div>
 

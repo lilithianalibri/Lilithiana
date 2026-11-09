@@ -27,7 +27,8 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
               width={1217}
               height={638}
               preload
-              className="h-16 w-auto sm:h-24 lg:h-28"
+              sizes="(min-width: 1280px) 489px, (min-width: 1024px) 428px, (min-width: 640px) 184px, 123px"
+              className="h-16 w-auto sm:h-24 lg:h-56 xl:h-64"
             />
           </Link>
         </div>

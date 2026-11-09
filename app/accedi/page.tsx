@@ -74,11 +74,12 @@ export default async function LoginPage({ searchParams }: LoginPageProps) {
             <h1 className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 font-display text-4xl leading-tight sm:text-5xl">
               <span>Accedi a</span>
               <Image
-                src="/lilithiana-logo-transparent.png"
+                src="/lilithiana-logo-audio-transparent.png"
                 alt="Lilithiana"
-                width={1572}
-                height={715}
-                className="-mt-2 h-14 w-auto max-w-[78vw] sm:-mt-4 sm:h-20"
+                width={1217}
+                height={638}
+                sizes="(min-width: 1024px) 245px, (min-width: 640px) 153px, 107px"
+                className="h-14 w-auto max-w-[78vw] sm:h-20 lg:h-32"
               />
             </h1>
             <p className="mt-4 max-w-2xl text-base text-muted">

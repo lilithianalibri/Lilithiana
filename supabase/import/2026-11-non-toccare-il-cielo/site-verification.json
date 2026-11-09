@@ -1,0 +1,24 @@
+[
+  {
+    "base": "https://www.lilithiana.it",
+    "book_status": 200,
+    "library_status": 200,
+    "author": "Sondos Sabra",
+    "narrator": "Antonella Civale",
+    "category": "Narrativa",
+    "cover_verified": true,
+    "tracks_in_page": 1,
+    "visible_in_library": true
+  },
+  {
+    "base": "http://127.0.0.1:3000",
+    "book_status": 200,
+    "library_status": 200,
+    "author": "Sondos Sabra",
+    "narrator": "Antonella Civale",
+    "category": "Narrativa",
+    "cover_verified": true,
+    "tracks_in_page": 1,
+    "visible_in_library": true
+  }
+]

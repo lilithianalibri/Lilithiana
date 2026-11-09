@@ -1,0 +1,114 @@
+[
+  {
+    "source": "source\\deledda1\\00la volpe_1.wav",
+    "source_index": 0,
+    "chapter_index": 1,
+    "ordered_copy": "ordered\\novelle\\00-la-volpe.wav",
+    "bytes": 347377346,
+    "sha256": "89b8d029f08125031c694e3d5e2c9fe6fec3c37896b1bfd5a50807562db0d151"
+  },
+  {
+    "source": "source\\deledda1\\01chiaroscuro.wav",
+    "source_index": 1,
+    "chapter_index": 2,
+    "ordered_copy": "ordered\\novelle\\01-chiaroscuro.wav",
+    "bytes": 218600416,
+    "sha256": "15bfb98576583c41ce02e2ba961ad5153fb7c686468a3646f39b79f50aad7cac"
+  },
+  {
+    "source": "source\\deledda1\\02le 13 uova.wav",
+    "source_index": 2,
+    "chapter_index": 3,
+    "ordered_copy": "ordered\\novelle\\02-le-tredici-uova.wav",
+    "bytes": 229127456,
+    "sha256": "2ba5a32b9c4692c21cf0fb08bb987c63edf6ec2a54ef492a4ac58cfd923c8d42"
+  },
+  {
+    "source": "source\\deledda1\\03la porta aperta.wav",
+    "source_index": 3,
+    "chapter_index": 4,
+    "ordered_copy": "ordered\\novelle\\03-la-porta-aperta.wav",
+    "bytes": 259372168,
+    "sha256": "e22d0ecc328f365988d8f90fc49f68dc4b104226ad263ad150792a3a5ac47e9e"
+  },
+  {
+    "source": "source\\deledda sa 4 a 7\\04la porta chiusa.wav",
+    "source_index": 4,
+    "chapter_index": 5,
+    "ordered_copy": "ordered\\novelle\\04-la-porta-chiusa.wav",
+    "bytes": 223526388,
+    "sha256": "0e6b93e30003e30ddadc8700272d475b3809eb40f6e39a26605fc4087455eea4"
+  },
+  {
+    "source": "source\\deledda sa 4 a 7\\05Il Natale del consigliere.wav",
+    "source_index": 5,
+    "chapter_index": 6,
+    "ordered_copy": "ordered\\novelle\\05-il-natale-del-consigliere.wav",
+    "bytes": 303723114,
+    "sha256": "712d7245b390a9817f5fd75ec9746d37f7c6807000df2b17ae2b6b75c3537d98"
+  },
+  {
+    "source": "source\\deledda sa 4 a 7\\06Al servizio del Re.wav",
+    "source_index": 6,
+    "chapter_index": 7,
+    "ordered_copy": "ordered\\novelle\\06-al-servizio-del-re.wav",
+    "bytes": 166735658,
+    "sha256": "1ae49ccded9b64f6f9dcd23301fb55991027ee7bcef2d4648cda3e1eca2ce5bc"
+  },
+  {
+    "source": "source\\deledda sa 4 a 7\\07padrona e servi.wav",
+    "source_index": 7,
+    "chapter_index": 8,
+    "ordered_copy": "ordered\\novelle\\07-padrona-e-servi.wav",
+    "bytes": 275592252,
+    "sha256": "19e7785c38945c37ac8e5a4947d9868e8f5ddd0374c936bab99a5184110691ed"
+  },
+  {
+    "source": "source\\deledda fine\\08la scomunica.wav",
+    "source_index": 8,
+    "chapter_index": 9,
+    "ordered_copy": "ordered\\novelle\\08-la-scomunica.wav",
+    "bytes": 244680770,
+    "sha256": "61140eb4592f7a2ab05f5f75f925939afe22521b58cbd33ddacd7b91059b29c1"
+  },
+  {
+    "source": "source\\deledda fine\\09L'uomo nuovo.wav",
+    "source_index": 9,
+    "chapter_index": 10,
+    "ordered_copy": "ordered\\novelle\\09-l-uomo-nuovo.wav",
+    "bytes": 251842784,
+    "sha256": "922576bd3ae1e27bf9b970d42abd23da1c07cc661d3da746e35ae599021745e6"
+  },
+  {
+    "source": "source\\deledda fine\\10cerbiatta.wav",
+    "source_index": 10,
+    "chapter_index": 11,
+    "ordered_copy": "ordered\\novelle\\10-la-cerbiatta.wav",
+    "bytes": 173399750,
+    "sha256": "0a483ebf40d1376d0683479653bab8b0b6a93239141dc4ed6451f39de8a79965"
+  },
+  {
+    "source": "source\\deledda fine\\11La festa del Cristo.wav",
+    "source_index": 11,
+    "chapter_index": 12,
+    "ordered_copy": "ordered\\novelle\\11-la-festa-del-cristo.wav",
+    "bytes": 339007122,
+    "sha256": "f8b4f744a1539ddfc51c34edea3854e23c87cfb49364fb42f004be26f007f4ab"
+  },
+  {
+    "source": "source\\deledda fine\\12Un po' a tutti.wav",
+    "source_index": 12,
+    "chapter_index": 13,
+    "ordered_copy": "ordered\\novelle\\12-un-po-a-tutti.wav",
+    "bytes": 211223306,
+    "sha256": "8468aa36841c3a800e6cc1806aeb731942c419743cc9b366106eab437924ce1b"
+  },
+  {
+    "source": "source\\deledda fine\\13Ll'ultima.wav",
+    "source_index": 13,
+    "chapter_index": 14,
+    "ordered_copy": "ordered\\novelle\\13-l-ultima.wav",
+    "bytes": 188935220,
+    "sha256": "24686bd03f1f00a115b15bf67f5f1de6c0085e443c5d4fcf7652c4f40b018b35"
+  }
+]
