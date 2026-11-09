@@ -22,10 +22,10 @@ export function MainNav({ searchQuery = "" }: MainNavProps) {
         <div className="flex justify-center border-b border-accent/12 pb-3">
           <Link href="/" className="shrink-0" aria-label="Vai alla home di Lilithiana">
             <Image
-              src="/lilithiana-logo-transparent.png"
+              src="/lilithiana-logo-audio-transparent.png"
               alt="Lilithiana"
-              width={1572}
-              height={715}
+              width={1217}
+              height={638}
               preload
               className="h-16 w-auto sm:h-24 lg:h-28"
             />

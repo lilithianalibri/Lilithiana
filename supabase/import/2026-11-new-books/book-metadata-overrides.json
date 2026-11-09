@@ -1,0 +1,24 @@
+{
+  "telegrafi-dello-stato-sezione-femminile": {
+    "title": "Telegrafi dello Stato (Sezione femminile)",
+    "author": "Matilde Serao",
+    "narrator": "Antonella Civale",
+    "category": "Narrativa",
+    "description": "Nella Napoli di fine Ottocento, le giovani impiegate della sezione femminile dei Telegrafi dello Stato affrontano turni estenuanti, salari bassi e rigide gerarchie. Tra attese, amicizie e desideri di autonomia, Matilde Serao racconta il lavoro e la vita quotidiana di donne sospese fra bisogno di indipendenza e aspettative sociali.",
+    "vibe": "Lavoro femminile, Napoli, desiderio di autonomia",
+    "cover_from": "#6b3b17",
+    "cover_via": "#c89144",
+    "cover_to": "#28180d"
+  },
+  "il-voto-alle-donne-e-donne-della-costituente": {
+    "title": "Il voto alle donne e donne della Costituente",
+    "author": "Paola Gaiotti de Biase",
+    "narrator": "Paola Giglio",
+    "category": "Saggistica",
+    "description": "Una riflessione storica sull’ingresso delle donne nella cittadinanza politica italiana: dalla conquista del diritto di voto al contributo delle elette all’Assemblea Costituente. Paola Gaiotti de Biase ripercorre il significato di questa svolta e il riconoscimento della presenza femminile nella storia della democrazia italiana.",
+    "vibe": "Suffragio femminile, cittadinanza, memoria della Costituente",
+    "cover_from": "#154e59",
+    "cover_via": "#3e93a0",
+    "cover_to": "#0a2933"
+  }
+}

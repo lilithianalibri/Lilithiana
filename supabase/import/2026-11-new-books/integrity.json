@@ -1,0 +1,37 @@
+[
+  {
+    "source": "source\\copia aggiorna\\Telegrafi dello Stato (Sezione femminile)\\serao01.wav",
+    "ordered_copy": "ordered\\telegrafi-dello-stato-sezione-femminile\\01-capitolo-i.wav",
+    "bytes": 319547242,
+    "sha256": "27d4710cd9a784ba248bd37fe623ca598fc3f0557e9a8917232e21211d0dada6",
+    "intro_embedded": true
+  },
+  {
+    "source": "source\\copia aggiorna\\Telegrafi dello Stato (Sezione femminile)\\serao2.wav",
+    "ordered_copy": "ordered\\telegrafi-dello-stato-sezione-femminile\\02-capitolo-ii.wav",
+    "bytes": 505633408,
+    "sha256": "dde7340c1036a1e230db8f06c025c3b9863b40a153d3cd37800889740c8d0a07",
+    "intro_embedded": false
+  },
+  {
+    "source": "source\\copia aggiorna\\Telegrafi dello Stato (Sezione femminile)\\serao03.wav",
+    "ordered_copy": "ordered\\telegrafi-dello-stato-sezione-femminile\\03-capitolo-iii.wav",
+    "bytes": 177091810,
+    "sha256": "a681933283a1cc4f5816fab47673c00b77a12679db4220d7a434a604661ab03e",
+    "intro_embedded": false
+  },
+  {
+    "source": "source\\copia aggiorna\\Telegrafi dello Stato (Sezione femminile)\\serao04.wav",
+    "ordered_copy": "ordered\\telegrafi-dello-stato-sezione-femminile\\04-capitolo-iv.wav",
+    "bytes": 194350812,
+    "sha256": "4a0d6dc6ef35207c8043350cfb086b8cdbf6fb9658266763ae6f5d051fea0d4c",
+    "intro_embedded": false
+  },
+  {
+    "source": "source\\copia aggiorna\\voto alle donne e costituente di Paola Gaiotti de Biase\\1voto alle donne e costituente.wav",
+    "ordered_copy": "ordered\\il-voto-alle-donne-e-donne-della-costituente\\01-lettura-integrale.wav",
+    "bytes": 215525790,
+    "sha256": "5063bed17709613c4d45f4bc1faf8d0d2ddf7e9db99f354d47e2b943b1a62dba",
+    "intro_embedded": true
+  }
+]

@@ -33,5 +33,15 @@
     "book_slug": "un-americana-a-parigi",
     "chapters": 45,
     "total_duration_seconds": 30471
+  },
+  {
+    "book_slug": "telegrafi-dello-stato-sezione-femminile",
+    "chapters": 4,
+    "total_duration_seconds": 6231
+  },
+  {
+    "book_slug": "il-voto-alle-donne-e-donne-della-costituente",
+    "chapters": 1,
+    "total_duration_seconds": 1122
   }
 ]

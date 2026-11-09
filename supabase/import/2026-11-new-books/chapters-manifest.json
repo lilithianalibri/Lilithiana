@@ -1,0 +1,47 @@
+[
+  {
+    "book_slug": "telegrafi-dello-stato-sezione-femminile",
+    "chapter_index": 1,
+    "chapter_slug": "capitolo-i",
+    "chapter_title": "I",
+    "duration_seconds": 1664,
+    "r2_key": "telegrafi-dello-stato-sezione-femminile/01-capitolo-i.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/telegrafi-dello-stato-sezione-femminile/01-capitolo-i.wav"
+  },
+  {
+    "book_slug": "telegrafi-dello-stato-sezione-femminile",
+    "chapter_index": 2,
+    "chapter_slug": "capitolo-ii",
+    "chapter_title": "II",
+    "duration_seconds": 2633,
+    "r2_key": "telegrafi-dello-stato-sezione-femminile/02-capitolo-ii.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/telegrafi-dello-stato-sezione-femminile/02-capitolo-ii.wav"
+  },
+  {
+    "book_slug": "telegrafi-dello-stato-sezione-femminile",
+    "chapter_index": 3,
+    "chapter_slug": "capitolo-iii",
+    "chapter_title": "III",
+    "duration_seconds": 922,
+    "r2_key": "telegrafi-dello-stato-sezione-femminile/03-capitolo-iii.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/telegrafi-dello-stato-sezione-femminile/03-capitolo-iii.wav"
+  },
+  {
+    "book_slug": "telegrafi-dello-stato-sezione-femminile",
+    "chapter_index": 4,
+    "chapter_slug": "capitolo-iv",
+    "chapter_title": "IV",
+    "duration_seconds": 1012,
+    "r2_key": "telegrafi-dello-stato-sezione-femminile/04-capitolo-iv.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/telegrafi-dello-stato-sezione-femminile/04-capitolo-iv.wav"
+  },
+  {
+    "book_slug": "il-voto-alle-donne-e-donne-della-costituente",
+    "chapter_index": 1,
+    "chapter_slug": "lettura-integrale",
+    "chapter_title": "Il voto alle donne e donne della Costituente",
+    "duration_seconds": 1122,
+    "r2_key": "il-voto-alle-donne-e-donne-della-costituente/01-lettura-integrale.wav",
+    "audio_url": "https://pub-5c8f826260ec4bc4a78e9186bb598e0e.r2.dev/il-voto-alle-donne-e-donne-della-costituente/01-lettura-integrale.wav"
+  }
+]

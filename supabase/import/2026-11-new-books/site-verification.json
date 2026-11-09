@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "telegrafi-dello-stato-sezione-femminile",
+    "status": 200,
+    "author": true,
+    "narrator": true,
+    "category": true,
+    "cover": true,
+    "audio": true
+  },
+  {
+    "slug": "il-voto-alle-donne-e-donne-della-costituente",
+    "status": 200,
+    "author": true,
+    "narrator": true,
+    "category": true,
+    "cover": true,
+    "audio": true
+  },
+  {
+    "library_status": 200,
+    "both_books_visible": true
+  }
+]
