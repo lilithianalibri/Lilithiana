@@ -191,10 +191,6 @@ for (const [bookSlug, chapters] of grouped.entries()) {
   sql += `  total_duration_seconds = excluded.total_duration_seconds,\n`;
   sql += `  is_published = excluded.is_published;\n\n`;
 
-  sql += `with target_book as (\n`;
-  sql += `  select id from public.audiobooks where slug = '${safeBookSlug}'\n`;
-  sql += `)\n`;
-
   for (const row of ordered) {
     const chapterSlug = escapeSqlText(row.chapter_slug);
     const chapterTitle = escapeSqlText(row.chapter_title);
@@ -203,7 +199,9 @@ for (const [bookSlug, chapters] of grouped.entries()) {
     const chapterIndex = Number(row.chapter_index) || 1;
 
     sql += `insert into public.chapters (book_id, slug, chapter_index, title, duration_seconds, audio_url)\n`;
-    sql += `select id, '${chapterSlug}', ${chapterIndex}, '${chapterTitle}', ${duration}, '${audioUrl}' from target_book\n`;
+    sql += `select book.id, '${chapterSlug}', ${chapterIndex}, '${chapterTitle}', ${duration}, '${audioUrl}'\n`;
+    sql += `from public.audiobooks book\n`;
+    sql += `where book.slug = '${safeBookSlug}'\n`;
     sql += `on conflict (book_id, slug) do update set\n`;
     sql += `  chapter_index = excluded.chapter_index,\n`;
     sql += `  title = excluded.title,\n`;

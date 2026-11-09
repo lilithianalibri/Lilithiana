@@ -24,7 +24,7 @@ export default function TermsPage() {
             <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
               Condizioni d’uso della piattaforma
             </h1>
-            <p className="mt-4 text-sm text-muted">Ultimo aggiornamento: 20 maggio 2026</p>
+            <p className="mt-4 text-sm text-muted">Ultimo aggiornamento: 20 giugno 2026</p>
           </section>
 
           <section className="panel rounded-3xl p-6 sm:p-8">
@@ -105,7 +105,35 @@ export default function TermsPage() {
               </section>
 
               <section>
-                <h2 className="font-display text-2xl">9. Legge applicabile e foro</h2>
+                <h2 className="font-display text-2xl">9. Canali social e servizi di terzi</h2>
+                <p className="mt-2">
+                  Il sito può contenere link verso i canali ufficiali LILITHIANA su Facebook e
+                  Instagram. Si tratta di collegamenti esterni: quando l’utente apre tali pagine o
+                  interagisce con esse, l’uso delle piattaforme Meta è regolato anche dai termini,
+                  dalla{" "}
+                  <a
+                    className="font-semibold text-accent"
+                    href="https://www.facebook.com/privacy/policy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Privacy Policy di Meta
+                  </a>{" "}
+                  e dalle{" "}
+                  <a
+                    className="font-semibold text-accent"
+                    href="https://www.facebook.com/policies/cookies/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    regole cookie di Meta
+                  </a>
+                  .
+                </p>
+              </section>
+
+              <section>
+                <h2 className="font-display text-2xl">10. Legge applicabile e foro</h2>
                 <p className="mt-2">
                   I presenti Termini sono regolati dalla legge italiana. Restano salvi i diritti del
                   consumatore previsti dalla normativa applicabile.
@@ -113,7 +141,7 @@ export default function TermsPage() {
               </section>
 
               <section>
-                <h2 className="font-display text-2xl">10. Contatti</h2>
+                <h2 className="font-display text-2xl">11. Contatti</h2>
                 <p className="mt-2">
                   Per informazioni:{" "}
                   <a className="font-semibold text-accent" href="mailto:lilithianalibri@gmail.com">

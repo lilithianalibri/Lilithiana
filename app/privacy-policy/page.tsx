@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
             <h1 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">
               Informativa sul trattamento dei dati personali
             </h1>
-            <p className="mt-4 text-sm text-muted">Ultimo aggiornamento: 20 maggio 2026</p>
+            <p className="mt-4 text-sm text-muted">Ultimo aggiornamento: 20 giugno 2026</p>
           </section>
 
           <section className="panel rounded-3xl p-6 sm:p-8">
@@ -91,6 +91,20 @@ export default function PrivacyPolicyPage() {
                   I dati possono essere trattati da fornitori tecnici che operano quali responsabili
                   del trattamento (es. infrastruttura applicativa, autenticazione, hosting, sistemi
                   anti-abuso/CAPTCHA), nei limiti necessari all’erogazione del servizio.
+                </p>
+                <p className="mt-2">
+                  I canali Facebook e Instagram di LILITHIANA sono ospitati su piattaforme Meta. Se
+                  li visiti o interagisci con essi, Meta può trattare dati personali secondo le
+                  proprie{" "}
+                  <a
+                    className="font-semibold text-accent"
+                    href="https://www.facebook.com/privacy/policy/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    informative privacy
+                  </a>{" "}
+                  e impostazioni di privacy.
                 </p>
               </section>
 
