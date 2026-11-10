@@ -53,8 +53,8 @@ function splitCatalogByTrack(books: AudioBook[]) {
   const narrativaBooks = books.filter((book) => !saggisticaSlugSet.has(book.slug));
 
   return {
-    narrativaBooks: narrativaBooks.slice(0, 6),
-    saggisticaBooks: saggisticaBooks.slice(0, 6),
+    narrativaBooks,
+    saggisticaBooks,
   };
 }
 
